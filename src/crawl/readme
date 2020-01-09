@@ -1,0 +1,8 @@
+Description of files:
+    course_list.txt: contains many (if not all) courses in Coursera
+    run_commands.py: run commands in a txt file 
+
+Follow this:
+    1. pip install coursera-dl
+    2. Go to course_list.txt, put your Coursera Account and Password to YourAccount and YourPassword for all commands
+    3. python run_commands.py course_list.txt
