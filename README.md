@@ -3,7 +3,7 @@
 ## Overview
 This repo is for our paper ***Coursera Corpus Mining and Multistage Fine-Tuning for Improving Lectures Translation*** (Under review).
 
-It contains high quality English-Japanese parallel documents and sentences from OpenCourse site Coursera.
+It contains high quality English-Japanese parallel documents and sentences from OpenCourse site Coursera. (We can not public the data due to intellectual property reason.)
 
 |       | #lines | #docs | Description                       |
 |-------|--------|-------|-----------------------------------|
