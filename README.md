@@ -18,9 +18,5 @@ Also it contain the source codes described in the paper:
 3. Use Machine Translation and sentence embedding combined with DP to extract parallel sentence pair in document pairs.
 4. Multistage fine-tuning techniques to leverage out-of- and in- domain data to train a MT system for lectures domain translation.
 
-## Others
-
-We will update data of other language pairs and larger dataset later.
-
 ## Contact 
 If you have any question, please contact song@nlp.ist.i.kyoto-u.ac.jp
