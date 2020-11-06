@@ -1,0 +1,541 @@
+Algorithms are everywhere.
+Whether you are writing software, analyzing a genome, predicting traffic jams, producing automatic movie recommendations, or just surfing the Internet, you're dealing with algorithms.
+Every single branch of computer science uses algorithms, so a course on algorithms and data structures is an essential part of any CS curriculum.
+>> It's important that the algorithms we use are efficient as users want to see the search results in a blink of an eye even if they search through trillions of web pages.
+A poorly thought out algorithm could take literally centuries to process all the webpages indexed by a search engine or all the Facebook posts.
+And thus, algorithmic improvements are necessary to make these systems practical.
+That's why tech companies always ask lots of algorithmic questions at the interviews.
+>> In data science problems, like ranking internet search results, predicting road accidents, and recommending movies to users, advanced algorithms are used to achieve excellent search quality, high prediction accuracy, and to make relevant recommendations.
+However, even for a simple machine learning algorithm like linear regression to be able to process big data is usually a challenge.
+When advanced algorithms such as deep neural networks are applied to huge data sets they make extremely accurate predictions.
+Recently starting to even outperform humans in some areas of vision and speech recognition, but getting those algorithms to work in hours instead of years on a large dataset is hard.
+Each of trillions of cells in your body executes a complex and still poorly understood algorithm.
+And it is important to design your algorithms and to implement them.
+To turn you into a pro in algorithm design we will give you nearly 100 programming assignments in this class.
+Your solutions will be checked automatically, and you will learn how to implement, test, and debug fast algorithms solving large and difficult problems in seconds.
+We look forward to seeing you in this class.
+In fact you just saw five algorithms solving the fundamental sorting problem in computer science, and they all have different running times.
+In fact while four of them are about to finish one will take a much longer time.
+In this specialization you'll be able to implement all of these algorithms, and master the skill of answering both algorithmic and programming questions at your next interview.
+This lecture is primarily useful for people using Windows computers.
+People that are using Mac or Linux don't necessarily need this lecture.
+So Rtools is a collection of tools that are necessary for building R packages in Windows.
+We won't be doing that right away, but later in developing data trials you will be doing that, so you need to be able to install Rtools if you're going to complete that class.
+And so, what you can do is you can find a version of Rtools that is available that is the latest version, and so you want to select the .exe download link, and it corresponds to your version of R, so you need to figure out what version of R you have.
+And then, download that version, if you are not sure what version of R you have, open and restart R and you will see in the very beginning there will be some text listed out and one of the things they list out in that text is the version of R.
+If you, have the most recent version of R, you should select the most recent Rtools download, it's at the top of the chart.
+And so, if you just installed R for this course, then you will also need the latest version of Rtools.
+Once the download completes, you'll just open the executable file to begin the installation.
+So basically unless you know what you're doing, you should just go with the default selection at each steps of the installation.
+And you should make sure that box is checked to have the installer edit your path.
+And so you can see it very, very, if you're very eagle eyed, in this below.
+But basically make you sure check the box to allow the installer to edit your path.
+So, if you type find.packages("devtools") in the console, you'll figure out whether you have it or not.
+And then to install it, you can just, as in previous lectures, just use install.packages("devtools") like that, and you'll have the devtools package.
+After devtools is done installing you can load it using library(devtools) and then type find_rtools(), like this as shown below, and this should return a TRUE.
+This lecture is primarily useful for people using Windows computers.
+People that are using Mac or Linux don't necessarily need this lecture.
+So Rtools is a collection of tools that are necessary for building R packages in Windows.
+We won't be doing that right away, but later in developing data trials you will be doing that, so you need to be able to install Rtools if you're going to complete that class.
+And so, what you can do is you can find a version of Rtools that is available that is the latest version, and so you want to select the .exe download link, and it corresponds to your version of R, so you need to figure out what version of R you have.
+And then, download that version, if you are not sure what version of R you have, open and restart R and you will see in the very beginning there will be some text listed out and one of the things they list out in that text is the version of R.
+If you, have the most recent version of R, you should select the most recent Rtools download, it's at the top of the chart.
+And so, if you just installed R for this course, then you will also need the latest version of Rtools.
+Once the download completes, you'll just open the executable file to begin the installation.
+So basically unless you know what you're doing, you should just go with the default selection at each steps of the installation.
+And you should make sure that box is checked to have the installer edit your path.
+And so you can see it very, very, if you're very eagle eyed, in this below.
+But basically make you sure check the box to allow the installer to edit your path.
+So, if you type find.packages("devtools") in the console, you'll figure out whether you have it or not.
+And then to install it, you can just, as in previous lectures, just use install.packages("devtools") like that, and you'll have the devtools package.
+After devtools is done installing you can load it using library(devtools) and then type find_rtools(), like this as shown below, and this should return a TRUE.
+In the previous videos, you have heard some of our speakers talk about data sources like social media, emails, and documents.
+All things you may not typically think of as data sources.
+In this video, we will define big data and big data and analytics.
+Look at the differences between structured, unstructured, and semi-structured data.
+For example, a large bank was looking at improving their customer satisfaction ratings.
+The bank traditionally measured CSAT, or Customer Satisfaction, and NPS, or Net Promoter Score, as the two primary indicators.
+We worked with the bank to obtain and link a large variety of different sources of data.
+First, we used the surveys and analyzed the natural language text in the open comments field.
+This gave us a good view of the topic areas of concern to their customers.
+Second, we recorded all the calls coming to the customer service call center.
+Based on the speech analytics, speech to text, and text analytics, we we're able to identify the key reasons for the calls and the emotional state of the callers and the responders.
+Finally, we analyzed the social media channels to assess what their customers were saying about the bank and their competitors.
+This allowed us to build a complete view of the customer's interactions and sentiments about the bank, which helped them make better decisions.
+The amount of information available is exploding as digitarization, and the Internet of things, has increased the number of data sources and the value and complexity of data.
+Now, we use big data as a term to describe a collection of data sets so large and complex that it becomes difficult to process using basic database management tools or traditional data processing applications.
+The large data sets involved can consist of numerous data formats in either a structured, a semi-structured, or an unstructured form.
+Let's take a look at what we mean by structured, unstructured, and semi-structured data.
+Think about the list of names, addresses, and phone numbers found in a phone book.
+This is an example of structured data.
+It is well defined data, like customer names, ages, identifiers, etcetera, that you can collect formally.
+The most popular platforms for structured data include, Oracle, Microsoft SQL Server, Microsoft Access, and so on.
+Big data can be associated with structured data sources, but not exclusively.
+Now, lets look at unstructured data.
+Unstructured data is not broken down into individual components.
+It is a collection of videos or audio recordings on YouTube.
+It is millions of e-mails or pictures or social media posts.
+The challenge is, how do you take this unstructured data and do something meaningful with it?
+To understand semi-structured data, take that Word document that represents unstructured data and add metadata.
+Now you have semi-structured data.
+Semi-structured data does not conform to a structural format like relational or other standard formats.
+Semi-structured data includes tags and other markers to separate data elements.
+Big data is not just about the data.
+It is about the interconnectedness of the data.
+Internet availability, interconnectedness, rapid connection speeds, and mobility contribute to the torrent of data points being generated daily.
+Organizations want to realize the potential value of these extreme size data sets, and discard less and less information.
+However, the existing means to process and analyze data cannot scale to extreme sizes economically.
+As far back as 2001, industry analyst Doug Laney, currently with Gartner, articulated a now mainstream definition of big data as four Vs.
+Volume reflects the size of a dataset.
+New information is generated daily, and in some cases hourly, creating datasets that are measured in terabytes and petabytes.
+In the past, excessive data volume was a storage issue.
+Including how to determine relevance within the large data volumes, and how to use analytics to create value from the relevant data.
+This reflects the speed at which data is generated and used.
+New data is being created every second.
+In some cases, it may need to be analyzed just as quickly.
+Radio Frequency Identification, or RFID tags, sensors, and smart metering, are driving the need to deal with torrents of data in near real time.
+Reacting rapidly enough to deal with data velocity is a challenge for most organizations.
+Variety is the third V, and it represents the diversity of the data.
+Data sets will vary by time.
+Social networking, media, text, and so on.
+Data today comes in all types of formats.
+Unstructured data in the form of text documents, email, video, audio, stock ticker data and financial transactions.
+Managing, merging, and governing different varieties of data is something many organizations still grapple with.
+Data veracity refers to the biases, noise and abnormality in data.
+Is the data that is being stored and mined meaningful to the problem being analyzed?
+Veracity in data analysis is the biggest challenge when compared to things like volume and velocity.
+In scoping out your data and analytic strategy, you need to have your team and partners work to help keep your data clean, and create processes to prevent dirty data from accumulating in your systems.
+Even more important than the definition of data is what data promises to achieve.
+Effectively used, data can be transformed into insights and intelligence.
+Delivered where and when they are needed to make and implement strategic and operational decisions.
+There is one more V to take into account when looking at data and analytics.
+And that is value.
+Having access to data creates value only when you have the right data to clean strategic insights.
+Companies can generate significant value from your data.
+An online retailer for example, was planning to enhance their recommendation engine.
+The current software relied on a static set of rules to determine one of five different paths through their website.
+They wanted to modify this to make recommendations based on the individual profile of the customer, the amount of time they spend on a page, the keywords they enter, and what other customers like them have done in the past.
+More than half of new data created is in video and audio formats.
+And by the year 2020, total global Internet traffic will exceed 200 exabytes per month.
+An exabyte is equal to 1 billion gigabytes.
+Global mobile traffic will increase to 30 exabytes per month, and will increase by 50% combined annual growth rate.
+The total number of users with Internet access will exceed 3.5 billion.
+The total number of mobile devices will exceed 10 billion.
+Think about that for a minute.
+What does all that data mean for organizations?
+How will organizations use this data?
+Big data is a game changer in making business decisions.
+Let's look at how organizations are currently using social media.
+In traditional use, businesses use the convening power of social media to boost their image and better anticipate consumer trends.
+Few organizations have harnessed the potential power of social media for applications beyond marketing and public relations.
+Let's take an example.
+A large investment bank is worried about its compliance risk.
+Regulators are monitoring customer complaints made directly to them as well as the social media channels of the financial institutions.
+The investment bank built a social media dashboard that monitored customer complaints on a regular basis made to their social media site as well as other public forums.
+The dashboard captured the rate of change of the number of messages on a particular topic, as well as the rate of change of sentiment with respect to the same topic.
+This allowed them to react and respond fast whenever there was a change in volume or sentiment related to themselves or their competitors.
+Big data is made up of structured, unstructured, and semi-structured data.
+The amount of data that is being produced is growing at an astounding rate.
+And the key to this data is the interconnectedness of it all.
+We covered a lot of information here.
+You can use the interactive PDF to review the big data concepts.
+In the next video, you will hear from some of our PWC professionals about how we have used big data to solve client issues.
+And at PwC, I'm lucky enough to use advanced data and analytics to bring insights to our clients every day.
+Data and analytics is all about bringing client challenges to life so we can overcome them by taking data, whether structured or unstructured and turning it into usable information and insights.
+All the sophisticated data and analytics in the world won't matter if it can't be consumed by an end user or decision maker.
+Think about the data and analytics framework that we talked about earlier in the course.
+Once you gather the data and perform your analysis, you need to be able to present that data in a way that make sense to your end user.
+In other words, you have to visualize the data.
+Let's start with a basic principle of data visualization.
+Take a look at the table on the screen, how many numbers are greater than one?
+Do you have it?
+Now tell me how many numbers are greater than one.
+In fact, visualization is all about making complex insights simple.
+Simply highlighting the numbers greater than one helped you solve the problem quickly.
+And that's data visualization in a nutshell, the presentation of data in a pictorial or graphical format.
+We illustrate data with graphics and communicate information clearly and effectively to users.
+It's nothing new.
+For centuries, people have depended on visual representations such as charts and maps to understand information more easily and quickly.
+As more and more data is collected and analyzed, decision makers at all levels of the organization welcome data visualization software that enables them to see analytical results presented visually.
+It helps them to find relevance among millions of variables, communicate concepts and hypothesis to others, and even predict the future.
+Visualization is important because the brain processes visual information faster.
+Users can spot patterns or trends which are not obvious in a flat structure.
+Simply put, data visualization is just a technique that helps everyone see and understand the analysis that is going on.
+For example, let's say you want look through customer behaviors based on their location.
+You would have to go through tables and tables of customer segments to identify different behaviors by zip codes.
+It would take a lot of time to sort through all that analysis and data.
+If you plot that data on a map and pinpoint stores or locations where specific customer behaviors are occurring, you can use this to develop strategies that attract specific customers to specific locations.
+You can now take that map into a meeting with your client and show him or her where all their stores are overlaid with the data on their customers.
+And you're able to tell a story that will allow your client to adjust their business strategy.
+We're seeing that data and analytics today is underpinning every kind of business challenge.
+Being able to visualize data allows you to present an analysis so that anyone can understand what the information means.
+In the next couple of videos you'll get to see some examples of how we use data visualization tools to solve real business problems.
+In the next assignment, you'll be using the Sense HAT.
+So we're going to take a quick look at how you use the Sense HAT within NodeRED.
+So if you followed the setup instructions and did the latest update for the Raspberry image, you'll see a NodeRED palette in the Raspberry_Pi section, you will have two nodes for the Sense HAT.
+If you select the node, you'll get all the instructions on the info tab in NodeRED.
+But let's have a quick look.
+So dragging it onto the palette, if I open up the configuration, you see I have the option of enabling the various groups of senses.
+So I can choose to turn on or off the motion sensors, the environmental sensors, or the joy stick.
+Environmental sensors publish about once every second, and they are the temperature and humidity and air pressure.
+And that's your gyroscope magnetometer and accelerometer.
+And then the joystick events only publish when you actually interact with the joystick.
+So simply select the sensors you want, and then that will initiate a flow.
+To output to the LED matrix, you're going to use the Sense HAT output node.
+And again, if you look in the info tab, you'll see all of the details of how you have to format the payload to actually control the output.
+If you don't have a Sense HAT, there is an additional node that you can install that acts as the Sense HAT simulator.
+These aren't installed out of the box, so you need to go onto command line, into your .node-red directory, and then you have to add using NPM install the package.
+So if you install that node and then restart node-red, you'll see that you have an additional two nodes appear in the raspberry_pi section of the palette.
+And these are your simulator nodes.
+But rather than talking to the real hardware, they just simulate that hardware.
+To allow you to control what the sensor's data is, there's also a web interface where you can control the environmental sensors.
+So you can set the value you want published.
+In this lecture, we're going to talk about the analysis of chemical compounds.
+As you can see from the title slide, there's gotta be similarities between this topic, and our lecture on the analysis for the presence of different elements.
+But even though there are some similarities, as we'll see, there are also enormous differences between looking for elements and looking for compounds.
+So under what circumstances might we want to analyze a sample for the presence of chemical compounds?
+Well, as you'll see in the lecture on fibres later, one of the important things you need to do when you have a fibre sample is to determine what that fibre is made of.
+So you have to analyze the compounds that make up the fibre in order to identify it.
+In addition, because most fibres are coloured, you might want to analyze the dye to find out what compounds are present in the dye.
+And this is another example of where we would want to analyze for particular compounds.
+And one of the major applications of this kind of chemistry is in the analysis of suspected illegal drugs, and these suspected illegal drugs might actually be the material itself, or it might be analyzing body fluids from a suspect, an alleged user, for the presence of those illegal drugs.
+So analysis of compounds is a very important part of forensic science.
+A complication in the analysis of compounds which we did not encounter in the analysis of elements is the fact that the samples that are being given for analysis are actually very complex mixtures.
+If you think, for instance, of a blood sample or a urine sample, there are a huge number of different compounds within that sample and most of them are quite ubiquitous, they're quite supposed to be there.
+Urine, for instance, contains all the by-products of our metabolism, and the forensic scientist will be analyzing that very, very complex mixture for maybe just a few or even one compound that is of interest.
+So when we're talking about the analysis of compounds, there's really two different things that we have to talk about.
+The first thing is how to separate out this mixture so we can find within it the compound or compounds of interest.
+Only when that has been done, we then have to identify the compound and find what it is.
+We have a sample, and the sample is applied at one position in the stationary phase, and it's indicated here by the purple bar.
+We then need to have a mobile phase, and our mobile phase is either a liquid or a gas, and that flows through the stationary phase.
+And as the mobile phase flows through the stationary phase, the components of the mixture that we're trying to analyze also flow through.
+So as we run the experiment, as time goes by, our mixture will separate out into its individual components based on the speed with which they move through the medium.
+And as we run the experiment longer, the separation will get greater, and of course, one of these components will get to the end of our stationary phase well before the other one.
+And we've now separated our mixture into its different components and we could go ahead with whatever analysis we're going to use to identify them.
+There are many different kinds of chromatography.
+The simplest, easiest and cheapest one is a technique called Thin Layer Chromatography.
+And the TLC plate consists very simply of an inert backing plate, which is typically glass, but can also be other materials such as aluminium or plastic.
+The great thing about TLC is that the equipment you need is very, very simple.
+You can use a jam jar; this isn't a jam jar.
+So this a glass backed TLC plate, and this side has the stationary phase, which is silica.
+So what I do, draw a line on the TLC plate to show where my sample's going to start.
+And as a sample, I've chosen this one.
+And that's because all the components are coloured and we'll be able to see them at the end of the experiment.
+We take up some sample into the capillary.
+Apply it to the TLC plate where we've drawn the line.
+Okay, when the mobile phase has almost got to the top of the TLC plate, we can take it out of the jar.
+Make a mark with the pencil to show where the solvent got to.
+That is the so-called solvent front, and then you can see the result.
+We can clearly see that this sample contains two components, or at least it contains two components that are coloured and we can see under visible light.
+So when we are working with coloured compounds, you can just see by inspection, just by looking at the plate, you can see where the spots are.
+But most organic compounds are not coloured.
+If your spots don't show up on the UV light, then we have a whole series of chemical reagents that we can apply to the plate, and that will make these otherwise invisible spots show up as coloured spots.
+So here's a typical TLC plate, it's visualized under UV light, and our unknown mixture that we're analyzing is lane C.
+And as you can see, the TLC of lane C shows two spots, so probably there's two compounds in here.
+So compound A, compound B, we know what they are, we have have spotted them on the TLC plate, and we can see that the two spots in lane C correspond to compounds A and B.
+Does this mean that we can use TLC as a technique for identifying compounds?
+The answer to that question is not straight-forward, because TLC is what we call a presumptive test.
+We are analyzing this mixture for its composition in terms of organic compounds.
+There are several million organic compounds that have been made, that have been described, that have been reported.
+Now, a TLC plate is only a few centimetres long, so it's absolutely impossible for a little TLC plate to separate and distinguish between all of those millions and millions of compounds, and it's frustratingly frequent that we find that two different compounds will actually give the same spots on a TLC plate.
+That is, when we run our TLC plates, those two compounds will move to the same distance.
+So when we do a TLC and we see that a spot in our unknown mixture corresponds to one of our standards as it does in this TLC plate, we cannot say that that standard compound is present in the mixture.
+We can say that that compound may be in the mixture, and therefore we should go on to do further tests to determine this.
+So TLC is nice, it's simple, it's quick, it's cheap, but it cannot in all cases, give you a definitive answer.
+Okay, let's look a little more closely at TLC.
+So here we have a TLC plate on the left, where we have three standard compounds - the pink compound, the grey compound and the green compound - and we have an unknown mixture symbolized by the black dot.
+So suppose when we take this TLC plate and we run it, and maybe we get a result like the one on the right, where the solvent has flowed up to the position marked solvent front.
+And we can see the three standard compounds have moved, and our unknown mixture has now separated into four different spots.
+So there's presumably, probably, four components in our unknown mixture.
+Well, we can see that the green standard corresponds to a spot in the mixture, so we can say probably the green compound is there.
+The black standard compound also matches a spot in the mixture, so we can say probably or possibly that compound is in the mixture.
+The pink standard compound, you can see, does not correspond to any spot in the mixture.
+So now we can be quite clear, we can say that that pink compound is not present in this mixture that we are analysing.
+At least it's not present within the sensitivity of this particular technique.
+But, here we can also see that two other spots have appeared.
+There's a yellow spot and a red spot.
+So we can say that this unknown mixture contains at least two more compounds, and we have no idea what they might even be.
+Now when we're discussing TLC, it's not good enough to say "oh, the spot up there" or "the spot down there".
+What we really need is some numerical method to describe the positions of the spots, and what we use is a number called the Rf, which is the Retention Factor.
+Then the Rf of that particular compound is defined as X divided by Y.
+So there's TLC, a very simple, very easy to do technique, but not quite accurate enough for our purposes.
+What is machine learning?
+You probably use it dozens of times a day without even knowing it.
+When Facebook or Apple's photo application recognizes your friends in your pictures, that's also machine learning.
+Each time you read your email and a spam filter saves you from having to wade through tons of spam, again, that's because your computer has learned to distinguish spam from non-spam email.
+So, that's machine learning.
+There's a science of getting computers to learn without being explicitly programmed.
+One of the research projects that I'm working on is getting robots to tidy up the house.
+Well what you can do is have the robot watch you demonstrate the task and learn from that.
+The robot can then watch what objects you pick up and where to put them and try to do the same thing even when you aren't there.
+For me, one of the reasons I'm excited about this is the AI, or artificial intelligence problem.
+Many scientists think the best way to make progress on this is through learning algorithms called neural networks, which mimic how the human brain works, and I'll teach you about that, too.
+In this class, you learn about machine learning and get to implement them yourself.
+I hope you sign up on our website and join us.
+In the last video I talked about how, when faced with a machine learning problem, there are often lots of different ideas for how to improve the algorithm.
+In this video, let's talk about the concept of error analysis.
+Which will hopefully give you a way to more systematically make some of these decisions.
+And when I start with a learning problem what I usually do is spend at most one day, like literally at most 24 hours, To try to get something really quick and dirty.
+Frankly not at all sophisticated system but get something really quick and dirty running, and implement it and then test it on my cross-validation data.
+But plot learning curves of the training and test errors to try to figure out if you're learning algorithm maybe suffering from high bias or high variance, or something else.
+And use that to try to decide if having more data, more features, and so on are likely to help.
+And the reason that this is a good approach is often, when you're just starting out on a learning problem, there's really no way to tell in advance.
+It's just incredibly difficult to figure out where you should be spending your time.
+And by plotting learning curves, that helps you make these decisions.
+So if you like you can to think of this as a way of avoiding whats sometimes called premature optimization in computer programming.
+And this idea that says we should let evidence guide our decisions on where to spend our time rather than use gut feeling, which is often wrong.
+In addition to plotting learning curves, one other thing that's often very useful to do is what's called error analysis.
+I will often look at my cross validation set and manually look at the emails that my algorithm is making errors on.
+So look at the spam e-mails and non-spam e-mails that the algorithm is misclassifying and see if you can spot any systematic patterns in what type of examples it is misclassifying.
+And often, by doing that, this is the process that will inspire you to design new features.
+And let's say in this example that the algorithm has a very high error rate.
+And this classifies 100 of these cross validation examples.
+So what I do is manually examine these 100 errors and manually categorize them.
+Based on things like what type of email it is, what cues or what features you think might have helped the algorithm classify them correctly.
+And maybe I find that 53 of them are these what's called phishing emails, basically emails trying to persuade you to give them your password.
+And, also what I might do is look at what cues or what additional features might have helped the algorithm classify the emails.
+So let's say that some of our hypotheses about things or features that might help us classify emails better are.
+And once again I would manually go through and let's say I find five cases of this and 16 of this and 32 of this and a bunch of other types of emails as well.
+And if this is what you get on your cross validation set, then it really tells you that maybe deliberate spellings is a sufficiently rare phenomenon that maybe it's not worth all the time trying to write algorithms that detect that.
+But if you find that a lot of spammers are using, you know, unusual punctuation, then maybe that's a strong sign that it might actually be worth your while to spend the time to develop more sophisticated features based on the punctuation.
+So this sort of error analysis, which is really the process of manually examining the mistakes that the algorithm makes, can often help guide you to the most fruitful avenues to pursue.
+And this also explains why I often recommend implementing a quick and dirty implementation of an algorithm.
+What we really want to do is figure out what are the most difficult examples for an algorithm to classify.
+And very often for different algorithms, for different learning algorithms they'll often find similar categories of examples difficult.
+And by having a quick and dirty implementation, that's often a quick way to let you identify some errors and quickly identify what are the hard examples.
+Lastly, when developing learning algorithms, one other useful tip is to make sure that you have a numerical evaluation of your learning algorithm.
+And what I mean by that is you if you're developing a learning algorithm, it's often incredibly helpful.
+I'll talk more about this specific concept in later videos, but here's a specific example.
+Let's say we're trying to decide whether or not we should treat words like discount, discounts, discounted, discounting as the same word.
+So you know maybe one way to do that is to just look at the first few characters in the word like, you know.
+If you just look at the first few characters of a word, then you figure out that maybe all of these words roughly have similar meanings.
+In natural language processing, the way that this is done is actually using a type of software called stemming software.
+And if you ever want to do this yourself, search on a web-search engine for the porter stemmer, and that would be one reasonable piece of software for doing this sort of stemming, which will let you treat all these words, discount, discounts, and so on, as the same word.
+But using a stemming software that basically looks at the first few alphabets of a word, more of less, it can help, but it can hurt.
+And it can hurt because for example, the software may mistake the words universe and university as being the same thing.
+Because, you know, these two words start off with the same alphabets.
+So if you're trying to decide whether or not to use stemming software for a spam cross classifier, it's not always easy to tell.
+And in particular, error analysis may not actually be helpful for deciding if this sort of stemming idea is a good idea.
+Instead, the best way to figure out if using stemming software is good to help your classifier is if you have a way to very quickly just try it and see if it works.
+And in order to do this, having a way to numerically evaluate your algorithm is going to be very helpful.
+Concretely, maybe the most natural thing to do is to look at the cross validation error of the algorithm's performance with and without stemming.
+And you rerun it and you end up with 3 percent classification error, then this decrease in error very quickly allows you to decide that it looks like using stemming is a good idea.
+For this particular problem, there's a very natural, single, real number evaluation metric, namely the cross validation error.
+We'll see later examples where coming up with this sort of single, real number evaluation metric will need a little bit more work.
+But as we'll see in a later video, doing so would also then let you make these decisions much more quickly of say, whether or not to use stemming.
+So, you know, as the word, mom, were upper case, and versus lower case m, should that be treated as the same word or as different words?
+Should this be treated as the same feature, or as different features?
+And I find that therefore, this does worse than if I use only stemming.
+So when you're developing a learning algorithm, very often you'll be trying out lots of new ideas and lots of new versions of your learning algorithm.
+If every time you try out a new idea, if you end up manually examining a bunch of examples again to see if it got better or worse, that's gonna make it really hard to make decisions on.
+But by having a single real number evaluation metric, you can then just look and see, oh, did the arrow go up or did it go down?
+And you can use that to much more rapidly try out new ideas and almost right away tell if your new idea has improved or worsened the performance of the learning algorithm.
+And this will let you often make much faster progress.
+So the recommended, strongly recommended the way to do error analysis is on the cross validations there rather than the test set.
+But, you know, there are people that will do this on the test set, even though that's definitely a less mathematic appropriate, certainly a less recommended way to, thing to do than to do error analysis on your cross validation set.
+Set to wrap up this video, when starting on a new machine learning problem, what I almost always recommend is to implement a quick and dirty implementation of your learning out of them.
+And I've almost never seen anyone spend too little time on this quick and dirty implementation.
+I've pretty much only ever seen people spend much too much time building their first, supposedly, quick and dirty implementation.
+But really, implement something as quickly as you can.
+And once you have the initial implementation, this is then a powerful tool for deciding where to spend your time next.
+Because first you can look at the errors it makes, and do this sort of error analysis to see what other mistakes it makes, and use that to inspire further development.
+This can then be a vehicle for you to try out different ideas and quickly see if the different ideas you're trying out are improving the performance of your algorithm.
+And therefore let you, maybe much more quickly make decisions about what things to fold in and what things to incorporate into your learning algorithm.
+In the PCA algorithm we take N dimensional features and reduce them to some K dimensional feature representation.
+This number K is a parameter of the PCA algorithm.
+This number K is also called the number of principle components or the number of principle components that we've retained.
+And in this video I'd like to give you some guidelines, tell you about how people tend to think about how to choose this parameter K for PCA.
+In order to choose k, that is to choose the number of principal components, here are a couple of useful concepts.
+What PCA tries to do is it tries to minimize the average squared projection error.
+And this one says, "On average, how far are my training examples from the vector, from just being all zeros?" How far is, how far on average are my training examples from the origin?
+When we're trying to choose k, a pretty common rule of thumb for choosing k is to choose the smaller values so that the ratio between these is less than 0.01.
+So in other words, a pretty common way to think about how we choose k is we want the average squared projection error.
+That is the average distance between x and it's projections divided by the total variation of the data.
+That is how much the data varies.
+We want this ratio to be less than, let's say, 0.01.
+Or to be less than 1%, which is another way of thinking about it.
+And the way most people think about choosing K is rather than choosing K directly the way most people talk about it is as what this number is, whether it is 0.01 or some other number.
+And if it is 0.01, another way to say this to use the language of PCA is that 99% of the variance is retained.
+I don't really want to, don't worry about what this phrase really means technically but this phrase "99% of variance is retained" just means that this quantity on the left is less than 0.01.
+And so, if you are using PCA and if you want to tell someone, you know, how many principle components you've retained it would be more common to say well, I chose k so that 99% of the variance was retained.
+And that's kind of a useful thing to know, it means that you know, the average squared projection error divided by the total variation that was at most 1%.
+That's kind of an insightful thing to think about, whereas if you tell someone that, "Well I had to 100 principle components" or "k was equal to 100 in a thousand dimensional data" it's a little hard for people to interpret that.
+So this number 0.01 is what people often use.
+And so range of values from, you know, 90, 95, 99, maybe as low as 85% of the variables contained would be a fairly typical range in values.
+Maybe 95 to 99 is really the most common range of values that people use.
+For many data sets you'd be surprised, in order to retain 99% of the variance, you can often reduce the dimension of the data significantly and still retain most of the variance.
+Because for most real life data says many features are just highly correlated, and so it turns out to be possible to compress the data a lot and still retain you know 99% of the variance or 95% of the variance.
+So how do you implement this?
+Well, here's one algorithm that you might use.
+You may start off, if you want to choose the value of k, we might start off with k equals 1.
+Compute all of those x1 approx and so on up to xm approx and then we check if 99% of the variance is retained.
+And then we'll again run through this entire procedure and check, you know is this expression satisfied.
+And if not then we do this again.
+Let's try k equals 3, then try k equals 4, and so on until maybe we get up to k equals 17 and we find 99% of the data have is retained and then we use k equals 17, right?
+That is one way to choose the smallest value of k, so that and 99% of the variance is retained.
+Fortunately when you implement PCA it actually, in this step, it actually gives us a quantity that makes it much easier to compute these things as well.
+So those big O's that I'm drawing, by that what I mean is that everything off the diagonal of this matrix all of those entries there are going to be zeros.
+And so, what is possible to show, and I won't prove this here, and it turns out that for a given value of k, this quantity over here can be computed much more simply.
+And that quantity can be computed as one minus sum from i equals 1 through K of Sii divided by sum from I equals 1 through N of Sii.
+What we're going to do to compute the numerator is sum from one-- I equals 1 through 3 of of Sii, so just compute the sum of these first three elements.
+And then for the denominator, well that's the sum of all of these diagonal entries.
+And one minus the ratio of that, that gives me this quantity over here, that I've circled in blue.
+And so, what we can do is just test if this is less than or equal to 0.01.
+Or equivalently, we can test if the sum from i equals 1 through k, s-i-i divided by sum from i equals 1 through n, s-i-i if this is greater than or equal to 4.99, if you want to be sure that 99% of the variance is retained.
+And so what you can do is just slowly increase k, set k equals one, set k equals two, set k equals three and so on, and just test this quantity to see what is the smallest value of k that ensures that 99% of the variance is retained.
+And if you do this, then you need to call the SVD function only once.
+So this procedure is much more efficient, and this can allow you to select the value of K without needing to run PCA from scratch over and over.
+You just run SVD once, this gives you all of these diagonal numbers, all of these numbers S11, S22 down to SNN, and then you can just you know, vary K in this expression to find the smallest value of K, so that 99% of the variance is retained.
+Then, if you want to explain to others what you just did, a good way to explain the performance of your implementation of PCA to them, is actually to take this quantity and compute what this is, and that will tell you what was the percentage of variance retained.
+So hopefully, that gives you an efficient procedure for choosing the number K.
+In this next set of videos, I would like to tell you about recommender systems.
+There are two reasons, I had two motivations for why I wanted to talk about recommender systems.
+The first is just that it is an important application of machine learning.
+And one of the most frequent answers I heard was that there are many groups out in Silicon Valley now, trying to build better recommender systems.
+So, if you think about what the websites are like Amazon, or what Netflix or what eBay, or what iTunes Genius, made by Apple does, there are many websites or systems that try to recommend new products to use.
+So, Amazon recommends new books to you, Netflix try to recommend new movies to you, and so on.
+And so an improvement in performance of a recommender system can have a substantial and immediate impact on the bottom line of many of these companies.
+But if you look at what's happening, many technology companies, the ability to build these systems seems to be a high priority for many companies.
+And that's one of the reasons why I want to talk about them in this class.
+The second reason that I want to talk about recommender systems is that as we approach the last few sets of videos of this class I wanted to talk about a few of the big ideas in machine learning and share with you, you know, some of the big ideas in machine learning.
+And we've already seen in this class that features are important for machine learning, the features you choose will have a big effect on the performance of your learning algorithm.
+So there's this big idea in machine learning, which is that for some problems, maybe not all problems, but some problems, there are algorithms that can try to automatically learn a good set of features for you.
+There are many others, but engraved through recommender systems, will be able to go a little bit into this idea of learning the features and you'll be able to see at least one example of this, I think, big idea in machine learning as well.
+Imagine that you're a website or a company that sells or rents out movies, or what have you.
+So, users may, you know, something one, two, three, four or five stars.
+In order to make this example just a little bit nicer, I'm going to allow 0 to 5 stars as well, because that just makes some of the math come out just nicer.
+Although most of these websites use the 1 to 5 star scale.
+So, let's say Alice really likes Love That Lasts and rates that 5 stars, likes Romance Forever, rates it 5 stars.
+Carol and Dave, users three and four, really like the action movies and give them high ratings, but don't like the romance and love- type movies as much.
+Specifically, in the recommender system problem, we are given the following data.
+And so, y(i, j) would be a number from zero to five, depending on the star rating, zero to five stars that user gave that particular movie.
+So, the recommender system problem is given this data that has give these r(i, j)'s and the y(i, j)'s to look through the data and look at all the movie ratings that are missing and to try to predict what these values of the question marks should be.
+Maybe we think Bob would have given this a 4.5 or some high value, as we think maybe Carol and Dave were doing these very low ratings.
+You try to predict what else might be interesting to a user.
+So that's the formalism of the recommender system problem.
+In the next video we'll start to develop a learning algorithm to address this problem.
+In this video, I'd like to talk about a new large-scale machine learning setting called the online learning setting.
+The online learning setting allows us to model problems where we have a continuous flood or a continuous stream of data coming in and we would like an algorithm to learn from that.
+Today, many of the largest websites, or many of the largest website companies use different versions of online learning algorithms to learn from the flood of users that keep on coming to, back to the website.
+Specifically, if you have a continuous stream of data generated by a continuous stream of users coming to your website, what you can do is sometimes use an online learning algorithm to learn user preferences from the stream of data and use that to optimize some of the decisions on your website.
+So let's say that we want a learning algorithm to help us to optimize what is the asking price that we want to offer to our users.
+And specifically, let's say we come up with some sort of features that capture properties of the users.
+If we know anything about the demographics, they capture, you know, the origin and destination of the package, where they want to ship the package.
+And what is the price that we offer to them for shipping the package.
+and what we want to do is learn what is the probability that they will elect to ship the package, using our shipping service given these features, and again just as a reminder these features X also captures the price that we're asking for.
+And so if we could estimate the chance that they'll agree to use our service for any given price, then we can try to pick a price so that they have a pretty high probability of choosing our website while simultaneously hopefully offering us a fair return, offering us a fair profit for shipping their package.
+So if we can learn this property of y equals 1 given any price and given the other features we could really use this to choose appropriate prices as new users come to us.
+So in order to model the probability of y equals 1, what we can do is use logistic regression or neural network or some other algorithm like that.
+But let's start with logistic regression.
+Now if you have a website that just runs continuously, here's what an online learning algorithm would do.
+This just means that our website is going to, you know, keep on staying up.
+What happens on the website is occasionally a user will come and for the user that comes we'll get some x,y pair corresponding to a customer or to a user on the website.
+So the features x are, you know, the origin and destination specified by this user and the price that we happened to offer to them this time around, and y is either one or zero depending one whether or not they chose to use our shipping service.
+Now what happens as we get an example and then we learn using that example like so and then we throw that example away.
+Which is why, you know, we're also doing away with this notion of there being this sort of fixed training set indexed by i.
+And, if you really run a major website where you really have a continuous stream of users coming, then this sort of online learning algorithm is actually a pretty reasonable algorithm.
+Because of data is essentially free if you have so much data, that data is essentially unlimited then there is really may be no need to look at a training example more than once.
+Of course if we had only a small number of users then rather than using an online learning algorithm like this, you might be better off saving away all your data in a fixed training set and then running some algorithm over that training set.
+But if you really have a continuous stream of data, then an online learning algorithm can be very effective.
+I should mention also that one interesting effect of this sort of online learning algorithm is that it can adapt to changing user preferences.
+And in particular, if over time because of changes in the economy maybe users start to become more price sensitive and willing to pay, you know, less willing to pay high prices.
+Or if they become less price sensitive and they're willing to pay higher prices.
+This sort of online learning algorithm can also adapt to changing user preferences and kind of keep track of what your changing population of users may be willing to pay for.
+And it does that because if your pool of users changes, then these updates to your parameters theta will just slowly adapt your parameters to whatever your latest pool of users looks like.
+Here's another example of a sort of application to which you might apply online learning.
+this is an application in product search in which we want to apply learning algorithm to learn to give good search listings to a user.
+So 1080p is a type of a specification for a video camera that you might have on a phone, a cell phone, a mobile phone.
+And because of the way our website is laid out, when a user types in a query, if it was a search query, we would like to find a choice of ten different phones to show what to offer to the user.
+What we'd like to do is have a learning algorithm help us figure out what are the ten phones out of the 100 we should return the user in response to a user-search query like the one here.
+For each phone and given a specific user query; we can construct a feature vector X.
+So the feature vector X might capture different properties of the phone.
+We capture things like how many words in the user search query match the name of the phone, how many words in the user search query match the description of the phone and so on.
+So the features x capture properties of the phone and it captures things about how similar or how well the phone matches the user query along different dimensions.
+What we like to do is estimate the probability that a user will click on the link for a specific phone, because we want to show the user phones that they are likely to want to buy, want to show the user phones that they have high probability of clicking on in the web browser.
+To give this problem a name in the language of people that run websites like this, the problem of learning this is actually called the problem of learning the predicted click-through rate, the predicted CTR.
+And if you can estimate the predicted click-through rate for any particular phone, what we can do is use this to show the user the ten phones that are most likely to click on, because out of the hundred phones, we can compute this for each of the 100 phones and just select the 10 phones that the user is most likely to click on, and this will be a pretty reasonable way to decide what ten results to show to the user.
+So, I'll quickly mention a few others.
+One is, if you have a website and you're trying to decide, you know, what special offer to show the user, this is very similar to phones, or if you have a website and you show different users different news articles.
+So, if you're a news aggregator website, then you can again use a similar system to select, to show to the user, you know, what are the news articles that they are most likely to be interested in and what are the news articles that they are most likely to click on.
+And in fact, if you have a collaborative filtering system, you can even imagine a collaborative filtering system giving you additional features to feed into a logistic regression classifier to try to predict the click through rate for different products that you might recommend to a user.
+Of course, I should say that any of these problems could also have been formulated as a standard machine learning problem, where you have a fixed training set.
+Maybe, you can run your website for a few days and then save away a training set, a fixed training set, and run a learning algorithm on that.
+But these are the actual sorts of problems, where you do see large companies get so much data, that there's really maybe no need to save away a fixed training set, but instead you can use an online learning algorithm to just learn continuously.
+So, that was the online learning setting and as we saw, the algorithm that we apply to it is really very similar to this schotastic gradient descent algorithm, only instead of scanning through a fixed training set, we're instead getting one example from a user, learning from that example, then discarding it and moving on.
+And if you have a continuous stream of data for some application, this sort of algorithm may be well worth considering for your application.
+And of course, one advantage of online learning is also that if you have a changing pool of users, or if the things you're trying to predict are slowly changing like your user taste is slowly changing, the online learning algorithm can slowly adapt your learned hypothesis to whatever the latest sets of user behaviors are like as well.
+Welcome to Multivariate Calculus for Machine Learning.
+In this course, we're going to cover a range of topics related to calculus that we think will be useful for you as you embark on your study of machine learning.
+We've tried to design this course so that you are able to rapidly develop an intuitive understanding of calculus and its applications.
+Where possible, we use graphics and animations to show what the maths is doing.
+So, hopefully, those of you who have bad memories of maths from high school will be left wondering why they ever found it confusing in the first place.
+Well, as I'm sure you can imagine, these two statements are related.
+We simply don't have time to cover all the details in this short course.
+But crucially, you'll know what to look up if you get stuck.
+Personally, although I'm using machine learning quite a lot in my job, this is not the core focus of my research.
+I'm not a developer of machine learning.
+I hope you find this course enjoyable, but most of all that it gives you the confidence to dive into machine learning and see through the maths to the meaning.
+So you're just about to reach the end of the first week of material on the first course in this specialization.
+Let me give you a quick sense of what you'll learn in the next few weeks as well.
+As I said in the first video, this specialization comprises five courses.
+And right now, we're in the first of these five courses which teach you the most important foundations, really the most important building blocks of deep learning.
+So by the end of this first course, you know how to build and get to work a deep neural network.
+So here the details of what is in this first course.
+This course is four weeks of material.
+And you're just coming up to the end of the first week when you saw an introduction to deep learning.
+At the end of each week, there are also be 10 multiple-choice questions that you can use to double check your understanding of the material.
+So when you're done watching this video, I hope you're going to take a look at those questions.
+In the second week, you then learn about the Basics of Neural Network Programming.
+You'll learn the structure of what we call the forward propagation and the back propagation steps of the algorithm and how to implement neural networks efficiently.
+I find it really satisfying when I learn about algorithm and they get it coded up and I see it worked for myself.
+So I hope you enjoy that too.
+Having learned the framework for neural network programming in the third week, you code up a single hidden layer neural network.
+So you learn about all the key concepts needed to implement and get to work in neural network.
+And then finally in week four, you build a deep neural network and neural network with many layers and see it worked for yourself.
+I hope that you now have a good high-level sense of what's happening in deep learning.
+And perhaps some of you are also assigned to, has some ideas of where you might want to apply deep learning yourself.
+And don't review, you don't get all the answers right the first time, you can try again and again until you get them all right.
+I found them useful to make sure that I'm understanding all the concepts, I hope you're that way too.
+So with that, congrats again for getting up to here and I look forward to seeing you in the week two videos.
+Welcome to The Business Model Canvas, An Entrepreneur and Innovator's Tool.
+Dan is a member of the faculty at Kennesaw State University and has over 30 years' experience teaching courses in management, leadership, and entrepreneurship.
+During his career, Dan has also been an entrepreneur running a publishing firm with his two brothers, and he spent five years directing a small business development center in Ann Arbor, Michigan.
+Dan has a passion for helping people reach their fullest potential as leaders, innovators, and change makers.
+So sit back, enjoy the program, and learn how the Business Model Canvas can help you turn a new idea Into a new profitable reality.
+My name is Dan Stotz, and I'm a faculty member in the Management and Entrepreneurship Department at Kennesaw State University.
+You may not know a lot about Kennesaw State University.
+We are located just north of Atlanta, Georgia, and we are one of the largest universities in the United States with over 33,000 students.
+Last year, US News and World Report ranked KSU number four as an up and coming university, and just recently we were ranked in the top 20 as one of the most innovative universities in the country.
+So we are both pleased and proud that Coursera chose us to design and deliver this program titled The Business Model Canvas, An Entrepreneur and Innovator's Tool.
+So let's get to work.
+In the first module, we'll learn about the nine building blocks that make up the business model canvas.
+And together we'll discover how the business model canvas can play a key role in helping us transform a new idea into a profitable reality.
+As you may already know, the business model canvas was invented by Alex Osterwalder and Yves Pigneur, authors of the best selling book Business Model Generation.
+Their book is a practical, inspiring handbook for anyone striving to improve a business model or craft a new one.
+They wrote the book with the help of 470 business model canvas practitioners from 45 countries.
+So the business model canvas tool has been validated by university researchers and field tested by innovators and entrepreneurs.
+So let's begin.
+We'll start by watching a short video called Getting from Business Idea to Business Model.
+It is a story of Beth and Carl in an idea that they believed could become a great business.
+This video is the first of a series of six.
+The video was produced by the Strategizer Company and made available to us through the generosity of the Kauffman Foundation.
+So, sit back, go to the next session of the module, and enjoy the video.
+Have you ever wondered why you can eat a bag of candy and feel hungry just 30 minutes later?
+It has to do with something called the glycemic index of the food or the combinations of food that you choose to eat.
+So let's compare two snacks.
+First, let's look at a candy bar.
+Then, the alternative snack, a bowl of brown rice with some stir-fried broccoli on top.
+The candy bar is high and simple sugars like sucrose and glucose, they are carbohydrates your body can really quickly break down and absorb.
+This means that if you want to look at a graph of your blood sugar after you ate the candy bar, it will look something like this.
+So, this is in between meals.
+So right after you've eaten your candy bar, your blood sugar is going to start to climb pretty quickly.
+Now when blood sugar goes up like this, the body senses it and starts releasing a proportional amount of a hormone called insulin, that works to lower blood sugar and bring it back down to its normal level.
+So when blood glucose, or blood sugar, shoots up like this, insulin will also shoot up, but there'll be a bit of a time lag.
+Now, if on the other hand, you were to choose the broccoli and brown rice as your snack, your body would have to work harder to breakdown the carbs in that food.
+So the graph would look something more like this.
+So, right after the bowls of broccoli and brown rice, your blood sugar is going to go up more slowly than it did when you ate the candy bar.
+This also means that your insulin levels aren't going to spike like they did when you ate the candy bar.
+They're only going to be released in proportion to the amount of sugar entering your blood and the speed at which it enters the blood.
+The result is that you're going to end up with a more stable blood sugar over a longer period of time.
+Things like chicken and brown rice even whole grained bread with cheese are good combinations.
+If you combine your carbohydrates with a bit of fiber, protein, or healthy fats, it will slow down the release of sugar into your blood and prevent you from getting the munchies too quickly.
