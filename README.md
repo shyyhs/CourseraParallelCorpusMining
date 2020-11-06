@@ -5,6 +5,7 @@ This repo is for our paper [***Coursera Corpus Mining and Multistage Fine-Tuning
 
 It contains both the dataset and all source codes in the paper. 
 
+Keywords: Japanese-English parallel dataset, educational domain machine translation, lectures translation, multistage fine-tuning
 
 ## Dataset
 
