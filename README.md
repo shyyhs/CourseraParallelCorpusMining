@@ -16,7 +16,7 @@ It contains both the dataset and all source codes in the paper.
 
 Table 1: English-Japanese parallel dataset in educational domain.
 
-It contains high quality English-Japanese parallel sentences and documents from site [Coursera](https://coursera.org/). Please refre our paper for details.
+It contains high quality English-Japanese parallel sentences and documents from site [Coursera](https://coursera.org/). Please refer our paper for details.
 
 
 ## Source code
@@ -25,6 +25,14 @@ Also it contain the source codes described in the paper:
 2. Extracting subtitle files of the desired language pair, data normalization and data clean.
 3. Using machine translation and sentence embedding combined with DP to extract parallel sentence pairs in comparable document pairs.
 4. Multistage fine-tuning techniques to leverage out-of- and in- domain data to train a MT system for lectures domain translation.
+
+## Experiment results
+|       | Ja->En | En->Ja |
+|-------|--------|-------|
+| Coursera dataset only  | 6.2   | 6.4    |
+| Combined with OOD datasets   | 27.5    | 18.5    | 
+
+Table 2: BLEU scores of using only Coursera dataset and combined with [ASPEC](http://orchid.kuee.kyoto-u.ac.jp/ASPEC/), [TED Talks](https://wit3.fbk.eu/mt.php?release=2017-01-ted-test) datasets with multistage fine-tuning techniques. Please refer our paper for details.
 
 ## Reference
 Please cite our paper if you use our code or dataset:
