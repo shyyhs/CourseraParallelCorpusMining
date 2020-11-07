@@ -36,7 +36,7 @@ Also it contain the source codes described in the paper:
 Table 2: BLEU scores of using only Coursera dataset and combined with [ASPEC](http://orchid.kuee.kyoto-u.ac.jp/ASPEC/), [TED Talks](https://wit3.fbk.eu/mt.php?release=2017-01-ted-test) datasets with multistage fine-tuning techniques. Please refer our paper for details.
 
 ## Reference
-Please cite our paper if you use our code or dataset:
+Please cite our paper if you used our code or dataset:
 ```
 @inproceedings{song-etal-2020-coursera,
     title = "{C}oursera Corpus Mining and Multistage Fine-Tuning for Improving Lectures Translation",
