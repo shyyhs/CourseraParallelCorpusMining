@@ -11,8 +11,8 @@ Keywords: Japanese-English parallel dataset, educational domain machine translat
 
 |       | #lines | #docs | Description                       |
 |-------|--------|-------|-----------------------------------|
-| Test  | 2005   | 50    | Manually checked                     |
-| Dev   | 541    | 16    | Manually checked                     |
+| Test  | 2005   | 50    | Human-validated                     |
+| Dev   | 541    | 16    | Human-validated                     |
 | Train | 40770  | 818   | Automatic aligned<br>High quality |
 
 Table 1: English-Japanese parallel dataset in educational domain.
