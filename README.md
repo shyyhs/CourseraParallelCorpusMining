@@ -17,7 +17,18 @@ Keywords: Japanese-English parallel dataset, educational domain machine translat
 
 Table 1: English-Japanese parallel dataset in educational domain.
 
-It contains high quality English-Japanese parallel sentences and documents from site [Coursera](https://coursera.org/). Please refer our paper for details.
+
+|       | #lines | #docs | Description                       |
+|-------|--------|-------|-----------------------------------|
+| Test  | 2009   | 90    | Human-validated                     |
+| Dev   | 865    | 34    | Human-validated                     |
+| Train | 40074  | 997   | Automatic aligned<br>High quality |
+
+Table 2: English-Chinese parallel dataset in educational domain.
+
+
+
+It contains high quality English-Japanese (English-Chinese) parallel sentences and documents from site [Coursera](https://coursera.org/). Please refer our paper for details.
 
 
 ## Source code
@@ -32,6 +43,11 @@ Also it contain the source codes described in the paper:
 |-------|--------|-------|
 | Coursera dataset only  | 6.2   | 6.4    |
 | Combined with OOD datasets   | 27.5    | 18.5    | 
+
+|       | Zh->En | En->Zh |
+|-------|--------|-------|
+| Coursera dataset only  | 14.8   | 14.5    |
+| Combined with OOD datasets   | 29.5    | 29.1    | 
 
 Table 2: BLEU scores of using only Coursera dataset and combined with [ASPEC](http://orchid.kuee.kyoto-u.ac.jp/ASPEC/), [TED Talks](https://wit3.fbk.eu/mt.php?release=2017-01-ted-test) datasets with multistage fine-tuning techniques. Please refer our paper for details.
 
