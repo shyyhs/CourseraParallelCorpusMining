@@ -1,0 +1,865 @@
+Unlike a machine learning project , the output of a data science project is often a set of actionable insights , a set of insights that may cause you to do things differently .
+Let 's take a look at one of the steps of a data science project .
+As our running example , let 's say you want to optimize a sales funnel . Say you run a e-commerce or a online shopping website that sells coffee mugs and so for a user to buy a coffee mug from you , there 's a sequence of steps they 'll usually follow .
+First , they 'll visit your website and take a look at the different coffee mugs on offer , then eventually , they have to get to a product page , and then they 'll have to put it into their shopping cart , and go to the shopping cart page , and then they 'll finally have to check out .
+So , if you want to optimize the sales funnel to make sure that as many people as possible get through all of these steps , how can you use data science to help with this problem ?
+The first step is to collect data . So , on a website like the one we saw , you may have a data set that stores when different users go to different web pages .
+In this simple example , I 'm assuming that you can figure out the country that the users are coming from , for example , by looking at their computers ' address , called an IP address , and figuring out what is the country from which they 're originating .
+If that 's true then you might think about whether to put part of shipping costs into the actual product costs or your data science team may think there are blips in the data whenever there 's a holiday .
+Maybe more people will shop around the holidays because they 're buying gifts or maybe fewer people will shop around the holidays because they 're staying home rather than sometimes shopping from their work computers .
+In some countries , there may be time-of-day blips where in countries that observe a siesta , so a time of rest like an afternoon rest , there may be fewer shoppers online and so your sales may go down .
+They may then suggest that you should spend fewer advertising dollars during the period of siesta because fewer people will go online to buy at that time .
+So , a good data science team may have many ideas and so they try many ideas or will say iterate many times to get good insights .
+Finally , the data science team will distill these insights down to a smaller number of hypotheses about ideas of what could be going well and what could be going poorly as well as a smaller number of suggested actions such as incorporating shipping costs into the product costs rather than having it as a separate line item .
+When you take some of these suggested actions and deploy these changes to your website , you then start to get new data back as users behave differently now that you advertise differently at the time of siesta or have a different check out policy .
+Then your data science team can continue to collect data and we analyze the new data periodically to see if they can come up with even better hypotheses or even better actions over time .
+So the key steps of a data science project are to collect the data , to analyze the data , and then to suggest hypotheses and actions , and then to continue to get the data back and reanalyze the data periodically .
+Let 's take this framework and apply it to a new problem , to optimizing a manufacturing line .
+So we 'll take these three steps and use them on the next slide as well .
+Let 's say you run a factory that 's manufacturing thousands of coffee mugs a month for sale and you want to optimize the manufacturing line .
+Then you have to heat this mug and we call that firing the kiln .
+Finally , you would inspect the mug to make sure there are n't dents in the mug and it is n't cracked before you ship it to customers .
+So , a common problem in manufacturing is to optimize the yield of this manufacturing line to make sure that as few damaged coffee mugs get produced as possible because those are coffee mugs you have to throw away , resulting in time and material waste .
+What 's the first step of a data science project ?
+I hope you remember from the last slide that the first step is to collect data . So for example , you may save data about the different batches of clay that you 've mixed , such as who supplied the clay and how long did you mix it , or maybe how much moisture was in the clay , how much water did you add .
+You might also collect data about the different batches of mugs you made . So how much humidity was in that batch ?
+What was the temperature in the kiln and how long did you fire it in the kiln ?
+Given all this data you would then ask the data science team to analyze the data and they would , as before , iterate many times to get good insights .
+So , they may find that , for example , that whenever the humidity is too low and the kiln temperature is too hot that there are cracks in the mug or they may find out that because it 's warmer in the afternoon that you need to adjust the humidity and temperature depending on the time of day .
+Based on the insights from your data science team you get suggestions for hypotheses and actions on how to change the operations and manufacturing line in order to improve the productivity of the line .
+When you deploy the changes , you then get new data back that you can reanalyze periodically so they can keep on optimizing the performance of your manufacturing line .
+To summarize , the key steps of a data science project are to collect the data , to analyze the data , and then to suggest hypotheses and actions . In this video and the last video you saw some examples of machine learning projects and data science projects .
+It turns out that machine learning and data science are affecting almost every single job function .
+What I want to do in the next video is show you how these ideas are affecting many job functions , including perhaps yours and certainly that of many of your colleagues .
+Hi , everybody . Thanks for signing up for the Financial Analysis for Startup Course .
+One of them is financial analysis using Excel , and the other is real-world application of theories .
+When I developed this course , I tried to incorporate these areas so that learners find this course useful for their daily business judgment .
+When you complete this course , you will come away with an in-depth knowledge of valuation and financial analysis of startups , and will be ready to analyze real-world startups .
+If you have friends who might be interested in this evaluation and financial analysis for startup , please let them know about the course and get them to sign up too .
+If you and your friends form a study group and work together to learn about financial analysis for startup , that would likely make the experience more fun and help you learn more quickly too . Welcome again to the financial analysis for startup course .
+Financial analysis and valuation is one of the most sought after skills today on entrepreneurs , venture capitalists , and private equities .
+I hope that this course will help make you an expert .
+In this course , you will learn how data science problems can be paralyzed using Apache Spark .
+In addition , Apache Spark DataFrames are SQL compatible , so you can reuse your already existing SQL skills for scalable data science .
+People tend to jump right into data science without even understanding the basics of statistics .
+Because we want to focus on scalable data science , we will concentrate on applying these methods on Apache Spark .
+In the first week of the course , we just make sure that you have successfully set up the cloud based development and runtime environment consisting of Jupyter notebooks , Apache Spark , and CouchDB .
+Then , we show you how Apache Spark internally works , and how you can use it .
+The third week is all about statistical measures , and how they can be derived using parallel Apache Spark programs .
+In week four , we close with the most common visualizations like books , plots , histograms , Runshots , 3D , and 2D scatterplots .
+But , we will also make sure that you can run those on Apache Spark .
+And there 's a little farewell present , I will share with you my view on multidimensional data . I see every dataset as a point cloud in high dimensional vector space , and if you really understand that , nothing can stop you in being a good data scientist .
+But , this course is an ideal introduction to the more advanced courses of this specialization , which is advanced machine learning , and signal processing , and applied AI using deep learning .
+Hello , again . In this lesson , we are going to continue our discussion of acquired language , language you can actually use by discussing two different modes of learning .
+Douglas Brown introduces the idea of two different types of learning by using the metaphor of a camera .
+For Brown , using language is like using a camera that has two different lenses , a zoom lens and a wide angle lens .
+When you are learning a language through a zoom lens , you are focusing in on a very small specific linguistic form , like a vocabulary word , the past tense or a small pronunciation rule .
+However , when you are in a wide angle lens mode of learning , you are trying to understand an overall general meaning .
+Or trying to convey a message without worrying so much about every small rule of grammar , vocabulary or pronunciation .
+Brown is n't the only one who talks about two distinct modes of learning .
+Barbara Oakley , who teaches the famous online course Learning How to Learn , explains this by describing two different ways to focus your learning . One she calls the focused mode and the other , the diffuse mode of learning .
+In a focused mode , you concentrate and look very specifically at certain tasks , such as reading a chapter in the textbook .
+She recommends focusing for a specific length of time , like 25 minutes when in a focused mode .
+A diffuse mode , however , is a time to let your mind wander and make connections that it otherwise would n't make when you focus too narrowly .
+As a teacher , one of your jobs will be to sometimes help students narrow in on a specific feature of their language , often that they have n't been paying attention to .
+But other times , having them step back and not pay attention to every single mistake .
+By stepping back , you will help learners understand overall structure and meaning as they communicate and gain fluency .
+In this sense , language is a camera , and you are the photographer , moving the students back and forth between two modes of learning .
+In the next video , we are going to have a very special guest deepen our understanding of these two modes .
+I hope you 'll be able to use AI to build exciting and valuable projects either for yourself or for your company and make life better both for yourself and for others .
+Along the way , I hope you also manage to avoid some of the pitfalls I 've seen some AI teams fall into .
+Let 's go over a five do n'ts and dos for if you 're trying to build AI for your company .
+You already know that AI can do a lot but there 's also lots AI can not do . Instead , you should be realistic about what AI can or can not do , given the limitations of technology , data , and engineering resources .
+That 's why I think technical diligence in addition to business diligence is important for selecting feasible and valuable AI projects .
+Second , do n't just hire two or three machine learning engineers and count solely on them to come up with use cases for your company .
+Machine learning engineers are a scarce resource but you should instead air the engineer talents with business talent and work cross-functionally to find feasible and valuable projects .
+Is often the combination of the machine-learning talents worked to business talent that can select the most valuable and feasible projects .
+Third , do n't expect AI project to work the first time . As you 've already seen , AI development is often an iterative process so should plan for it through an iterative process with multiple attempts needed to succeed .
+Fourth , do n't expect traditional planning processes to apply without changes .
+Instead , you should work with the AI team to establish timeline estimates , milestones , KPIs or metrics that do make sense .
+The types of timeline estimates , milestones , and KPIs or metrics associated with AI projects are a bit different than the same things associated with non AI projects .
+So , hopefully working with some individuals knowledge about AI can help you come up with better ways of planning AI projects . Finally , do n't think you need superstar AI engineers before you can do anything .
+Instead , keep building the team and get going with a team you have realizing that there are many AI engineers in the world today including many that have learned primarily from online courses . They can do a great job building valuable and feasible projects .
+If you can avoid these AI pitfalls , you already be ahead of the game compared to many other companies . The important thing is to get started .
+You 're second AI project would be better than your first . Your third AI project would better than your second .
+So , the important thing is to get started and to attempt your first AI project .
+In the final video for this week , I want to share with you some concrete first steps you can take in AI .
+In accounting , we generally assume that accounts receivables and inventories are short-term assets because most of the time , but not all , they are converted to the cash within a year .
+Had a discussion recently with Standard Charter Bank major bank in Asia major bank in Hong Kong about what do they see as the future ?
+They 're applying for a virtual bank license now and they are likely to be approved in Hong Kong In that license , they said " We 're going to set up a bank that will be a different name , a different institution , owned by Standard Charter .
+Because they see small as a giant opportunity to innovate to experiment , to learn to serve a different type of customer to serve with a different attitude , a different approach FinTech favors the small So , if you are a giant you may want to think more about incubators more about intrapreneurs , more about partnering more about investing in small opportunities because small is beautiful when it comes to FinTech .
+Thank you
+said " We 'd like to report on people in other countries and have financial institutions in Europe or Asia report on what other people what other Americans are doing with overseas bank accounts Other governments said , " Yes , that 's a good idea .
+You want to know who 's buying or selling Bitcoins ?
+Good luck .
+We 're going to put our account in Cayman Islands and we do n't care what your rules are .
+Welcome back .
+So , in week four we look at the interaction of week four The first thing what we 're going to look at is what is a disaster and why we need a disaster recovery planning and business continuity planning ?
+Okay ?
+So , as we all know that disaster means that some of our critical business processes can not continue If critical business process can not continue for long period of time we call it as a disaster So , we had to prepare for disasters We ca n't wait until disaster happens to decide what to do because after disaster every minute counts and we want to run our business as soon as possible We want to treat our employees if in case they 're injured as soon as possible So , a quickly response to a disaster would make a difference of whether that we can survive after disaster or not so that 's very important in the event of a disaster So , we 'll talk about handling disaster recovery planning So , we look at the first step The first step in the BCP planning is to make sure that punishment on board so they have to allocate funding they have to decide team leader and they should have developed team members for the BCP/DR plan In any BCP/DR , plan the most important step is step number two we 'll call it business impact analysis I 'm going to explain this business impact analysis in very much detail to you all in the coming few videos What is important ?
+What we do in the business impact analysis ?
+The Introduction to Business Impact Analysis basically we first look at what are the most critical business processes to organization So , to do that as compliance officers we ca n't do it by ourselves we should talk to the line managers senior management and ask him to tell us or if we could asked them to tell us that which parts are the most critical The next step what we do in the business impact analysis is to find out what are the resources human material resources , support to be so critical those critical business processes Finally , we 'll look at some important recover time terminologies we call it as RPO RTO , WRT , MTD , and STO I 'm going to explain all these terms very much in detail because all these terms have a good understanding of all these terms are extremely important for us to develop a good BCP/DR planning Okay .
+So , now , let 's look at step number three next The step number three is basically main focus is in the event of a disaster there 's a high possibility that our primary location may destroy it it could be earthquake , it could be flooding we may not be able to continue our business in our poor primary location So , if we ca n't continue business in our primary location we should think about having other location So , we ca n't wait until the primary location is not available to look for alternative location that 's something we have to think before hand That 's very important otherwise it will take much longer time for us to continue our business or start our business So , there are different recovery strategies in the event our primary site is not available First one we call it redundant processing site and then second we call hot site warm site , cold site , mobile site and there 's one more we call reciprocal agreement as well So , I 'm going to explain all these recovery strategies what are the important considerations that we have to make in the recovery strategies ?
+What would be the best recovery strategy in a given situation ?
+So , that 's something that you guys should have a very good understanding So , that 's something that I 'm going to explain very much in detail in the coming videos about step number three that 's very important So , step number four to seven of course important here So , if we look at now we discuss step number one , two , three step before we talk about design and development So , what are the considerations we need to have when we design the plan when developing ?
+Then we have to store the backup data Then we should decide which are the best location to store it and what are the considerations we have to have in terms of restoration and then access to the back up types as well So , this is going to be the most important concepts that we are going to learn in this module Look forward to see you guys soon
+Come on .
+You ca n't identify customers in a particular segment who are riskier or less risky .
+We already do credit scores and other things . " They said , " No .
+Not interested . " But Signet bank in Virginia small regional bank said " We like it .
+What gives ?
+Most FinTech firms will not be alone forever They will be copied , or bought out and the other banks will adapt or die So , this is an example of a FinTech pioneer who transformed an industry changed the nature of consumer lending via credit card business and succeeded marvelously in the process But then stumbled as they became a giant and did n't transition well to a different managerial challenge and market environment So , that 's maybe an analogy that we can draw and say " What might happen to other FinTech firms ?
+How might they succeed ?
+And how might success even sow seeds for its own problems as you try to move from success to greatness . " That 's it for that case Hope you enjoyed that By the way , if you do n't have a Capital One credit card maybe you should think about it They offer some great rates and great products and some nice features Innovative , pioneering , and interesting company .
+Thank you very much
+One of the biggest problems with the typical Western diet is the fact that much of our food is refined , or highly processed .
+The refining process removes important nutrients like fiber , iron and B vitamins , and this is done by food manufactures for two reasons .
+Firstly , it 's to give the end project a softer texture , and secondly it 's done to extend the shelf life of the resulting product .
+A hamburger that 's highly processed will spoil much more slowly than a hamburger made at home with mostly natural ingredients .
+But the question is , if highly processed food is so low in nutrients that the pests do n't even want to eat it , how healthy can it be for us ?
+In fact , the nutrient content of any given food is directly related to the spoil rate of that food .
+>> One of the best predictors of a healthy diet is whether it was cooked by a human being or a large corporation .
+And the reason is that when we outsource our food preparation to big companies , they tend to cook in a certain way that is n't very healthy .
+They tend to use way too much salt , fat , and sugar , all of which are problematic nutrients for our health , and they tend to use the cheapest possible raw ingredients .
+Their business model is to start with a cheap food and process it as much as possible , make it attractive with salt , fat and sugar .
+>> Thinking about the nutrient density of the food is another conceptual way of making sensible food decisions .
+The nutrient density of a food can be thought of as the amount of nutritional value , including vitamins , minerals , and fiber , divided by the calories , or energy content , of that food .
+For example , a glass of soda is high in calories without providing much in the way of nutritional value .
+A bunch of fresh spinach , on the other hand , would be an example of a nutrient dense food because its nutritional value is relatively high compared to its caloric content .
+When people talk about fast food being cheaper than fresh food , they 're often referring to the fact that the cost per calorie of highly processed food is lower than that of fresh , whole food .
+This is often true because highly processed food is so high in calories that the cost per calorie is relatively low .
+But , if we instead look at the cost of food per unit of nutrient density , then buying fewer calories of higher nutrient density food is a much better use of our food budget .
+In the midst of a serious epidemic of obesity , avoiding empty calories should be near the very top of our list of priorities .
+One of the reasons why highly processed food is usually higher in calories is that in order to make these products sell , significant amounts of fat , sugar , and salt are added to make the nutrient-stripped foods taste good .
+Additives like colorants , artificial flavors , stabilizers , and other preservatives , are also added to enhance packaged products and maintain the illusion that we as consumers have many choices when we walk through the supermarket aisles .
+The last thing we need to be aware of are highly processed foods that masquerade as healthy foods .
+These are products that have synthetic nutrients added back to them after they 've been refined , and this is usually done to make the product seem healthy to the nutrition aware consumer .
+It 's important to remember that the most nutritious foods , like broccoli , do n't come in packages that tell us how healthy they are .
+Food and beverage businesses are very various ones .
+You find fresh products which should be produced and consumed immediately , and packaged goods whose shelf life can last for years .
+And you can find products and services which are typically consumed locally , and others which have a global appeal .
+When you talk to managers and entrepreneurs , they will highlight the differences across the different businesses .
+And most of them , they will focus on the specificities of their businesses and other companies .
+But I think that in the different food and beverage businesses , there are managerial issues which are common to the different companies .
+In the second week , we will focus on another dilemma , the dilemma between the tradition and the innovation .
+The third week , we will focus on another very important dilemma , the dilemma between local and global .
+The fourth and final dilemma is between the small size and the big size of the company .
+From all these dilemmas , most of the managerial decisions that the company has to make , stand .
+In the four weeks of the course , we will cover all the decisions related to this dilemma , in order to have an overview of the typical analysis and decisions that companies in food and beverage businesses should implement .
+One way to reconcile the apparent paradox between the product and the market is to introduce a new concept : the concept of customer value .
+What does that mean ?
+If you think about consumers , why do they buy products and services ?
+Usually they buy because they want to satisfy some needs or desires .
+The point is they want to get some benefits out of the products and services they buy .
+The idea of customer value is exactly this : it ’s the combination of benefits that consumers want to get out of the products and services they buy .
+But obviously consumers know that to get some benefits they have to make some sacrifices , so the concept of customer value is usually represented as a ratio between the benefits and sacrifices .
+What are the typical benefits and sacrifices that consumers relate to food products and beverages ?
+Generally speaking , when we talk about benefits the idea is to classify these benefits into two different classes .
+The first one is usually called functional benefits .
+If you think about functional benefits , they are benefits that consumers relate to problems they want to solve or something they leave as problems to be solved .
+When we talk about foodstuffs and beverages , we talk about typical functional benefits — - like the food could be energetic , healthy , or light ; or if we think of the general consumer process when he or she decides and makes a choice , some other benefits are related to the process : the availability of the product and the convenience .
+Think , for example , about a yogurt , many consumers eat yogurt , because yogurt is light , or because they consider yogurt as healthy , or because they consider the specific yogurt they buy as very available in the shops they tend to buy at .
+All these are functional benefits , and there are also other kinds of benefits which are very important in food and beverage businesses .
+All these other benefits can be related to the big sphere of psychological , symbolical , and experiential benefits .
+One which is very typical is the sensorial pleasure given by a product in the food and beverage business like the taste which is obviously a fundamental one , but this is not the only one .
+Linked to the big sphere there is a number of benefits which are symbolical .
+Let ’s think , for example , about the identity value of many foodstuffs and beverages .
+We Italians are very proud of our espresso , pizza , and pasta and these products are very much linked to our national identity but the same would be , for example , in Mexico with tequila or in the Caribbean with sweet rum , or in Germany with beer .
+There are many different products or services which are very linked to the identity of a country .
+This has nothing to do with the functional benefits of the product it has a lot to do with the symbolical power of many foodstuffs and beverages .
+Another area is the area of psychological benefits which have to do with the psychological sphere of the consumer .
+If I consider myself as an expert in tea , every time I buy some tea is a way to reaffirm the image I have of myself .
+Then there is another part of this big class of benefits which are the social benefits .
+I also consume some products , foods and beverages , just because I want to show or communicate my belonging to a social group or my not belonging to a social group .
+For example , if I want to share with my peers that I have a specific lifestyle , and connected to that lifestyle , there are some specific products and drinks .
+what I do is consume these products because I want to confirm my lifestyle to my peers .
+Mineral water like any other product category can provide consumers with very different benefits : functional , symbolical , experiential , and psychological .
+For example , a mineral water which is focused on some specific features of the product can provide a lot of functional benefits .
+For example , it can be used for a specific diet , and it can be considered light and/or healthy .
+On the other side , there are other mineral waters that provide consumers with other benefits that are more symbolical .
+Let me give you an example , There are two different brands : Evian which is part of the Danone group and San Pellegrino which is part of the Nestlé group .
+If you look at the ad by Evian , The ad is very focused on the health aspect .
+This is obviously put as an extreme .
+It ’s very function , I mean you feel better , because your health would be benefit by the consumption of this kind of mineral water .
+The ad is very focused on lifestyle .
+The idea is seeing San Pellegrino as one one of the most famous Italian brands .
+The idea is to “ live in Italia , ” that is share the Italian lifestyle with all other consumers .
+It has nothing to do with function benefits .
+As you see we have two very different classes of benefits : one is the benefits connected to the functional aspects of the products and the service ; and the second one is the big area of symbolical and experiential benefits .
+Then we can move to sacrifices which are the negative components of customer value .
+Consumers know very well that if they want to get a benefit they have to make some sacrifices .
+The easiest one to think of is price , a monetary sacrifice .
+Actually monetary sacrifices are not the only sacrifices consumers make when they want to get some benefits .
+There are many sacrifices linked to the consumer decision making process .
+When consumers have to choose a product or service , we have to go through a process .
+To come up with a choice , we need to collect information which requires time .
+It requires cognitive effort .
+It requires sharing information with others .
+This part is made of sacrifices .
+Then there are sacrifices connected to the procurement .
+When we want to buy a product we have to find this product online or offline .
+This means again , time spent in searching for information related to the shops where consumers can buy products .
+Another part of sacrifices are linked to learning how to use a product .
+We tend to think that food products and beverages are very easy to consume , but let ’s think about a very classy restaurant .
+A typical Michelin star restaurant .
+I have to learn how to appreciate this kind of service .
+There are some learning costs which are related to the learning process to get the most out of the product and service .
+Then there are other sacrifices that , in economics , are usually called opportunity costs .
+What are opportunity costs ?
+They are costs related to the fact that I choose one product and by choosing one product I can not have other alternatives , usually because of monetary constraints .
+If I decide to go a weekend to a food destination I spend some money and time so in that weekend I can not do other things .
+Sometimes if the opportunity costs are perceived very high , consumers decide not to buy the product or service .
+There are also other switching costs that sometimes are very psychological .
+Then there are costs related to the usage of the product .
+For example , think of the maintenance of some products related to food and beverage .
+If I have an espresso machine , I have to spend some money for the spare parts for repairing it .
+These are costs related to the usage of the product itself .
+As you can see the number of sacrifices that consumers have to make is not related only to the price , but there are many more .
+If you consider the customer value from the consumer 's point of view it is a bunch of benefits related to a bunch of sacrifices that consumers have in mind when they decide to buy a product or service .
+The concept of customer value is very relevant to companies for a number of reasons .
+First of all , management in food and beverage companies can be considered as providing value to customers .
+That basically means analyzing what kind of value customers want , creating this value , and delivering this value to consumers .
+What is a value proposition ?
+Actually , every company sells a value proposition into a market .
+That is a specific combination of benefits and sacrifices that the company wants to give to its customers .
+Every product is a potential combination of benefits and by definition every product category is able to provide consumers with all kinds of benefits : functional , symbolical , experiential , social , and psychological .
+But my specific company can decide to provide a specific value proposition , a specific combination of some benefits which are related to some sacrifices .
+This value proposition should be different from my competitors ’ one in order to get a competitive advantage .
+So basically what is important to understand for companies is that companies do not compete in markets with products and services , they compete with value propositions .
+A value proposition is a combination of specific benefits and specific sacrifices .
+The point is , what is the role played by the product within the value proposition ?
+The product is one component of the value proposition because the product is able to provide some benefits , but not all benefits are provided by the product .
+If we think , for example , that a typical function benefit is the availability of the product this has to very much to do with the distribution of the product not with the product features itself .
+If we think of the convenience , again , we go to the distribution , so the fact that it is very easy for consumers to find the product and buy it .
+For example , if we think of the image of the value proposition it could be related to the price , a high price gives the product image .
+As you see , the value proposition is made by different components , and all these components together make the value for the customer .
+The point is not to focus too much attention on the product , but to move the attention to the overall value proposition .
+Companies compete in markets with value propositions .
+If we go back for a while to the concept of customer value we can consider other reasons why this concept is relevant .
+One of the most important ones is that we consumers have two different concepts of customer value .
+One is expected value and the second one is perceived value .
+Expected value and perceived value are very different concepts .
+They are different because the determinants of these two constructs for consumers are very different .
+Expected value is expectations , so consumers expect something , then we buy , we consume , and then we get something from the product and service , so we perceive some value .
+The point is that a company should consider the two together .
+I mean a company should have knowledge of the expectations of consumers and what are the perceptions that consumers have after having bought and consumed the product .
+What influences us consumers before we buy a product or service ?
+Basically we consumers are influenced by two different things : why we buy and what we know .
+Basically what we want to get out of a product or service and what is our knowledge when we go and buy it .
+These are motivations and knowledge ( respectively ) .
+From my experience , companies give an extremely focused importance on motivations , to try to understand why consumers consume basically , and they tend to give less emphasis to knowledge .
+But actually we must be very aware of the fact that different consumers have different expectations because they have different knowledge .
+There is this tendency in food and beverage businesses to overestimate consumer knowledge .
+When I talk to managers and entrepreneurs they tend to think that consumers have a lot of knowledge .
+They are experts and connoisseurs ; but this is not the case .
+The point is , how can I leverage on this knowledge ?
+Well if I 'm able , as a company , to know and understand what are the expectations , the motivations , the “ why ” consumers buy , and what is the knowledge consumers have , I can define and define and design a value proposition which is better able to meet consumers ' expectations .
+What about perceived value ?
+We said perceived value is the value consumers get out of the consumption of the product or service .
+The determinants of this perceived value are different from the determinants of the expected value .
+Basically , there are two big classes of determinants .
+The first one is the experience .
+The experience of the consumer with the product and/or service is one of the main determinants of the perceived value .
+Again , if some consumers have limited knowledge of how to consume a product the effect will be a likely decrease of perceived value .
+In the end , these two main concepts are fundamental for the consumer for one simple reason : Expected values and perceived values combine together to give customer satisfaction .
+Customer satisfaction is basically the result or outcome of a comparison of the perceived value with the expected value .
+Obviously this comparison is very frequently subconscious .
+If us consumers perceive to have got a value which is less than that of what we expected we are dissatisfied .
+The fundamental concept of customer satisfaction derives from expected value and perceived value .
+That 's why companies need to know very well , what are the expectations , what are the perceptions , what are the determinants of these protections , what are determinants of the perceptions because this is the only way to anticipate if consumers could be satisfied or dissatisfied , and afterwards to manage consumer satisfaction or consumer dissatisfaction .
+In this first module we covered a very fundamental dilemma in food and beverage business , the one between the product and market .
+First we put it in context by saying that the dilemma is mainly a matter of organizational culture .
+There are companies who focus a lot of their effort on the product , but some other companies focus a lot of their effort on the market .
+The point is how to get the best of one approach and the other in order to have a very effective management into the market .
+Then we tried to figure out what is the way to solve this dilemma , which is actually an apparent dilemma .
+The way to solve it , is to focus on the concept of customer value .
+The product can be translated into value for the market by focusing on what is the value for the customers .
+Then we focused on the concept of quality which is very important in food and beverage businesses .
+when we talk about quality we basically focus on two different concepts concepts of quality : the first one is intrinsic quality and the second one is the perceived quality by customers .
+We understood that food and beverage products are experience products , that is to say , a product for which the customer finds it difficult to anticipate the quality .
+That basically means that customers rely on sound quality clues .
+One important quality clue is the reviews given by experts and critics , which in this business play a very fundamental role .
+They help customers make sense of the quality especially if they do n't have any direct experience of the quality itself .
+So what do the companies have to do with all this information they get ?
+First of all , it is important to understand what customers give value to ?
+What are the benefits they seek and what are the sacrifices they want to make .
+Secondly , it ’s very important to understand how customers make their choice , because the choice of the customer is a very complex process . They need to compare , they need to shop , and they need to choose .
+One more thing that companies need to know is the relation between customer value and the different stages of customer experience .
+Customers , in fact , do not only have a consumption experience , rather they have a pre-consumption experience , a purchase experience , a consumption experience , and also a post-consumption experience .
+We 've seen that all the stages of experience can create value for customers and consumers . What is important for companies to know is what are the different stages of this experience and how these different stages are able create value for their customers .
+Another very important decision that we covered in this module is how companies choose the customers they serve that basically means how to segment the market and out to evaluate the attractiveness of the different segments in the market .
+Finally , we focused on one very strategic decision which is how to build a value proposition and how to make value for consumers out of it .
+That basically means focusing on the differences that the value proposition of the company has compared to the value propositions offered by other competitors in the market .
+The point about the relation between tradition and innovation is very much to do with the time .
+If you think about it for while , every new product or very old traditional one has been launched .
+It has a starting point .
+The question is how important is this starting point over time ?
+The tradition , the beginning , needs to be held over time in order to provide value to customers , or it has to be changed or abandoned completely .
+So the difference between tradition and innovation is only a matter of perspective , and has to do with time .
+The issue of time in management has very much to do with the idea of life cycles : of product life cycles and market life cycles .
+There is a very strong emphasis given by managers and entrepreneurs to the concept of the product life cycle .
+For me , they tend to overlook market life cycle .
+The difference is very easy to understand .
+Usually , the market lasts forever .
+If you think about a market as a representation of customers ’ needs , of customers ’ benefits , every benefit in the food or beverage business usually lasts for a very long time .
+If you think that the food and the beverage has to do with hunger and thirst , we can consider these two needs , usually not forever .
+What changes is the way companies strive to satisfy those benefits , those needs , and this has to do with the product life cycle .
+In a product life cycle , we can consider the product , which has a birth and a death , maybe ; but the market usually does not decline .
+So again , the idea of tradition and innovation should be considered within the concept of life cycles .
+A market life cycle , like a product life cycle is usually represented through four different stages .
+Then there is a maturity when usually the sales of the market stabilize .
+Then there could be a decline , which is to say , the sales start dropping .
+Obviously , the decline in a market is very unlikely , because if the sales of the market start dropping companies would do something to restart a new growth stage .
+Within the market life cycle , there are the life cycles of all the different products sold within that market .
+The product life cycle which again , has the same stages : the birth introduction , the growth , the maturity , and the decline ; the decline is much more likely because the product which a specific component of a specific value proposition , can lose value over time for consumers and can be replaced by other products .
+It 's the dynamic between the product life cycle and the market life cycle that is very relevant to companies for making their decisions .
+The question is how important is it to keep the tradition the same over time .
+Even tradition can be re-innovated .
+There are some aspects of tradition that can be innovated in order to keep the traditional elements of the value proposition alive over time .
+The point is , how can companies use the life cycle model : the product life cycle model or the market life cycle model ?
+There is this tendency of managers and entrepreneurs to think of life cycle as extraneous to their action , that is the market goes or the product life cycle goes independently of my action .
+Actually every market and every product life cycle completely depends on the actions of companies .
+So each individual companies and all the competitors within a market can influence the life cycle of the product , that is to say , can influence the different stages through which the product or the market go .
+One point could be , in order to understand how to influence the evolution of a market over a product life cycle , what are the determinants of a specific shape of the life cycle .
+The traditional way of representing a life cycle at the product level or the market level Is the introduction stage is a stage where sales are very limited and the growth of the sales is limited as well .
+Basically , the growth stage is when sales start growing .
+Companies do something to increase the sales and the sales start growing so the market is growing .
+It grows up to a point where the rate of growth reduces up to zero .
+In the maturity stage , basically , the product or the market has reached its potential , the maximum level of sales .
+Then if the product does not correspond to a value proposition to specific customer needs , it starts declining .
+The question is what determinants give the product life cycle that shape .
+There are two basic main determinants : one regards the consumers , the second regards the competitors .
+As for the consumers , many researcher has shown that consumers tend to have an approach , an attitude towards innovation which can allow us to classify them in different groups .
+There are some consumers which are considered innovators or pioneers ; they like innovation .
+They 're a very limited amount in every market but they tend to appreciate new products very much . There is a new beer .
+There is a new vodka .
+There is a new yogurt , a new value proposition with a new product , they appreciate it .
+Early adopters , in terms of size , in terms of numbers , are a bigger group than the innovators .
+They have a slightly different characterization compared to innovators .
+They are more able to influence other people through their choices and behaviors .
+In every market the big majority of consumers tend to buy a new product only only after , they have seen other consumers , the early adopters , consuming the product .
+Basically , they need to be reassured by the choices of other consumers .
+Usually this majority is split into two : an early majority and a late majority , but the difference basically is not so notable between these two groups but between the majority and the early adopters .
+The last group is usually called the laggers : people who tend to buy a product only if a lot of other consumers have already bought and consumed that product .
+This shape , which is a shape given numbers , gives life to a specific shape of the product life cycle .
+From a company ’s point of view , I can influence the product life cycle with my competitors by trying to “ put back , ” to anticipate as much as possible the moment in which the majority will start buying the product .
+If there are many consumers who tend to buy the product in advance , it will increase the sense of the product and so start the growth stage of the product life cycle .
+If the innovators and the early adopters are very limited , and there is no word of mouth , no passage of information between this group and the majority , the sales of the product will be very limited .
+The growth stage would not start . The goal of a company is how to enact the growth stage of the product life cycle in order to increase the sales .
+The point is how much can tradition influence this , because , obviously , this is a matter of how tradition is a fundamental part of the value proposition .
+This also helps us if we consider the competitive dynamics .
+As we said , the product life cycle depends on the consumer side and also on the supply side , because competitors play a game , which is an imitation-differentiation .
+If a product is successful , a competitor will try to launch a product which is slightly different , but also similar to the successful product .
+So this imitation game again would enact growth because the sales of the competitor would by definition steal some part of the sales of the innovator but would also add new sales to the market and so it ’s the combination of imitation and differentiation which contributes to give the product life cycle each stage .
+Again , when playing this imitation-differentiation game , some companies decide to stick with the tradition while some companies will try to innovate .
+The imitation-differentiation game can also be considered as a game between tradition and innovation .
+But the point is also if a company for its mission , for its values , for its main goals decides to stick to the tradition , to build its authenticity on the more traditional side , this tradition should be interpreted over time .
+The idea here is for every company , “ How can I revitalize the products , or how do I choose to go for completely new products ? ” The dilemma could be considered this : is it more effective , more profitable , more interesting to me , to my company , to try to revitalize an old product by revitalizing the tradition , according to which this product has been successful in the past ; or launch a new product , innovate completely ?
+Again , this is a dilemma only if we consider it as a dilemma because for every company the tradition innovation can be contextual .
+In my portfolio of products , I can have products which are very traditional , and on the other side I can add new products .
+Or I can have products whose tradition is innovated by adding new values , new symbols to the product itself and other products which are completely new and can be revitalized every time the product life cycle ’s sales start dropping .
+Considering sparkling wine : Champagne . Champagne is a very long-story and long-history product , but obviously , the way champagne is made , although it is a traditional method , has been innovated over time , because the technology has changed , Because the way the champagne has been sold into the market has changed .
+Actually , the traditional champagne has been re-innovated over time .
+Today I would like to talk to you about waste management and the role of waste , in relation to resource efficiency and circular economy .
+First of all , let 's consider one of the greatest challenges that we face today .
+And within a few decades , we are likely to be many more people than we are today . Maybe up to 9-10 billion people within the coming decades .
+What is more of a challenge is that the average income of people is likely to increase as well .
+The so called global middle class is expected to significantly increase .
+What this will do is to put even more pressure on the consumption of food , resources , raw materials , energy , in our society .
+The great problem with that , is that most of the environmental impacts that we see today , is one way or the other related to the consumption of resources that we have in society .
+Most of you have probably seen figures like this here illustrating that in order to produce the goods and services that we want in society , we need raw materials .
+And in order to get those , we extract natural resources from the environment .
+After we are finished with using our goods and the services , we produce waste .
+Now in order to be a resource efficient society , we need to channel this waste , and the resources in waste back into the economy , back into industry , and utilize those as raw materials .
+But as you can probably imagine , the quality and the composition of these waste materials are not exactly the same as the raw materials that we normally use in industry .
+The message is simple .
+However , we should not only use and lose our resources , we should somehow collect and select the right resources again for recycling .
+But the thing is how do we do that .
+How do we identify and develop the right technologies that provides a sustainable circle here ?
+Well , we need to think about the whole circle .
+We need to consider the ways the resources are collected .
+We need tot think about what kind of secondary resources we can get from this .
+We need to consider what type of products can be made from these resources .
+And we need to consider how these new products are used in society again .
+We also need to think about what kind of emissions are associated with this upgrading and management of the waste resources .
+But , first and foremost , we need to think about what kind of and to which extent do we actually save natural resources , which is what we want if we want to be more resource efficient .
+In other words , we need to consider the whole circle here , the whole chain of processes , and all the emissions and impacts to society and environment .
+Now consider for a moment that we can actually extract and isolate these valuable raw materials .
+It could be aluminum , glass , paper , plastic , and other .
+Then we can recycle those , and when we do that , we save natural resources .
+We do save the environmental impacts .
+We avoid the environmental impacts associated with the production of these materials , and we can almost save 100 % of these impacts .
+We may save most of the impacts associated with production of these materials in the first place .
+However , the recycling here is not for free .
+We also need to handle , to manage , to upgrade , to clean the materials .
+In some cases , well we have a lot savings compared to the lows , but in other cases , we have also a significant amount of lows compared with the savings .
+So the net benefit for society , environment may not be as large as we sometimes think .
+Now in order to find the right solutions for recycling , we need to consider the whole flow of materials and resources in society .
+We need to quantify the magnitude of these flows , and the impact of recycling certain flows for the rest of the system .
+In this case for phosphorus , for Denmark , you can imagine zooming in on the tiny flow here .
+It may not save the world .
+But we need to understand the whole picture , the whole system in order to make the right selections in it essentially .
+We also need to zoom in on the individual technologies , the individual recovery technologies to understand the internal flows , the quality of the individual materials , the residual streams that may be there , in order to understand the full impact and the full potentials for recovery of resources .
+Now waste is not just waste .
+Certain flows have different qualities .
+In this case , as an example , paper and plastic and certain paper and cardboard materials here .
+We see significantly higher concentrations of problematic substances than in other materials , in other paper flows .
+The same with plastic and in this case .
+Some waste and plastic flow , some paper flows have better quality for recycling than others .
+Now in order to provide a full understanding , a full evaluation of these solutions here , at Digital Environment , we use life cycle assessment to provide a consistent evaluation .
+For almost 15 years , we have developed this life cycle assessment model which is now one of the most advanced models that we have , dedicated to material flows and resource flows .
+Here we can model , we can set up the exact same processes that we see in real life .
+We can model the individual processes , we can enter information about the waste qualities , we can follow the substances throughout the system .
+As good engineers , we take care in making sure that the mass balance as the material flows , the energy balances , the substance balances match throughout the system .
+And on this basis , we can provide consistent and systematic evaluation of the recycling solutions that we want to develop and put out in society .
+Now , it 's important to understand that waste can not save the world .
+But somehow we need to make the best use of the resources in waste . We need to have a detailed knowledge , and a detailed understanding of the waste qualities , the technologies , the processes involved in order to make the right decisions .
+And we need to have a variation of the full circle , the full routine of processes in order to make the right decisions . This is what we do at DTU Environment .
+Hi , I 'm Scott Klemmer , an Associate Professor of Cognitive and Computer Science at UC San Diego , and I 'm really excited to share this updated and revised version of the Human-Computer Interaction course with all of you .
+And I hope you 'll join me .
+In this course you 'll learn how to design , prototype , and evaluate user interfaces .
+You 'll learn important topics for building natural , effective , and intuitive interfaces .
+And techniques that help convert those principals to concrete user interface designs .
+In those course , as with many online classes , you get out what you put in .
+Some of you will join just to watch a few videos that you want to learn more about .
+And that 's great . Others of you will purchase a bit more in Studio Track , where you 'll have a chance to prototype your own design project .
+Some past alumni of the course have even continued their projects afterwards , launching startups or getting Kickstarter funding . Working with non-profits and schools , or just using their project as a portfolio piece for job or school or for their own fun .
+And for me , the most powerful part of this online class , is that it provides a way for you as students to connect with each other and I encourage you to reach out and discuss these ideas online or maybe even as an in person meet up .
+I 'm really looking forward to seeing all of the great ideas that you come up with and I hope that you 'll join me for this class .
+How the government is set up and structured .
+When the framers met here in Philadelphia in 1787 , they were primarily concerned with this part of constitutional ordering .
+And in setting up the new American constitution , in light of the failures of the Articles of Confederation , it was important for the framers to get it right and give the right kinds of power and the right amounts of power to different parts of government .
+Here we turn once again to the views of James Madison , and the most important of the framers who was a student of governmental structure and proper allocation of authority , and thought quite a great deal and wrote a great deal about the best way to structure government .
+And he acknowledged a basic challenge which I 've alluded to before .
+First the framers sought to give the government enough power to control the governed , but then structure it in such a way as to use Madison 's phrase , oblige it to control itself .
+For Madison the solution to this dilemma , sought in , actually , lay in the basic ambition of the men and , today , men and women who occupy spots in our government .
+Recognizing , then , as now , that the inherent ambition of people , who would seek places in government .
+Madison and the other framers sought to build a government where this ambition was a built in feature .
+And one that would perhaps solve the problem of too much ambition in one place .
+So as Madison said , ambition must be made to counteract ambition .
+The interest of man must be connected withe the constitutional rights of the place .
+For Madison this meant that the best solution for structuring government was dividing power and creating incentives for one branch of government to counteract the other .
+We call this separation of powers or checks and balances .
+And the framers cared so much about this that they did n't just do it on one dimension . But they did it on two dimensions .
+And here what we mean is when we talk about separation of powers in the federal government we often use the phrase horizontal separation of powers . Splitting the government into three branches , executive , legislative and judicial , and giving each one of them certain powers and more importantly propose this theory of behavior that Madison advances giving each branch the incentives to counteract and be somewhat jealous of the other branch 's power .
+But , the framers did n't just divide constitutional , our constitutional order that way , they also did it on , what we would call , a vertical dimension , namely , dividing power between the National Government and the various state governments .
+This is a principle we call federalism and it is very important even today , as certain things are certain important policy choices are situated with the states , even as many important policy objectives have come to be viewed as national government prerogatives .
+And it 's on these two dimensions , the horizontal separation of powers within the federal government and the vertical separation of powers between the states and the federal government . Where our greatest debates over governmental structure continue to reverberate in the Supreme Court and in the broader public policy debates .
+James Madison 's fundamental insight that power was more safely reposed in government . When it was broken up into smaller chunks and given to different branches or even different governments as between the national and the state government is one that remains important today even as we debate the precise boundaries of those divisions .
+For the modern Supreme Court it has been important particularly in the last few decades .
+Justice Kennedy in a representative statement in a case called U.S. Term Limits versus Thornton called Federalism Our Nations 's Own Discovery .
+And he talked about the framers splitting the atom of sovereignty as a genius idea .
+Giving our citizens two political capacities , one state and one federal , each protected from incursion by the other .
+Now Justice Kennedy 's statement may be a somewhat idealized version of our federal order .
+In reality , many , perhaps most public policy issues are , are shared between the state and federal governments , who cooperate or conflict or wrangle over the proper sphere of authority .
+But still , for many citizens and many judges , and many policy makers .
+This question of where we allocate authority in our constitutional system remains crucially important and as hotly debated today as it was over 200 years ago in Philadelphia .
+Now the way that the Supreme Court and others have operationalized these broad general principles about sep , separation of powers .
+Is through the development of specific doctrines in particular cases .
+Recall what I said earlier that the basic framework parts of the constitution do n't come with definition clauses or users guides .
+It has been the task of subsequent generations over the past 200 years to give content to these broad general principles , like executive power , legislative power , judicial power , or the broad principles that there ought to be some separation between the states and the national government .
+And the way the Supreme Court has done so is , over the past 200 years , to very gradually , very incrementally craft different doctrines that go to both separation of powers on the horizontal level and the vertical level , the so called federalism doctrines .
+And finally , there 's another set of doctrines that are continuously under development and debate that attempt to create limits between the different branches of the federal government .
+And occasionally the Supreme Court will address cases that asks the question , is the president exercising too much power . Has Congress overstepped its bound in , in this case ?
+I 'll speak to all of these doctrines in the next few minutes .
+But I want to highlight yet another debate in this area , which is the question of who should decide these major separation of powers questions .
+To be sure , the Supreme Court has asserted that it has the right to decide these fundamental questions of governmental structure just as it does other questions of law and other questions of individual rights protection .
+But there is a long scholarly tradition rooted in constitutional history that suggest that these basic structural choices about the constitution ought to be what we call non justiciable .
+In other words , decided outside the courts by the major political branches of American government .
+After all , remember James Madison 's phrase ambition must be made to counteract ambition .
+For Madison at least , the government is already properly structured , so that if the President overreaches , Congress ought to step in and reign in Presidential power .
+Conversely , if Congress is exceeding its authority , perhaps the President will refuse to enforce that statute .
+And there 's a real question about whether the Supreme Court needs to referee all these disputes .
+On the other hand , developments that Madison and his colleagues never could have foreseen have complicated the separations of powers mix on all of these dimensions , and perhaps given rise for stronger arguments for judicial supervision .
+For instance , the framers for all of their wisdom , never anticipated modern political parties and the modern two party state .
+When the same party controls both Congress and the White House the assumption that ambition will counteract ambition , and Congress will reign in the President , falls apart in a world of strong party discipline .
+Likewise , the framers never foresaw the dramatic rise and the size and scope of the federal Executive branch that has taken place over the past century .
+In the early days of the Republic , the federal government had only a few thousand , non-military employees .
+Today the federal government has over a million such employees . Growth of the federal government over that phase has , some would argue fundamentally tipped the power of the presidency relative to the other branches .
+These are questions that are still debated , and that I 'll return to in a few minutes .
+Now let me go somewhat more systematically through these different areas of doctrine .
+The first area where federalism doctrines have been applied by the supreme court and are b , baked into the constitution deal with controlling state behavior or even state misbehavior .
+Indeed , were we to travel back in time to 1787 and asked the framers what they worried most about . They would not have worried about an overreaching federal government .
+After all , recall how weak the federal government was under the Articles of the Confederation .
+What they worried about , and the reason they came back to Philadelphia in 1789 , was that states were behaving badly .
+States were printing their own money to let their own debtors off the hook .
+They were could n't agree on state boundaries .
+They could n't agree on foreign policy , or policy toward the Native American trive , tribes . Each state was going in its own direction .
+States were enacting internal tariffs and trade barriers , of the sort that today we see between nation states .
+But this used to happen between Pennsylvania and New Jersey .
+The Framers regarded this as no way to run a proper country .
+And so one of the first things the constitution did was prohibit and provide doctrinal grounds for courts to prohibit states from engaging in this kind of individualistic behavior . A later justice , an important justice from mid 20th century Justice Robert Jackson said that these clauses taken together were to declare something he called a Federal Free Trade Zone .
+So if you imagine efforts such as our undergoing these days in Europe to create a , to , to trans , transform what used to be individual markets into a national free trade zone , that was a major impulse of the early days of the Constitution , and largely successfully enforced by the Supreme Court over the last two centuries .
+Such that these debates occur , but occur much more , much less frequently than they would have in the early days of the Republic .
+Modern debates over the scope of federal government authority often grapple with the fundamental tension and inconsistency that 's built into the Constitution .
+On the one hand the baseline rule in the Constitution is that power resides with the states and the people , and the national government only has those powers that the document . And interpretations of the document affirmatively give to the national government .
+This is called the doctrine of enumerated powers . And it is often invoked by people who say that the federal government is over-reaching its authority , because it ca n't point to a certain enumerated power .
+On the other hand , some of the enumerated powers themselves are extremely broad and extremely vague .
+The most important of these is the Commerce Clause which gives the national government the authority to regulate commerce among the several states .
+First , for much of the first hundred years of the constitution 's life , until about the 1870s or 1880s Commerce Clause cases were few and far between , precisely because the National Government did n't do that much .
+In a series of decisions , in this period , that might surprise modern observers .
+The Supreme Court took a very narrow and formalistic definition of the Commerce Clause , and , issued decisions saying things like manufacturing in a major sugar plant was not commerce and therefore that company was not subject to basic anti trust laws .
+Or even more strikingly a factory that employed chird , child workers was not engaged in commerce .
+Therefore the National government had no basic , no authority to issue basic child labor legislation .
+This was a constitutional regime , which seems anachronistic to us , and indeed it proved unsustainable , even in a much earlier date , namely in the New Deal in the 1930s and the 1940s .
+After the Supreme Court struck down some of President Franklin Roosevelt 's most popular and important recovery initiatives President Roosevelt capitalizing on public dissatisfaction with a court that seemed to be stuck in the past proposed what would have been a radical solution , namely adding more justices to the Supreme Court in order to reverse those rulings .
+Perhaps sensing the public outcry against its decisions and wanting to avoid the constitutionally problematic strong arming from President Roosevelt , the Supreme Court , by the middle of the New Deal reversed its prior narrow interpretation of the commerce clause and adopted something much more familiar to the doctrine we have today from the court . Namely , that commerce is defined pretty broadly to include any activity that affects the national economy , however small , so long as if taken in its totality in an aggregate sense it has an economic impact .
+Was that congress could do pretty much what ever it wanted under the commerce close . There was n't any real enforcement of federalism limitations in this area .
+We are now in a different era , with a more aggressive , robust Supreme Court , where at least five justices on the current Court maintain that there are limits to national government power and that the Court aught to enforce those limits .
+And we saw such a case just two years ago with the major Affordable Care Act case of 2012 , where a slim majority of the Court felt that a key part of that statute , the individual mandate , was beyond the Federal Government 's authority on commerce clause grounds .
+And indeed the entire validity of the Affordable Care Act was only upheld on a different ground the so-called taxing power .
+Because the the burden or the penalty that falls on people who did n't pay the individual mandate is operational as through their tax returns . So we 're in an era now where federal government authority is vast but the Supreme Court assertively maintains its prerogative to enforce that .
+There are many scholars and many in the policy world who feel that these kind of federalism restrictions to control federal government overreaching are important but ought not be enforced by the Supreme Court .
+Indeed keep in mind the structural provisions that are built into the so-called political branches , that are built into Congress itself .
+and , and the argument goes includes plenty of protections for the states .
+So that a state like Wyoming has as much representation on a state-by-state basis as a state like California . Despite vast discrepancies in population .
+For many observers , this suggests that state interests are fully protected in the actual voting procedures and political process in Congress , and that the Supreme Court ought not get involved , in policing this boundary . It ought to stick to protecting individual rights and standing up for the rights of entities and individuals who do n't have a voice in the political process , whereas states do have such a voice .
+But clearly , as a statement of current constitutional law , the Supreme Court has come out strongly in the other direction , saying that it can and will enforce these federalism restrictions .
+I 'll now speak about a different element of separation of powers .
+Now , in here we 're talking about the horizontal separation of powers between the different branches of the national government .
+This is the area where both today and historically Supreme Court doctrine has been least helpful .
+I think precisely because the fundamental definitions of these different branches are so unspecified .
+Legislative power , executive power , judicial power are undefined in the Constitution .
+And the precise contours and , and boundaries of those concepts have become evermore muddled as the government has grown , and changed , and become more complicated . For instance , take an agency like the Food and Drug Agency , which regulates the safety of food and therapeutic products , .
+We know it is within the executive branch but if we look at its functions it does some things that look like executive enforcing of the laws .
+It had the authority to inspect and enforce rules , say , against pharmaceutical manufacturers .
+But some of what it does looks a lot more like a legislature .
+Like many agencies , the FDA has authority to write rules which are binding and generally applicable and look a lot like statutes .
+We call them regulations and thus place them in the executive branch , but functionally , that behavior looks much more legislative .
+Other agencies have the ability to adjudicate actual cases and disputes .
+For instance the Social Security Administration has its own judges who hear debates , or hear disputes when somebody claims to be denied the proper amount of benefits exercising very much a judicial function again despite technically being in the executive branch .
+For this reason , the growth of government in ways that the framers never could have intended have put pressure on these basic dep , definitions inherent in the horizontal separation of powers and confounded easy judicial techniques for drawing bright lines between such branches .
+Today in this area courts are struggling with issues like national security surveillance by the executive branch the power of the President to wage war in foreign countries despite not formally declaring war and the growth of congressional behavior and congressional oversight activities which raise questions about congressional overreaching . In these areas , there 's a real question of how much the Supreme Court , or any judges can do , to meaningfully police these boundaries .
+As I 've said , the fundamental definitions in the Constitution are so vague and unspecified , between executive , legislative , and judicial power .
+That , articulating meaningful doctrinal standards to channel and cabin these different types of power have proven over the past two centuries to be largely unworkable .
+Moreover many of these decisions , such as whether or not to send troops to a foreign country are probably the worse kind of decisions to vest in a group of unelected judges who take a long time to hear cases .
+And perhaps ought to be worked out more within the political process .
+Certainly James Madison and the other framers envisioned that Congress and the President would be their own best check on each other .
+That Congress would check the President when he or she overreaches , and that the President would jack or refuse to enforce or would veto congressional laws that represent where we are reaching .
+In here I will return to though a problem that the framers never foresaw but that is essential part of our political community today which is the rise of disciplined fairly powerful political parties .
+Although , the framers envisioned politics . They did n't in , view , vision political parties .
+And , the notion of a strong disciplined party controlling both Congress and the White House , undermines many of the structural protections that Madison and the other framers thought would work to control over-reaching .
+Simply put , when the President and Congress are of the same party who will rein in an overreaching President if the President indeed is the leader of his , his party ?
+Whatever political party or persuasion one is , you can think of examples when Republican presidents have seemed to exert dramatic authority unchecked by Congress .
+And you can think of recent examples of a Democratic presidents have seem to exert unusually robust authority largely unchecked by Congress .
+This is something the framers never foresaw .
+And it 's a fundamental feature of our political process which puts pressure .
+And perhaps stretches to the breaking point .
+Some of the basic allocations of authority in in the national government .
+These are problems for which the court probably doesn ' have a solution and it 's up to the rest of our constitutional culture and other institutions : the public , the president and congress .
+So to sum up this entire separation of powers discussion , I think we see two very different problems , or two very different phenomenon .
+In the , in the Federalism context the debate between state and federal authority and in the horizontal separation of powers , context arrayed across the federal government .
+When it comes to judicial control of national government authority vis-a-vis the states , the current Supreme Court has been very assertive , very robust and articulated very clear rules .
+In ways that many think have gone too far in asserting judicial protection .
+On the other hand , when it comes to presidential authority and overreaching many feel that the court has not done enough to articulate clear meaningful standards to cabin executive power in the 21st century , as it grows in ways that the framers never would have imagined over two centuries ago .
+So these are the two competing challenges in this area , that the court . And the rest of our constitutional culture we 'll need to address going forward .
+Welcome to week five of this course .
+In this module , we will go through the concepts of longitudinal vehicle control to regulate the speed of our self-driving car .
+Specifically , you 'll review some of the essential concepts from classical linear time-invariant control , develop a PID control law for the longitudinal vehicle model and combine feedforward and feedback control to improve desired speed tracking .
+Design of the longitudinal speed control underpins all vehicle performance on the road and is one of the fundamental components needed for autonomous driving .
+In this video , we will briefly review some of the basics of linear time-invariant control and the PID controller .
+By the end of this video , you 'll be able to design a PID control for a linear time-invariant system .
+Note that we will have to assume you 're familiar with classical control design including the use of transfer functions and the Laplace domain .
+So , if you have n't seen these concepts before , please check out some of the great controls courses on Coursera listed in the supplemental materials . Let 's get started .
+In module three of this course , we learned how to develop the dynamic and kinematic models for a vehicle based on the bicycle model .
+These models aim to capture how the dynamic system reacts to input commands from the driver such as steering gas and break and how it reacts to disturbances such as wind , road surface and different vehicle loads .
+The effects of the inputs and disturbances on the states such as velocity and rotation rate of the vehicle are defined by the kinematic and dynamic models we developed .
+The role of the controller then is to regulate some of these states of the vehicle by sensing the current state variables and then generating actuator signals to satisfy the commands provided .
+For longitudinal control , the controller sensing the vehicle speed and adjust the throttle and break commands to match the desired speed set by the autonomous motion planning system .
+Let 's take a look at a typical feedback control loop .
+The plant or process model takes the actuator signals as the input and generates the output or state variables of the system .
+These outputs are measured by sensors and estimators are used to fuse measurements into accurate output estimates .
+The output estimates are compared to the desired or reference output variables and the difference or error is passed to the controller .
+The controller can be seen as a mathematical algorithm that generates actuator signals so that the error signal is minimized and the plant state variables approach the desired state variables .
+The plant model be it linear or nonlinear can be represented in several ways .
+Two of the most common ways are state-space form which tracks the evolution of an internal state to connect the input to the output and transfer function form which models the input to output relation directly .
+Note that for transfer functions , the system must be linear and time-invariant .
+A transfer function G is a relation between inputs U and outputs Y of the system defined in the Laplace domain as a function of S a complex variable .
+We use the Laplace transform to go from the time domain to the S domain because it allows for easier analysis of an input-output relation and is useful in understanding control performance .
+When working with the transfer functions , the numerator and denominator roots provide powerful insight into the response of a system to input functions .
+The zeros of a system are the roots of the numerator and the poles of the system are the roots of its denominator .
+Control algorithm design can vary from simple such as constant gain multiplication , lookup tables and linear equations to more detailed methods based on non-linear functions and optimization over finite prediction horizons .
+Some of the basic and classic controllers include lead-lag controllers and proportional integral and derivative or PID controllers .
+In the rest of this video , we will go into more detail on the PID control combination as a useful starting point for longitudinal control .
+More involved control design is also possible and it 's particularly useful for non-linear system models , time-varying models , or models with constraints that limit output selection .
+Optimization-based methods are heavily used in autonomous driving and so we 'll look at model predictive control as an example of this group of controllers later on in the course .
+PID control is mathematically formulated by adding three terms dependent on the error function .
+The constants Kp , Ki , and Kd are called the proportional integral and derivative gains and govern the response so the PID controller which is denoted U of t as it is the input to the plant model .
+Multiplying by S in the Laplace domain is equivalent to taking a derivative in the time domain and dividing by S is equivalent to taking the integral . By adding these three terms of the PID controller together , we get a single transfer function for PID control .
+Note that not all gains need to be used for all systems .
+If one or more of the PID gains are set to zero , the controller can be referred to as P , Pd or Pi .
+The PID transfer function contains a single pole at the origin which comes from the integral term .
+It also contains a second-order numerator with two zeros that can be placed anywhere in the complex plane by selecting appropriate values for the gains .
+PID control design therefore , boils down to selecting zero locations to achieve the desired output or performance based on the model for the plant .
+There are also several algorithms to tune PID gains , among them , Ziegler Nichols is one of the most popular .
+For a step input on the reference signal we can define the rise time as the time it takes to reach 90 percent of the reference value .
+The overshoot as the maximum percentage the output exceeds this reference . The settling time as the time to settle to within five percent of the reference and the steady-state error as the error between the output and the reference at steady-state .
+The effects of each P , I and D action are summarized in the following table .
+For instance , an increase in Kp leads to a stronger reaction to errors and therefore a decrease in rise time in response to a step change in the reference signal .
+Similarly , since Kd reacts to the rate of change of the error an increased Kd leads to a decrease in overshoot or the rate of change of error is high .
+It may simultaneously lead to a decrease in oscillations about the reference and a decreased settling time as a result .
+Finally , an increase in Ki can eliminate steady-state errors but may lead to increased oscillation in the response .
+Ultimately , the P , I and D gains must be selected with knowledge of the interaction of their effects to adjust the system response to get the right closed loop performance .
+You 'll get a chance to see these interactions as you develop your own PID controller as part of the assessment for this course .
+In this example , we 'll first review the transfer function of the proposed dynamic system and then design a PID controller for it .
+The dynamics of the spring-mass damper system were derived in an earlier video in this course .
+The mass M is connected to a rigid foundation by a spring with spring constant K and a damper with damping coefficient b. Now to transform the equation into the S domain or Laplace domain , we use the Laplace transform and write the second-order equation as follows .
+Finally , the transfer function is formed which represents the relation between the output x of s and the input F of S and is defined as the plant transfer function G of s.
+This is a second-order system with two poles defined by the mass spring constant and damping coefficient .
+To evaluate the system characteristics , we excite the system by using a unit step input .
+This is normally the first step to evaluate the dynamic characteristics of a plant .
+For example , the system response x is plotted here for the parameter values given as m equals one , b equals 10 and k equals 20 .
+This type of response is easily generated with scientific computing tools such as Matlab recite pi .
+The input is the unit step F equals one and the output is once again x.
+This response is called the open-loop response since there is no controller applied to the system at this point .
+If a controller is added to the plant and the output of the model is measured and compared with the desired output or reference signal , then the response of the system is called the closed loop response .
+For unity feedback , the sensor transfer function is assumed to be one and in general it could be any transfer function .
+The closed loop transfer function given here can be performed from the transfer functions of the controller and the plant .
+For those of you who have studied classical feedback control , you 'll know that the poles of the open-loop system define the characteristics of the closed-loop response .
+You may have also seen root locus bodhi and Nyquist design techniques which can be used to select controllers that meet specific output specifications .
+We 've left some links to appropriate resources for those who 'd like to learn more in the supplemental material .
+Let 's look at the step response for a few different PID controllers . The dashed horizontal line represents the reference or desired output and the controllers goal is to keep the actual output close to this reference .
+In the first example , the step responses for pure proportional control of the spring-mass damper system .
+In the P controller response , we see a fast rise time , significant overshoot and prolonged oscillation leading to a long settling time .
+Adding derivative control improves the step response in terms of overshoot and settling time but slows down the rise time . Adding the integral term instead maintains a short rise time and is able to reduce oscillations and overshoot leading to a fast settling time as well .
+The simple Pi control is an excellent design for the spring-mass damper system .
+By carefully tuning the controller gains , we can use the benefits of all three to eliminate overshoot and still maintain very short rise and settling times .
+As can be seen in the plot , the system approaches the reference at much more quickly without any overshoot with PID control .
+In this video , we 've covered the concepts of controller design and why we integrate controllers into a dynamic model .
+We also reviewed the PID controller and learned how to control the step response of a spring-mass damper system with PID control .
+In the next video , you will learn how to apply PID control to regulate the speed of a self-driving car .
+The challenges that I 've observed in the industry so far is it 's quite difficult driving in San Francisco .
+They decided that they wanted to think of the autonomous problem or challenge in a different way than everyone else was doing .
+Everyone else wants to put sensors on a car , and they wanted to build the car from the ground up .
+Our vehicle is bidirectional , that means they wo n't have to do U-turns or a three-point turns . Our vehicles wo n't have steering wheel , you 'll have social seeding , that means that riders will sit facing each other .
+In addition , one of the cool things that we can do is we have all wheels steering .
+So , all four of the wheels can steer , and what that means in dense urban environments like San Francisco is that if we have a rider on the side of the road and a very narrow spot between cars , we can get in there .
+Because the industry is so new , we at so many different challenges , we have to find so many different ways of solving problems that we 've never had to solve before .
+Zoox is well position to compete against the large OEMs that are currently in the field , because Zoox was born to solve the problem of autonomous mobility .
+We 're designing a vehicle from the ground up that will tackle the challenges of delivering a autonomous ride-sharing experience .
+The large OEMs have a lot of existing infrastructure , they 're encumbered by the current model of car ownership .
+Whereas we as a small and agile start-up are able to really execute on our core vision .
+It 's just amazing that large data sets like this are readily available to students so that they can learn and it make it really easy to learn . And in this case we saw with just a few lines of code , we were able to build a DNN that allowed you to do this classification of clothing and we got reasonable accuracy with it but it was a little bit of a naive algorithm that we used , right ?
+What do you think ?
+Yeah . So one of the ideas that make these neural networks work much better is to use convolutional neural networks , where instead of looking at every single pixel and say , " Oh , that pixel has value 87 , that has value 127 . " So is this a shoe or is this a hand bag ?
+But instead you can look at a picture and say , " Oh , I see shoelaces and a sole . " Then , it 's probably shoe or say , " I see a handle and rectangular bag beneath that . " Probably a handbag .
+So confidence hopefully , we 'll let the students do this . Sure , what 's really interesting about convolutions is they sound complicated but they 're actually quite straightforward , right ?
+It can spot features within the image as you 've mentioned .
+With the same paradigm of just data labels , we can let a neural network figure out for itself that it should look for shoe laces and soles or handles in bags and just learn how to detect these things by itself . So shall we see what impact that would have on Fashion MNIST ?
+The work of a conscientious data analyst always involves providing a model for the uncertainty that remains .
+So a good model includes both a signal and noise .
+It includes a representation of that part of future experience that can not be explained by the data that are available now .
+Whether we are modeling the uncertainty in an asset , financial returns , or the uncertainty that surrounds a forecast driven by a linear regression model , we again and again turn to the special continuous distribution known as the Gaussian probability density function .
+It is by far the most common model for noise or uncertainty used in data analysis , and it has many special properties , which we are now about to study .
+So other than MBSR , which we considered in the last session , MBCT or mindfulness-based cognitive therapy is probably the most widely recognized and practiced mindfulness intervention .
+Pioneered in the work of Segal , Williams and Teasdale and now closely associated with the mindfulness research centers in Oxford , Bangor , and Exeter Universities in the UK , MBCT was developed primarily as a treatment protocol to prevent relapse into depression .
+Indeed , the evidence base for the effectiveness of MBCT is now so compelling that it 's widely recognized and codified as a treatment by various national health services , medical insurance providers , and clinical watchdogs around the world .
+Like MBSR from which it draws many major elements , MBCT is also structured around an eight week program , which includes a number of formal meditation practices , the body scan , sitting and walking meditations , mindful movement exercises like stretching or yoga or Qigong .
+Like MBSR , MBCT causes also make use of periods of inquiry , a form of socratic questioning designed to help participants to reflect on their experiences and to facilitate matter awareness and matter cognition regarding how they react and respond to the experiences they encounter during meditation practices .
+We 'll look at this idea of metacognitive standpoints in more detail in the next module .
+In order to facilitate the generalization of mindfulness skills into everyday life , MBCT also incorporates various informal practices , such as , mindful eating , mindfulness of pleasant and unpleasant experiences , and bringing mindful awareness to various routine activities in which we participate every day , so brushing our teeth , tying our shoelaces and so on .
+And you 'll be excited to know that we 'll experiment with many of these practices in the meditation labs on this course .
+With respect to this generalization practices , MBCT places great emphasis on the importance of recognizing our autopilot .
+The phrase autopilot is used to label those daily activities that we perform mindlessly , such activities could include things that we 've gradually conditioned ourselves to do without thinking about them .
+Often for good reason , ranging from really rudimentary activities like walking through to more complex activities like driving a car .
+In some of these cases , turning off our autopilot could be disastrous .
+Learning to drive , for instance , is at least partially a process of programming our autopilot to be able to deal with pedals and gears and controls and steering precisely , so that we do n't have to think about them , and our attention is freed up to watch the road .
+As soon as we start thinking about them consciously , we have problems driving the car .
+However , MBCT also encourages us to become aware of the ways in which we switch into this kind of autopilot on a more ad hoc or reactive basis when were simply distracted by other things or when we are subconsciously seeking to avoid engaging with something .
+And really importantly , we 're usually completely unaware that we 're unaware of these things .
+That is , the focus of our awareness is often not the result of our conscious choice .
+It is not a reflection of what we really want or where we might want to put our attention .
+There 's a very real sense in which we were just not present during that walk home . This kind of experience always reminds me of that wonderful little parable by David Foster Wallace about the meaning of a liberal education .
+And he said , there are these two young fish swimming along , and they happen to meet an older fish swimming the other way who nods of them and says , morning boys , how 's the water ?
+And the two young fish swim on for a bit , and then eventually one of them looks over at the other and goes , what the hell 's water ?
+Of course , the point here is not that autopilot or perhaps daydreaming is necessarily evil or even that it 's always inappropriate or unhealthy , indeed , daydreaming is quite often the highlight of my working day .
+The point is about cultivating our awareness of where we have placed our attention and cultivating the discipline to place it where we want it to be .
+Sometimes we 're missing something essential , like water for those fish .
+Just as we saw in MBSR , awareness , attention , and discipline are core to MBCT .
+One of the basic insights of MBCT is that our attention is often drawn away from where we are without us being aware of this .
+And that particularly for people prone to depression what draws our attention is rumination on problems and regrets and memories of the past or fears and anxieties about the future .
+So instead of enjoying the water around us or the glorious sunset on our walk home , which really is there in front of us , we spend that walk involuntarily plunged into an internal darkness of our own making .
+Instead of enjoying a delightful evening walk , they 're thoroughly miserable and stressed the whole time and exhausted when we get home .
+This provokes a basic question , would the quality of your life be better if more of it was spent in what you were doing and where you were , less of it were spent entangled in a cycle of worry , anxiety , and stress about things that were not there ?
+If the answer to this question is yes , which probably it is , MBCT aims to provide you with the resources to be more aware of when your autopilot kicks in and with the discipline to make more skillful choices about when you choose to engage it and where you choose to put your attention .
+To be clear , it 's not about throwing your autopilot out the window since the autopilot can really valuable and useful which is why planes have autopilots after all .
+But just about becoming able to register experientially when it turns itself on , being able to make more skillful choices about when your autopilot is nourishing and when it 's depleting .
+One of the most characteristic practices of MBCT is the brief three minute or three step breathing space , which can be deployed at moments of stress or difficulty during the day , to help center practitioner in the here and now and thus support their ability to make these skillful choices .
+If you 're participating in the meditation labs to this course which , of course , you are , you 'll become familiar with this simple technique , and we 'll be doing it a lot .
+Just as we saw with MBSR in the last session , while studies demonstrate its general effectiveness , the MBCT program does not seem to work for everyone .
+Again , there are all kinds of possible reason for this , however given the fact that MBCT usually takes place in clinical settings for populations with particular diagnose needs , great emphasis is being placed on trying to understand the responsibilities and role of the instructor as a variable in the effectiveness of the program .
+In their seminal work on the establishment of MBCT , Segal , Williams , and Teasdale have outlined the basic requirements for responsible and accredited instructors .
+You can see the code of practice based on their work that is used today in the supporting documents for this module .
+And in brief , they argue that at the very least , teachers should be properly qualified in psychotherapy and also that they should have completed a full training program at MBCT , which usually takes about two years .
+But most importantly , such teachers should also have an established , long-term , ongoing meditation practice of their own .
+And it 's this last criteria that 's attracted most interest , since it suggests that the level of mindfulness attained by a teacher makes a real difference to the experiences of her students and to the efficaciousness of mindfulness training itself .
+For some , this argument might taste a little esoteric , as though it 's a way of smuggling Buddhist mindfulness conventions into a secular construct mindfulness program .
+However , rather than suggesting that there 's some sort of mystical osmosis involved in the transference of mindfulness from master to disciple , research about MBCT suggest that experienced mediators are better able to embody and model the qualities that the program seeks to promote .
+And that this modeling is important to the success of treatment .
+In particular , mindfulness is often associated with embracing what Mark Williams has called being mode , in preference to a more instrumental doing mode .
+Being mode is related to a capacity to accept the present moment with a non-striving attitude and to remain in it without judgment .
+You might notice that this mode seems to resemble the constellation of dispositions that Jon Kabat-Zinn called the Attitudinal Foundations of Mindfulness in our last session on MBSR .
+On the other hand , doing mode is related to striving for goal-oriented changes to the present moment .
+Judging the present as different from how it might otherwise have been , and thus flavoring it with disease and dissatisfaction .
+As we see in the meditation labs of this course , there are any number of times in an MBCT class at which a teacher might undermine the value of being mode by abruptly , and probably inadvertently , shifting into doing mode in order to fix the problems of a participant .
+The inquiry process at MBCT should provide space for the embodied compassion and acceptance of the instructor to facilitate the discovery of experiential first person knowledge by the participants .
+Should not be a directive , didactic or change-oriented exchange in which the instructor tells people how their experiences should feel .
+Research suggests that it 's very difficult to fake this therapeutic space of compassionate open awareness .
+It also shows that it 's very difficult for even experienced therapists , trained in other forms of therapy but relatively inexperienced in mindfulness , to avoid accidentally lapsing into the model of directive and didactic counseling .
+Indeed , one of the great benefits of an established personal practice for therapists is that they become more aware of and more attuned to those moments when their own autopilot kicks in during classes .
+And it 's at least partially for this reason that scientists and other mindfulness practitioners constantly debate the power and role of authenticity and integrity in the person of the teacher or therapist .
+It 's a hot topic , and we have no definitive answers .
+So having now considered the basics of MBSR and MBCT , the next step for us is to take a bit of a step back and to look at mindfulness interventions as a whole to see whether we can identify some common characteristics and features . And this is what we 'll attempt in the next session .
+You may remember that we introduced the concept of a filesystem in the Technical Support Fundamentals course .
+A filesystem is used to keep track of files and file storage on a disk .
+Without a filesystem , the operating system would n't know how to organize files .
+So when you have a brand new disk or any type of storage device , like a USB drive , you need to add a filesystem to it .
+There are lots of file systems out there , but the two that we 'll talk about in this course are recommended as default filesystems for Windows and Linux .
+For Windows , we use the NTFS filesystem , and for Linux , it 's recommended to use ext4 .
+Let 's say you have a USB drive that 's using an NTFS filesystem . Both Windows and Linux 's Ubuntu can read and write to the USB drive .
+It 's pretty likely that you 'll encounter this situation in an IT support role .
+Let 's say you have some important files on that same USB drive that you want to copy over to your Windows , Linux , and Mac OSes , what would you do then ?
+This is a pretty common situation .
+You 'd have to reformat or wipe the USB drive and add a filesystem that 's compatible with all three operating systems .
+Luckily , there are filesystems like FAT32 that support reading and writing data to all three major operating systems .
+This might be enough for a small USB drive , but it 's not really great for anything else . You can learn more about FAT32 in the next supplemental reading .
+In the next course on system administration and IT infrastructure services , we 'll discuss another filesystem type called network filesystems that solves this exact problem .
+All right , now that you 've got a quick refresher on filesystems , let 's spend the next few lessons discussing how you actually set them up .
+So to do that , we 're going to make use of several important Python libraries that will support our work .
+These include scikit-learn , SciPy , NumPy , pandas , and matplotlib .
+We recommend installing all of these using the Anaconda Python distribution since it comes with all the libraries we 'll need in this part of the course .
+If you have some other existing Python installation , you can install the libraries we 'll be using from the command line using pip , like this . The most important library we 'll be using for machine learning is called scikit-learn .
+Scikit-learn is the most widely used Python library for machine learning and it will be the basis for this course .
+It has excellent online documentation and a very active user community .
+Because of this broad adoption , scikit-learn has many sample applications , tutorials , and code examples that are available online .
+So one valuable reference that we recommend you use while you take this course is the scikit-learn User Guide and the API documentation which contains further details on the different algorithms that are in the library , along with details on the various options that these algorithms support .
+Scikit-learn makes use of two other Python scientific computing libraries called SciPy and NumPy .
+SciPy is a Python library that supports data manipulation and analysis methods that are commonly used in scientific computing .
+So this includes support for statistical distributions , optimization of functions , linear algebra , and a variety of specialized mathematical functions .
+In some parts of this course , we 'll make use of SciPy 's ability to provide what are called sparse matrices , which are a way to store large tables that contain mostly zeros , so more on that later .
+NumPy is a Python library for scientific computing that contains support for some fundamental data structures used by scikit-learn , such as multi-dimensional arrays .
+Pandas is a Python library for data manipulation and analysis .
+And if you took course one in this series , you 've already had experience with what pandas can do . The key data structure pandas supports that we 'll be using is called a DataFrame , which is basically like a spreadsheet table with rows and named columns .
+So unlike the arrays supported by NumPy , the columns in a DataFrame can be of all different types . You can have one column holding string values , another column holding a date , another column holding a floating point number and so on .
+Pandas also has great support for reading and writing data in a variety of formats , everything from comma separated CSV files to SQL , the Structured Query Language used by databases and more .
+Matplotlib is a widely used Python 2D plotting library that produces high quality figures in a variety of formats and interactive environments across platforms . Matplotlib can be used in Python scripts , the Python and iPython shell , web application servers , and a variety of different graphical user interface toolkits .
+If you 've taken course two in this data science series , you 'll already have some experience with using matplotlib .
+Here , we 'll primarily be using matplotlib.pyplot for data analysis since it can create histograms , bar charts , error charts , scatter plots , and so forth with just a few lines of code .
+So , for reference , this course will be using the following versions of these libraries as shown on the slide .
+Hello , and welcome again .
+Our first goal here is to build a common understanding of the basic concepts behind the phenomenon of digital transformation .
+So we 'll go back to the technological foundations , understanding really what makes digital technology so unique and difficult to apprehend .
+What makes it different from other technology elite advancements we saw .
+For example , in the 18th century with the first Industrial Revolution .
+You will first see that we can all boil it down to three fundamental laws about the unusual improvements in how digital information can be processed , communicated and stored .
+In fact , when we track each one of those , they interestingly all follow the same exponential acceleration pattern . So we will start there , and then we will discuss the impact this has on the business environment .
+First , the impact on traditional business architecture of all industries .
+In other words , how links between different economic agents are evolving across the value chain .
+Second , the impact on individual companies .
+Looking at how revenue and profitability are affected by technology investments .
+They are a hallmark of market economies .
+They can also be disruptive to the status quo .
+As Aman mentioned , we highlight the exponential growth of digital technology and , hence , its disruptive potential .
+Now , we will share some relatively recent examples of how digital innovation and technological change have affected industries and individual companies .
+But adapted its strategy over time to grow into an international e-commerce business .
+Digital transformation is a process involving many building blocks and people within a company .
+Well done , you have finished the second course , in this specialization on globalization economic growth and stability . The second course was trade , immigration and exchange rates in a globalized world .
+We talked about trade and how trade benefits all nations that are involved in it .
+That it 's not a soccer game or a zero sum game but it 's a win-win game , where both sides can benefit from specializing and exchanging the goods that they produce best , and the globe , the world gains in terms of efficiency .
+We looked at exchange rates , we saw how they were determined in free markets , how they move up or down , we talked about six different factors that can cause them to move and then a couple of special situations .
+Then we discovered that governments can manipulate those .
+So , we thought about what that meant and how that could be done , and we talked about how exchange rates affect an economy , what happens when they go up ?
+Then finally , we turn to probably the most controversial topic in this course , which is full of controversial topics , which is immigration .
+We discovered , maybe to some of our surprise , that immigration has a net beneficial effect on the country that sends the immigrant , but especially on the country that receives the immigrant .
+We talked about some of the elements of this debate , and why it has become such a political touch point now , in today 's debates , in today 's political life , and what may be could be done to reduce the opposition to immigration to make immigration policies work better for everybody in the economy .
+We also looked at the balance of payments , this becomes an important tool for us going forward , because we want to understand what kind of risks there are in countries that have current account surpluses and countries that have current account deficits .
+I tried to convince you , that it 's a very simplistic way of looking at the world to think a country where the surplus is better , more competitive , more virtuous , whatever you want to think and a country with a deficit is a country with a problem .
+I tried to convince you , and I hope I succeeded , that there are risks associated with deficits , and there are risks also associated with surpluses .
+We 're going to dig into these risks , as we move forward in this specialization and look at countries and look at the kinds of risk because of the opportunities that this kind of data point out for investors in different countries .
+So , we 're going to move on now , to the second part of the capstone .
+For this specialization you 'll have a quiz and then we will be doing an exercise with real data to review these concepts up in the real world .
+Now what goes with lighting is color . Defining a set of colors , thinking in palettes , tones , and multiple sets for a consistent environment is one really essential part of world design .
+Think hot and cold colors , complimentary ones . How they 're going to convey a different set , a different feeling to the player .
+If you have any ecclecticism of destinations , a desert , mountains , caves , sprawling cities or small towns , soccer fields or tennis courts , well , all those places , they 're leaning toward a different set of colors .
+If you have just a simple gradient , which is possible in a video game , having just solid colors or a gradient , everything that is standing out in this world well should have a meaning .
+All of this can be decided no , has to be decided , early on and as to depend either on the story and the context of the overall gameplay .
+If you think about it this way , what the players can do or can not do .
+If this is visible and labeled , you an use colors for that to guide them , where to go , what to do .
+You really do n't want to have your players being hammered during the whole time they 're playing the game , the entirety of it , what they can or what they can not do . You want them to get it early on and just keep it rolling .
+Which brings us to the UI , the color of the interface , the user interface , is very important . It 's not quite a world design matter , but it has to be mentioned somewhere .
+Players will have their eyes on the UI for hours and hours , at best , maybe .
+We ConsenSys are the forefront of the biggest technology revolution of our time .
+ConsenSys Academy is a core pillar of ConsenSys and through it , we will continue to bring you the best in educational content and programs around decentralizing technologies .
+Our mission is to galvanize the global blockchain ecosystem through every one of you .
+You 're all probably hearing a lot of terminology or jargon around watching cryptocurrency , mining , tokens , decentralized applications or DApps , cryptography , smart contracts , et cetera .
+You 're also probably wondering how the technology works and how it applies to you and your business in terms of real life use cases .
+We hope to bring you some of these answers via our courses and hope you enjoy learning , exploring , building , and joining the phenomenon .
+Currently , businesses rely on large centralized databases to store and process vast amounts of data , that is used to power organizational functions such as finance , human resources , marketing , sales , operations , and more .
+Decentralized databases , present many problems as they 're often siloed , inefficient , and inconsistent , making it difficult to share accurate data internally , and externally , slowing down transaction times , and failing to provide a single verifiable source of truth on data for multiple parties to agree on .
+Furthermore , these centralized databases are prone to attacks from external and internal actors , as they have a single point of failure that even the best cybersecurity fails to protect .
+We 've seen examples of this , with the recent hacks of Yahoo , Equifax , and Target .
+Many businesses are now examining blockchain technology to overcome challenges that they currently face with centralized databases .
+As you may recall , blockchain is a distributed ledger technology that is secured with cryptography , by using trusted , public , private key signature technology .
+Instead of data being stored on a centralized database , with blockchain , data can be stored and automatically replicated and shared across a network of databases .
+This network is transparent and verifiable , allowing anyone that is signed into it to see a single source of truth on current and historical data .
+It also improves the efficiency , accuracy , and speed of transactions , minimizing disputes , and the need for intermediaries .
+Finally , the distributed architecture of the blockchain is more resilient , reducing the ability for hacks to happen as there is no single point of failure .
+Exciting new use cases are merging across many industries enabled by blockchain , including supply chain .
+Provenance of assets become a verifiable , traceable , and auditable , creating transparency throughout the lifecycle of a supply chain .
+The medical industry personal ownership of medical records that can be used universally at the person 's discretion .
+The music industry . Music ownership and distribution , where creators are not exploited by intermediaries , and receive direct compensation for their work .
+Also the Internet of Things , blockchain is used as a means to connect and audit IoT machine to machine transactions .
+However , blockchain is not the answer for every problem in the business world .
+There are in fact , a few considerations that must be met in order to seriously consider blockchain for a business application .
+Are there multiple parties , or entities that need to interact with one another ?
+Do certain parts of the business rely on central agents that are acting as intermediaries ?
+Is there absence of trust , and a transaction , or business process ? Are there assets that need provenance in tracking ?
+Finally , what part of the business can be automated , and put into a smart contract ?
+To use one business as an example , let 's discuss payments in the financial service industry .
+If you think about swiping your credit card from the moment that it 's swiped , to when the transaction is finally settled , there are multiple intermediaries , and steps that drive high transaction costs , and inefficiencies and processing it .
+This is why it can take up to three or more days from a transaction to go from pending to finalized .
+By implementing blockchain technology as payment rails , a financial services business can dramatically speed up transaction times as it removes many intermediaries .
+It can drive down the costs of transactions , and there are reduced operational costs and risks .
+Bitcoin versus Ethereum .
+So , in my opinion bitcoin was the opening act , the gateway drug , the MySpace of blockchain technologies , although we should give thanks and praise to Satoshi Nakamoto , the pseudonymous figure who created the Bitcoin protocol .
+With that said , I liken Bitcoin to a giant abacus where I can essentially send a bead on an abacus peer to peer without a bank in the middle , and we can move those tokens or these abacus beads along this global distributed ledger .
+After about nine years of academic research on consensus algorithms , peer to peer networking , cryptographic tokens , and most importantly the virtual machine , Ethereum wanted to take that same peer-to-peer principle and essentially apply that to any type of software application .
+So , at its heart , Ethereum , Bitcoin both share the same properties of having a blockchain database , a peer-to-peer networking infrastructure and architecture , cryptographic tokens to incentivize the securitization of the networks , and a consensus algorithm .
+The core difference between Bitcoin and Ethereum lies in the virtual machine .
+There is a language which creates essentially a world computer rather than a world abacus for Bitcoin that is named solidity , which is a derivative of JavaScript , and we can now program applications .
+It 's important to note that both Bitcoin and Ethereum rely now on proof-of-work to form consensus , and Ethereum is going through four major upgrades for scalability .
+So , the first upgrade for Ethereum scalability is the establishment of what are called state channels .
+If i take everybody in this room to the bar , and I give the bartender a credit card , I would essentially open that state channel .
+If I bought everybody here Shirley Temple , and then everybody a hamburger , and then everybody a dessert , we would have batching of those transactions that could happen off-chain .
+Then , when I eventually close that tab , all of those batch transactions would be closed on-chain .
+This is a way to have thousands of microtransactions off-chain , and then have the opening and the closing of the channel on-chain .
+Next , is the evolution from proof-of-work to proof of stake where rather than having wasteful hardware mining , we will have deposits to form consensus on the state of the network .
+After that , we have sharding where essentially shards of the database have form consensus to agree on the state rather than every actor on the network .
+Lastly , we have a white paper that was written by Vital Puterin and Joseph Pune on a scalability solution called plasma , wherein we have Ethereum as the main settlement layer , and having child and grandchild block chains on top of that that could be vertical specific .
+With that being said , Ethereum is set out to be a platform by which we could create decentralized applications .
+So , in my opinion , there 's infinite ability for applications to be created versus within the Bitcoin community , for what I see , I see the majority of people are speculating on the price whereas within the Ethereum communities , I see thousands and hundreds of thousands of developers actually building software , where I think that we see in Bitcoin essentially the replacement and for gold being a store of value and an anti-inflationary hedge versus with Ethereum , we see the beginnings of what I believe will be the next generation of the Internet .
+So far you 've learned about how cancer is defined , the biology of cancer , how it spreads , and importantly how we find it .
+By the time you finish this lesson you 'll be able to list the most common types of cancer treatment .
+You will be able to describe chemotherapy , immunotherapy and clinical trials .
+And finally you will be able to list the types of treatments for the major cancers .
+As you listen pay special attention to the different treatments used if a cancer is localized and potentially curable . Or if the cancer has metastasized and the treatments are more palliative .
+In the previous video , you saw how you can get a neural network to output four numbers of bx , by , bh , and bw to specify the bounding box of an object you want a neural network to localize .
+In more general cases , you can have a neural network just output X and Y coordinates of important points and image , sometimes called landmarks , that you want the neural networks to recognize .
+Let me show you a few examples . Let 's say you 're building a face recognition application and for some reason , you want the algorithm to tell you where is the corner of someone 's eye .
+So that point has an X and Y coordinate , so you can just have a neural network have its final layer and have it just output two more numbers which I 'm going to call our lx and ly to just tell you the coordinates of that corner of the person 's eye .
+Now , what if you want it to tell you all four corners of the eye , really of both eyes .
+So , if we call the points , the first , second , third and fourth points going from left to right , then you could modify the neural network now to output l1x , l1y for the first point and l2x , l2y for the second point and so on , so that the neural network can output the estimated position of all those four points of the person 's face . But what if you do n't want just those four points ?
+What do you want to output this point , and this point and this point and this point along the eye ?
+Maybe I 'll put some key points along the mouth , so you can extract the mouth shape and tell if the person is smiling or frowning , maybe extract a few key points along the edges of the nose but you could define some number , for the sake of argument , let 's say 64 points or 64 landmarks on the face .
+Maybe even some points that help you define the edge of the face , defines the jaw line but by selecting a number of landmarks and generating a label training sets that contains all of these landmarks , you can then have the neural network to tell you where are all the key positions or the key landmarks on a face .
+So what you do is you have this image , a person 's face as input , have it go through a convnet and have a convnet , then have some set of features , maybe have it output 0 or 1 , like zero face changes or not and then have it also output l1x , l1y and so on down to l64x , l64y . And here I 'm using l to stand for a landmark .
+So this example would have 129 output units , one for is your face or not ? And then if you have 64 landmarks , that 's sixty-four times two , so 128 plus one output units and this can tell you if there 's a face as well as where all the key landmarks on the face .
+So , this is a basic building block for recognizing emotions from faces and if you played with the Snapchat and the other entertainment , also AR augmented reality filters like the Snapchat photos can draw a crown on the face and have other special effects . Being able to detect these landmarks on the face , there 's also a key building block for the computer graphics effects that warp the face or drawing various special effects like putting a crown or a hat on the person .
+Of course , in order to treat a network like this , you will need a label training set . We have a set of images as well as labels Y where people , where someone will have had to go through and laboriously annotate all of these landmarks .
+One last example , if you are interested in people pose detection , you could also define a few key positions like the midpoint of the chest , the left shoulder , left elbow , the wrist , and so on , and just have a neural network to annotate key positions in the person 's pose as well and by having a neural network output , all of those points I 'm annotating , you could also have the neural network output the pose of the person .
+And of course , to do that you also need to specify on these key landmarks like maybe l1x and l1y is the midpoint of the chest down to maybe l32x , l32y , if you use 32 coordinates to specify the pose of the person .
+So , this idea might seem quite simple of just adding a bunch of output units to output the X , Y coordinates of different landmarks you want to recognize .
+To be clear , the identity of landmark one must be consistent across different images like maybe landmark one is always this corner of the eye , landmark two is always this corner of the eye , landmark three , landmark four , and so on .
+So , the labels have to be consistent across different images .
+But if you can hire labelers or label yourself a big enough data set to do this , then a neural network can output all of these landmarks which is going to used to carry out other interesting effect such as with the pose of the person , maybe try to recognize someone 's emotion from a picture , and so on .
+Next , let 's take these building blocks and use it to start building up towards object detection .
