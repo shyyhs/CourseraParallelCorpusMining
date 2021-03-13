@@ -49,7 +49,7 @@ Also it contain the source codes described in the paper:
 | Coursera dataset only  | 14.8   | 14.5    |
 | Combined with OOD datasets   | 29.5    | 29.1    | 
 
-Table 2: BLEU scores of using only Coursera dataset and combined with [ASPEC](http://orchid.kuee.kyoto-u.ac.jp/ASPEC/), [TED Talks](https://wit3.fbk.eu/mt.php?release=2017-01-ted-test) datasets with multistage fine-tuning techniques. Please refer our paper for details.
+Table 2: BLEU scores of using only Coursera dataset and combined with [ASPEC](http://orchid.kuee.kyoto-u.ac.jp/ASPEC/), [TED Talks](https://wit3.fbk.eu/mt.php?release=2017-01-ted-test) datasets for Japanese-English and news commentary, TED Talks for Chinese-English with multistage fine-tuning techniques. Please refer our paper for details.
 
 ## Reference
 Please cite our paper if you used our code or dataset:
