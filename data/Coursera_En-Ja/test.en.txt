@@ -6,83 +6,67 @@ When we are going out, it's important that we realize that the choices we make w
 For a week when I went to Starbucks, I stopped buying any specialty drink and I only drank Americanos.
 And in that week, I found I was consuming way less calories and I lost a few pounds.
 The difference once again, they, they, they, third person, verses me, me, me.
-The next time you're up late at night and you're watching an infomercial, like one of those fitness.
-Even though you know, chances are those results are not common, you're still convinced, you still get excited, you still want to try.
 So the first trap, speaking in third person.
-In this video, we're going to be talking about the lazy rule, and how we can use it to make your slides and your presentations go from boring to awesome.
-Why not make a slide that you can look at, I think I get it, but now you have to listen to me to know if you're right or not.
 Two words?
 If I make slides with all the information on it, no one is going to be listening to me, because they're thinking, "Oh, I'll get the slides later." But if I can make slides that use the lazy rule, people are going to be like, "Wait.
 What does that mean?
 What does that mean?
 And when you're finished, take a picture, do a reflection and send it to us.
 Reproducible research is another one of or more unique courses.
-So reproducible research is concerned with creating code and documents that will completely reproduce all of the analysis that you've done in a transparent way so that you can communicate that to other people.
 It's one of the most fundamental components of being a data scientist.
 But it's often glossed over as a sort of a side component of many other programs of data science.
 We're going to talk about some of the components of reproducible research in terms of programming which include Markdown, LaTex, R Markdown.
-So for example, we're going to talk about the steps in a data analysis or in a data science problem.
 And so, you have to go all the way from defining the questions to creating sort of reproducible code that you can share with other people.
 And so, some of these steps are covered by different parts of the class, and so reproducible research synthesizes where those parts go together.
 We'll also talk about which files are components of a data analysis.
 Everything from the sort of a raw data to the exploratory figures to sort the final analysis that you'll be performing.
-So, a question that often comes up when you talk about data science is, what about big data?
 So big data is obviously different to different people.
 So, big data for somebody without a computer might be 1,000 numbers, but data for, big data for somebody with access to Amazon EC2 might be enormous, much, much, much larger.
 So, how much data is there?
 So, this is an info graphic that says that there in 2001 there will be 1.8 zetabytes that were created, which is a gigantic amount of data.
 But realistically, only a tiny fraction of that data can be used to answer any specific question that you might have in your mind.
-So the question that keeps coming up is what about big data?
 So, it really depends on your perspective.
 so, created by IBM and so it's it was able to contain much less data than you could even store right now on your computer or even on your cell phone.
 And so what this suggests is that over time as technology increases, big data will change.
 So, one way to solve the big data problem is to just sort of wait until the hardware catches up with the size of the data.
 But most questions that you're trying to answer don't necessarily have the big data component that necessitates the need of huge numbers of computers, although sometimes it does.
 So why is big data such a big deal now?
-So, there was an experiment run by Stanley Milgram where he took 296 individuals and he, what he tried to do was basically send them a letter and ask them to send a letter from someone they knew and so forth until they went a specific address.
-And so, 64 of these such chains came back, so 64 out of 296.
 And from that they found out that there were about 5.2 people in between the person that originally got the letter and the person that finally received the letter.
 And so what ended up happening is, is that people nowadays can collect much more data than they could before and much more cheaply.
 So the, these investigators took an instant messaging network and they looked at 30 billion conversations between 240 million people.
 And then they performed a similar sort of experiment to try to identify how far apart people were, and they looked at the sort of to analyze the same question that was looked at with just 64 email chains before.
 And they found that the average path length was actually 6.6, so they sort of upgraded the six points, the six degrees of separation to seven degrees of separation.
-The take home message is that it's now possible to collect much more data much more cheaply than it was before and to analyze it.
 But the question is, is how much of that data is useful for answering the question that you're sort of involved, you're involved in.
+So Hadoop is another of these buzzwords you frequently hear around big data, and it is an incredibly powerful and useful technique, if your data is very, very large.
 Big or small data that you need, regardless of the size of the data, you need the right data.
 So, the data might not contain the answer.
 The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.
 This was a quote by John Toupee, one of the first data scientists.
 So, even if you have gigantic data, it might not be big enough to be able to answer your question if it's not the right data.
 Reproducible research is another one of or more unique courses.
-So reproducible research is concerned with creating code and documents that will completely reproduce all of the analysis that you've done in a transparent way so that you can communicate that to other people.
 It's one of the most fundamental components of being a data scientist.
 But it's often glossed over as a sort of a side component of many other programs of data science.
 We're going to talk about some of the components of reproducible research in terms of programming which include Markdown, LaTex, R Markdown.
-So for example, we're going to talk about the steps in a data analysis or in a data science problem.
 And so, you have to go all the way from defining the questions to creating sort of reproducible code that you can share with other people.
 And so, some of these steps are covered by different parts of the class, and so reproducible research synthesizes where those parts go together.
 We'll also talk about which files are components of a data analysis.
 Everything from the sort of a raw data to the exploratory figures to sort the final analysis that you'll be performing.
-So, a question that often comes up when you talk about data science is, what about big data?
 So big data is obviously different to different people.
 So, big data for somebody without a computer might be 1,000 numbers, but data for, big data for somebody with access to Amazon EC2 might be enormous, much, much, much larger.
 So, how much data is there?
 So, this is an info graphic that says that there in 2001 there will be 1.8 zetabytes that were created, which is a gigantic amount of data.
 But realistically, only a tiny fraction of that data can be used to answer any specific question that you might have in your mind.
-So the question that keeps coming up is what about big data?
 So, it really depends on your perspective.
 so, created by IBM and so it's it was able to contain much less data than you could even store right now on your computer or even on your cell phone.
 And so what this suggests is that over time as technology increases, big data will change.
 So, one way to solve the big data problem is to just sort of wait until the hardware catches up with the size of the data.
 But most questions that you're trying to answer don't necessarily have the big data component that necessitates the need of huge numbers of computers, although sometimes it does.
 So why is big data such a big deal now?
-So, there was an experiment run by Stanley Milgram where he took 296 individuals and he, what he tried to do was basically send them a letter and ask them to send a letter from someone they knew and so forth until they went a specific address.
 And from that they found out that there were about 5.2 people in between the person that originally got the letter and the person that finally received the letter.
 And so what ended up happening is, is that people nowadays can collect much more data than they could before and much more cheaply.
 So the, these investigators took an instant messaging network and they looked at 30 billion conversations between 240 million people.
 And then they performed a similar sort of experiment to try to identify how far apart people were, and they looked at the sort of to analyze the same question that was looked at with just 64 email chains before.
 And they found that the average path length was actually 6.6, so they sort of upgraded the six points, the six degrees of separation to seven degrees of separation.
-The take home message is that it's now possible to collect much more data much more cheaply than it was before and to analyze it.
 But the question is, is how much of that data is useful for answering the question that you're sort of involved, you're involved in.
 So Hadoop is another of these buzzwords you frequently hear around big data, and it is an incredibly powerful and useful technique, if your data is very, very large.
 Big or small data that you need, regardless of the size of the data, you need the right data.
@@ -95,31 +79,22 @@ This week, you spent a lot of time learning about the different types of data th
 You heard a few of our PWC professionals talk about these different types of data, how they're used, and how technology is impacting data analytics.
 Throughout my career, the data that's been available to use to solve problems has changed significantly.
 When I began my career, data gathering was manual, pen to paper.
-Today, with the digital capabilities around us and the amount of data being captured, our enhanced abilities to analyze data and draw conclusions from it allow us to provide our clients with real time insights that impact their business decisions faster than ever before and on a more informed basis.
 For anyone considering a career in business today, the ability to frame and solve problems using data analytics is really an essential skill.
-The bottom note tells you which note gets one beat.
 One, two, three, four.
 One, two, three, four.
 One, two, three, four.
-4/4 time.
 One, two, three.
-One, two, three.
-The bottom note tells you which note gets one beat.
 One, two, three, four.
 One, two, three, four.
 One, two, three, four.
-4/4 time.
-One, two, three.
 One, two, three.
 In this module we're going to be looking at some additional nodes available within the pallet.
 For an IoT solution, the value comes from not being able to send data from a device to the cloud, but in what you do with that data.
 So we going to look at some of the nodes that can be useful in helping you implement the back-end solution.
 One of the most common things you may need to do when you create your IoT solution is augment your sensor data with data from other sources.
-Or it maybe some information from another system where you have additional information that puts the sensor data into context.
 Or it maybe from some analytics engine where you want to compare the current data with a previously created model.
 Whatever the source, you need to be able to access that data.
 The first set of nodes we're going to look at are the input nodes.
-We've already seen the inject node is very useful when creating, testing and debugging a flow.
 One that we saw in the very first module, when we used the sample application, was data coming in from a simulated device.
 So that data will come in using the IoT node shown here.
 In the next lesson, we'll be looking into this node in a lot more detail.
@@ -128,28 +103,22 @@ We're going to start by looking at the http node.
 This node allows you to create a web server within Node-RED.
 This can serve web pages, but it can also serve a REST API.
 The http node in Node-RED allows you to set up a REST API.
-So if you drag that onto the sheet, and then open up the properties, it's very simple.
-You can see it asks you what actv verb you want to respond to, and also what the URL is for this endpoint.
 Completing those two bits of information is all you need to do.
 The http input node, however, does not send any data back to the requester.
 There's a companion node in the output section which is the response.
 And that is what actually sends the response back to the requester.
 So it's important that the http input and output nodes are used as a pair.
-If I put a function node in between them, I can very quickly create a simple web page where the function node is just going to return some text in the payload.
 And here you can see I have the page running.
 The important thing to remember is that the input node adds some information to the message object that flows along your flow.
-It's important that data arrives at the response node because it's that data that joins the request and the response.
 If I go and edit the function node, and change the way that I return the text, like this, so I'm no longer passing on the request object to the response object, you'll see when I now try and load the page that I don't get any response back.
 And in the debug tab, I get an error saying that the response could not find the request.
 So it's important when you use the http nodes that you allow the messages to flow from the request to the response.
 MQTT is a pub-sub system.
 In pop sub communication, there is a broker in the middle on the sender, publishes data to the broker against a topic.
-Where the sender is not really aware of who is going to consume the data.
 The advantages of the coupling, the sender and receiver means that a message can be sent to multiple recipients without the sender needing to know who those recipients are.
 So, as I mentioned, when you publish or send data to the broker, you're just going to send the data against the topic.
 And then anybody interested in receiving that data, subscribe to the topic.
 And then, when data is published against that topic, you're going to receive a copy of the message.
-And that is the core of messaging within the IBM Internet of Things platform.
 And for the Internet of Thing platform, the broker is your organization.
 So when you create an organization, in effect you are creating a broker for your organization.
 And whenever you publish data you're sending the message to your organization broker.
@@ -160,10 +129,8 @@ And the IBM Internet of Things platform specifies how that topic space is organi
 So you have to use a specified format for your topic space.
 On the documentation, shows you how to organize that topic space.
 The data you send can be in any data format, typically it's in a JSON object format.
-And for events data, there is a recommended format to put the JSON data in and that's the format that the QuickStart service uses.
 And as we saw in the previous module, you can register your own message handlers.
 The MQTT protocol is a lower level protocol than the Internet of Things, Platform API.
-But if you have a specific device or a specific programming language that you want to use.
 We're not going to cover the exact programming model, but I will show you some of the clients available.
 So one of the most common ones is the Eclipse Paho project.
 And that has an implementation of an MQTT client and again it's in a number of languages.
@@ -190,18 +157,12 @@ If you want more details about JSON, please take a look at this website.
 Now, let's go back to our example application.
 As you remember that application made a request to a web service for some data about earthquakes.
 Well, the response that came back was actually formatted in JSON.
-So here's that data.
-First, the data comprises a single JSON object, and that object is a map, and that map has one key value pair.
 The key is called earthquakes, and the value is an ordered list.
-Has several objects inside it, and each of those objects is itself a map.
 And each of those maps again contains key value pairs.
-There's a key called eqid and it's value is an earthquake id.
 There's also a key called lng.
 And it's value is the longitude at which the earthquake was centered.
 And there are a bunch of other keys as well, and together all of these values provide the data for one earthquake.
-Let's take a look at an example application that gets this data from the internet, and then processes it to create a more human readable display.
 And now I'll launch the networking Android http client JSON application.
-As before, this application initially displays a single button labeled load data, and as before, when I press that button the application will issue an HTTP get request to an external server and that server will respond with some complex text containing the requested earthquake data.
 This time however, the data will be summarized and presented in a list view.
 Okay, so now I'll press the Load Data button and there you can see the requested data summarized and presented in a list view.
 Let's look at the source code to see how this works.
@@ -226,7 +187,6 @@ When XML is used to encode an HTTP response.
 Now, if you want more details about XML, please take a look at this website.
 Now, let's go back to our example application.
 Then that web service will return the earthquake data in XML format rather than in JSON format.
-So here's that data.
 Nested inside that element is a series of earthquake elements, and each of the earthquake elements contains other elements that provide the data for one earthquake.
 So comparable to what we saw with the JSON format there's an element called eqid and it's value is an earthquake id.
 So, if our application gets XML data from the internet, it will need to parse the XML document so it can create the list you display that we saw earlier.
@@ -238,12 +198,9 @@ A tree, and then the application does it's processing on this tree structure.
 Now this kind of parser requires more memory, but does allow the application to do things like multipass processing of the document.
 SAX parsers.
 These parsers read the XML document as a stream.
-And as they encounter various document entities, they call back into the application.
-Which can then process the document's information.
 But they're limited to doing their processing in a single pass of the document.
 Pull parsers, like sax parsers, read the document as a stream but pull parsers use an iterator based approach where the application rather than the parser decides when to move the parsing process along.
 Now the example application looks exactly the same as the one we showed for parsing json responses.
-Instead, let's look at this application's source code.
 Now, here I've opened the application in the IDE, and now I'll open up the file that does the downloading and displaying.
 And, again, I'm going to skip right to the HTTPGetTask class.
 The doInBackground method is similar to what we've seen before.
@@ -291,9 +248,7 @@ As we'll see, gamification is by no means limited to these kinds of contexts tha
 But it's a good example as a starting point of what we're talking about.
 So in the next series of lectures, I'll start to unpack what exactly gamification means which will then allow us to start to understand how to do it effectively, and what are some of the challenges in applying these techniques.
 And if you're curious about what the things are on the bookcases behind me, well, you'll just have to watch the rest of the videos to find out.
-And I think that one of the biggest global health care issue at the moment is the increase in mobility of patients to consume health care abroad.
 I think that the biggest global health challenge that we have is to take health not as a service but as a right.
-The major challenge to global health are poverty and corruption.
 My name is Christina and I'm from the United States.
 I think the biggest challenge to global health is unequal access to health care.
 That greatest amount of challenge we face in this part of the world is maternal and child mortality.
@@ -302,14 +257,12 @@ I think the biggest problem in public health issues in the world the, is migrati
 I reckon he greatest challenge to global health will be obesity.
 >> I am for global health and i think the largest single challenge for global health will be climate change.
 In my humble opinion the biggest, or rather one of the biggest problems that we have today in the world is mental health problems.
-Let me begin by introducing myself a little more formally than I did in the course intro video.
 I'm also a professor of marketing at the McCombs School of Business at the University of Texas at Austin and I have been there for over 15 years.
 Now that I've given you some background information about myself, let me turn to a question that you may be wondering about.
 How come a business school professor is teaching a course on happiness, of all things?
 Isn't business the opposite of happiness?
 For the first seven years after I joined UT Austin, I was teaching a very standard business school course, Consumer Behavior.
 I really loved teaching that course and I was very happy doing it.
-I took a bunch of MBAs from McCombs to India as part of a course called Global Connections.
 The objective of this course was to expose the American MBA students to a totally different country and culture.
 So I got to meet some of my old batchmates from both schools.
 That's when I noticed two very interesting things.
@@ -321,20 +274,16 @@ He was CEO of a big multinational company.
 I noticed that he had put on a lot of weight.
 He had dark circles under his eyes and bags under his eyes.
 He was very successful, but it was also very clear that he wasn't happy.
-And then there was this other guy, who had practically dropped out of the rat race.
 And yet he seemed far happier to me.
 This got me wondering about what the purpose of education is.
 If at the end of the day we aren't giving our students the knowledge to lead happy, fulfilling, meaningful lives, what's the purpose of that education?
 I felt that we weren't doing such a good job of achieving this goal.
 So that evening in Mumbai, I turned around to my MBA students from UT Austin.
 I remember this as if it happened just yesterday.
-The students said that they'd be absolutely delighted to take such a class.
 In fact, they all seemed to lament that they did not have the opportunity to take such a class.
 So after the trip to India got over, when I went back to Austin, I put together a syllabus.
-The main objective of the course was to be very simple, to give the students the opportunity to discuss this life's important question.
 For as long as I can remember, I've always been interested in happiness.
 Even as a teenager, I would read all kinds of books on philosophy and psychology, on what it takes to be happy.
-So I was personally very interested in teaching a class on happiness, but what I wasn't sure of is whether the business school would approve such a course.
 Like I mentioned sometime back, people don't normally associate MBA's and business schools with the pursuit of happiness.
 However, what's really great about a business school too, is that we believe in a free market economy.
 So, I went up to my dean and I asked him if I could be allowed to offer a course on happiness.
@@ -352,7 +301,6 @@ Happy smarts is the ability to consistently make happiness enhancing decisions.
 If you want to learn more about happy smarts, and how it's different from academic or career smarts I'd like to invite you to visit my website.
 It's www.happysmarts.com.
 With that, I'd like to extend, once again, a very warm welcome to a life of happiness and fulfillment.
-Thank you so much for taking the course, and I look forward to getting to know you better in the coming six weeks.
 Why does a dropped ball fall downward?
 The short answer to that question is that it's pulled downward by its weight and it accelerates downward in response to that force.
 This ball's gravitational force, due to the earth, is known as its weight.
@@ -384,16 +332,13 @@ For me one of the reasons I'm excited is the AI dream of someday building machin
 We're a long way away from that goal, but many AI researchers believe that the best way to towards that goal is through learning algorithms that try to mimic how the human brain learns.
 I'll tell you a little bit about that too in this class.
 In this class you learn about state-of-the-art machine learning algorithms.
-But it turns out just knowing the algorithms and knowing the math isn't that much good if you don't also know how to actually get this stuff to work on problems that you care about.
 So, we've also spent a lot of time developing exercises for you to implement each of these algorithms and see how they work fot yourself.
 So why is machine learning so prevalent today?
-But for the most part we just did not know how to write AI programs to do the more interesting things such as web search or photo tagging or email anti-spam.
 There was a realization that the only way to do these things was to have a machine learn to do it by itself.
 So, machine learning was developed as a new capability for computers and today it touches many segments of industry and basic science.
 For me, I work on machine learning and in a typical week I might end up talking to helicopter pilots, biologists, a bunch of computer systems people (so my colleagues here at Stanford) and averaging two or three times a week I get email from people in industry from Silicon Valley contacting me who have an interest in applying learning algorithms to their own problems.
 This is a sign of the range of problems that machine learning touches.
 There is autonomous robotics, computational biology, tons of things in Silicon Valley that machine learning is having an impact on.
-One of the reasons machine learning has so pervaded is the growth of the web and the growth of automation All this means that we have much larger data sets than ever before.
 Computational biology.
 So for example, I've worked on autonomous helicopters for many years.
 We just did not know how to write a computer program to make this helicopter fly by itself.
@@ -403,13 +348,11 @@ And in fact if you've seen the fields of natural language processing or computer
 Most of natural language processing and most of computer vision today is applied machine learning.
 Learning algorithms are also widely used for self- customizing programs.
 Every time you go to Amazon or Netflix or iTunes Genius, and it recommends the movies or products and music to you, that's a learning algorithm.
-If you think about it they have million users; there is no way to write a million different programs for your million users.
 The only way to have software give these customized recommendations is to become learn by itself to customize itself to your preferences.
 Finally learning algorithms are being used today to understand human learning and to understand the brain.
 We'll talk about how researches are using this to make progress towards the big AI dream.
 A few months ago, a student showed me an article on the top twelve IT skills.
 It was a slightly older article, but at the top of this list of the twelve most desirable IT skills was machine learning.
-Here at Stanford, the number of recruiters that contact me asking if I know any graduating machine learning students is far larger than the machine learning students we graduate each year.
 In the next video, we'll start to give a more formal definition of what is machine learning.
 And we'll begin to talk about the main types of machine learning problems and algorithms.
 You'll pick up some of the main machine learning terminology, and start to get a sense of what are the different algorithms, and when each one might be appropriate.
@@ -421,18 +364,13 @@ Here's a definition of what is machine learning as due to Arthur Samuel.
 He defined machine learning as the field of study that gives computers the ability to learn without being explicitly learned.
 And eventually learn to play checkers better than the Arthur Samuel himself was able to.
 This was a remarkable result.
-By doing this, a computer was able to get so much checkers playing experience that it eventually became a better checkers player than Arthur himself.
-Here's a slightly more recent definition by Tom Mitchell who's a friend of Carnegie Melon.
 He says, a computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
 I actually think he came out with this definition just to make it rhyme.
 For the checkers playing examples, the experience E would be the experience of having the program play tens of thousands of games itself.
-The task T would be the task of playing checkers, and the performance measure P will be the probability that wins the next game of checkers against some new opponent.
-Throughout these videos, besides me trying to teach you stuff, I'll occasionally ask you a question to make sure you understand the content.
 On top is a definition of machine learning by Tom Mitchell.
 So in an email client like this, you might click the Spam button to report some email as spam but not other emails.
 And based on which emails you mark as spam, say your email program learns better how to filter spam email.
 What is the task T in this setting?
-In a few seconds, the video will pause and when it does so, you can use your mouse to select one of these four radio buttons to let me know which of these four you think is the right answer to this question.
 In fact, this definition defines a task T performance measure P and some experience E.
 And so, watching you label emails as spam or not spam, this would be the experience E and and the fraction of emails correctly classified, that might be a performance measure P.
 In this class, I hope to teach you about various different types of learning algorithms.
@@ -442,14 +380,8 @@ It turns out that in supervised learning, the idea is we're going to teach the c
 Whereas in unsupervised learning, we're going to let it learn by itself.
 Don't worry if these two terms don't make sense yet.
 In the next two videos, I'm going to say exactly what these two types of learning are.
-These are other types of machine learning algorithms that we'll talk about later.
 It turns out what are the other things to spend a lot of time on in this class is practical advice for applying learning algorithms.
-And exactly something that I don't know if any other university teachers.
-And equally important or more important than giving you the tools as they teach you how to apply these tools.
 I like to make an analogy to learning to become a carpenter.
-Imagine that someone is teaching you how to be a carpenter, and they say, here's a hammer, here's a screwdriver, here's a saw, good luck.
-You have all these tools but the more important thing is to learn how to use these tools properly.
-There's a huge difference between people that know how to use these machine learning algorithms, versus people that don't know how to use these tools well.
 Here, in Silicon Valley where I live, when I go visit different companies even at the top Silicon Valley companies, very often I see people trying to apply machine learning algorithms to some problem and sometimes they have been going at for six months.
 But sometimes when I look at what their doing, I say, I could have told them like, gee, I could have told you six months ago that you should be taking a learning algorithm and applying it in like the slightly modified way and your chance of success will have been much higher.
 So I'm actually going to spend a lot of time teaching you those sorts of best practices in machine learning and AI and how to get the stuff to work and how the best people do it in Silicon Valley and around the world.
@@ -459,24 +391,17 @@ In the next video, I'm going to define what is supervised learning and after tha
 And also time to talk about when you would use each of them.
 In the last video, we gave a mathematical definition of how to represent or how to compute the hypotheses used by Neural Network.
 In this video, I like show you how to actually carry out that computation efficiently, and that is show you a vector rise implementation.
-Previously we said that the sequence of steps that we need in order to compute the output of a hypotheses is these equations given on the left where we compute the activation values of the three hidden uses and then we use those to compute the final output of our hypotheses h of x.
-So that we have that a(2)1, which is this term is equal to g of z to 1.
 And by the way, these superscript 2, you know, what that means is that the z2 and this a2 as well, the superscript 2 in parentheses means that these are values associated with layer 2, that is with the hidden layer in the neural network.
 So that similarly we have a(2)3 equals g of z(2)3.
 So these z values are just a linear combination, a weighted linear combination, of the input values x0, x1, x2, x3 that go into a particular neuron.
 Using this observation we're going to be able to vectorize this computation of the neural network.
-We can now vectorize the computation of a(2)1, a(2)2, a(2)3 as follows.
 We can compute z2 as theta 1 times x and that would give us this vector z2; and then a2 is g of z2 and just to be clear z2 here, This is a three-dimensional vector and a2 is also a three-dimensional vector and thus this activation g.
 This applies the sigmoid function element-wise to each of the z2's elements.
-And by the way, to make our notation a little more consistent with what we'll do later, in this input layer we have the inputs x, but we can also thing it is as in activations of the first layers.
-So, the a1 is vector, I can now take this x here and replace this with z2 equals theta1 times a1 just by defining a1 to be activations in my input layer.
 Now, with what I've written so far I've now gotten myself the values for a1, a2, a3, and really I should put the superscripts there as well.
 But I need one more value, which is I also want this a(0)2 and that corresponds to a bias unit in the hidden layer that goes to the output there.
 And finally, to compute the actual value output of our hypotheses, we then simply need to compute z3.
 This inner term there is z3.
-And z3 is stated 2 times a2 and finally my hypotheses output h of x which is a3 that is the activation of my one and only unit in the output layer.
 You can write it as a3 or as a(3)1 and that's g of z3.
-So, if you implement it using these equations that we have on the right, these would give you an efficient way or both of the efficient way of computing h of x.
 This forward propagation view also helps us to understand what Neural Networks might be doing and why they might help us to learn interesting nonlinear hypotheses.
 Consider the following neural network and let's say I cover up the left path of this picture for now.
 This looks a lot like logistic regression where what we're doing is we're using that note, that's just the logistic regression unit and we're using that to make a prediction h of x.
@@ -491,16 +416,13 @@ So it's as if the neural network, instead of being constrained to feed the featu
 So, in case what I'm saying here doesn't quite make sense, stick with me for the next two videos and hopefully out there working through those examples this explanation will make a little bit more sense.
 You can have neural networks with other types of diagrams as well, and the way that neural networks are connected, that's called the architecture.
 So the term architecture refers to how the different neurons are connected to each other.
-This is an example of a different neural network architecture and once again you may be able to get this intuition of how the second layer, here we have three heading units that are computing some complex function maybe of the input layer, and then the third layer can take the second layer's features and compute even more complex features in layer three so that by the time you get to the output layer, layer four, you can have even more complex features of what you are able to compute in layer three and so get very interesting nonlinear hypotheses.
 So anything that's not an input layer or an output layer is called a hidden layer.
 And you also saw how we can vectorize that computation.
 In the next, I realized that some of the intuitions in this video of how, you know, other certain layers are computing complex features of the early layers.
 In the last video, we talked about precision and recall as an evaluation metric for classification problems with skewed constants.
 For many applications, we'll want to somehow control the trade-off between precision and recall.
-Let me tell you how to do that and also show you some even more effective ways to use precision and recall as an evaluation metric for learning algorithms.
 As a reminder, here are the definitions of precision and recall from the previous video.
 And let's say we're trained in logistic regression classifier which outputs probability between 0 and 1.
-So, as usual, we're going to predict 1, y equals 1, if h(x) is greater or equal to 0.5.
 And this classifier may give us some value for precision and some value for recall.
 But now, suppose we want to predict that the patient has cancer only if we're very confident that they really do.
 And so maybe we want to tell someone that we think they have cancer only if they are very confident.
@@ -510,19 +432,13 @@ And, if you do this, then you're predicting someone has cancer only when you're 
 Because all of the patients that you're going to and saying, we think you have cancer, although those patients are now ones that you're pretty confident actually have cancer.
 And so a higher fraction of the patients that you predict have cancer will actually turn out to have cancer because making those predictions only if we're pretty confident.
 But in contrast this classifier will have lower recall because now we're going to make predictions, we're going to predict y = 1 on a smaller number of patients.
-Now we'll predict y=1 only if we are more than 90% certain that the patient has cancer.
-And so this would be a higher precision classifier will have lower recall because we want to correctly detect that those patients have cancer.
 Now consider a different example.
 Suppose we want to avoid missing too many actual cases of cancer, so we want to avoid false negatives.
 In particular, if a patient actually has cancer, but we fail to tell them that they have cancer then that can be really bad.
 Because if we tell a patient that they don't have cancer, then they're not going to go for treatment.
-And if it turns out that they have cancer, but we fail to tell them they have cancer, well, they may not get treated at all.
 And so that would be a really bad outcome because they die because we told them that they don't have cancer.
 So, suppose that, when in doubt, we want to predict that y=1.
-So, when in doubt, we want to predict that they have cancer so that at least they look further into it, and these can get treated in case they do turn out to have cancer.
 In this case, rather than setting higher probability threshold, we might instead take this value and instead set it to a lower value.
-And by doing so, we're saying that, you know what, if we think there's more than a 30% chance that they have cancer we better be more conservative and tell them that they may have cancer so that they can seek treatment if necessary.
-And in this case what we would have is going to be a higher recall classifier, because we're going to be correctly flagging a higher fraction of all of the patients that actually do have cancer.
 Where a value up here, this would correspond to a very high value of the threshold, maybe threshold equals 0.99.
 So that's saying, predict y=1 only if we're more than 99% confident, at least 99% probability this one.
 So that would be a high precision, relatively low recall.
@@ -532,7 +448,6 @@ Sometimes it will look like this, sometimes it will look like that.
 Now there are many different possible shapes for the precision-recall curve, depending on the details of the classifier.
 So, this raises another interesting question which is, is there a way to choose this threshold automatically?
 Or more generally, if we have a few different algorithms or a few different ideas for algorithms, how do we compare different precision recall numbers?
-So actually, maybe these are three different learning algorithms, maybe these are the same algorithm but just with different values for the threshold.
 How do we decide which of these algorithms is best?
 One of the things we talked about earlier is the importance of a single real number evaluation metric.
 And that is the idea of having a number that just tells you how well is your classifier doing.
@@ -540,27 +455,18 @@ But by switching to the precision recall metric we've actually lost that.
 We now have two real numbers.
 So how can we get a single real number evaluation metric?
 One natural thing that you might try is to look at the average precision and recall.
-So, using P and R to denote precision and recall, what you could do is just compute the average and look at what classifier has the highest average value.
 Then you can actually end up with a very high precision with a very low recall.
 So, the two extremes of either a very high threshold or a very low threshold, neither of that will give a particularly good classifier.
 And the way we recognize that is by seeing that we end up with a very low precision or a very low recall.
-You predict y=1 all the time, just normal useful classifier, but all it does is prints out y=1.
 But in this example, Algorithm 3 has a higher average value of precision recall than Algorithms 1 and 2.
 So we usually think of this average of precision and recall as not a particularly good way to evaluate our learning algorithm.
 In contrast, there's a different way for combining precision and recall.
 This is called the F Score and it uses that formula.
 And so in this example, here are the F Scores.
-And so we would tell from these F Scores, it looks like Algorithm 1 has the highest F Score, Algorithm 2 has the second highest, and Algorithm 3 has the lowest.
-And so, if we go by the F Score we would pick probably Algorithm 1 over the others.
-Is a little bit like taking the average of precision and recall, but it gives the lower value of precision and recall, whichever it is, it gives it a higher weight.
 And so, you see in the numerator here that the F Score takes a product of precision and recall.
 And so if either precision is 0 or recall is equal to 0, the F Score will be equal to 0.
-So in that sense, it kind of combines precision and recall, but for the F Score to be large, both precision and recall have to be pretty large.
 I should say that there are many different possible formulas for combing precision and recall.
-This F Score formula is really maybe a, just one out of a much larger number of possibilities, but historically or traditionally this is what people in Machine Learning seem to use.
-And the term F Score, it doesn't really mean anything, so don't worry about why it's called F Score or F1 Score.
 And concretely, if P=0 or R=0, then this gives you that the F Score = 0.
-Whereas a perfect F Score, so if precision equals one and recall equals 1, that will give you an F Score, that's equal to 1 times 1 over 2 times 2, so the F Score will be equal to 1, if you have perfect precision and perfect recall.
 And intermediate values between 0 and 1, this usually gives a reasonable rank ordering of different classifiers.
 So in this video, we talked about the notion of trading off between precision and recall, and how we can vary the threshold that we use to decide whether to predict y=1 or y=0.
 So it's the threshold that says, do we need to be at least 70% confident or 90% confident, or whatever before we predict y=1.
@@ -568,7 +474,6 @@ And by varying the threshold, you can control a trade off between precision and 
 We also talked about the F Score, which takes precision and recall, and again, gives you a single real number evaluation metric.
 And that be a pretty reasonable way to automatically choose the threshold for your classifier as well.
 Welcome to the final video of this Machine Learning class.
-In this video I would like to just quickly summarize the main topics of this course and then say a few words at the end and that will wrap up the class.
 So what have we done?
 We also spent some time talking about special applications or special topics like Recommender Systems and large scale machine learning systems including parallelized and rapid-use systems as well as some special applications like sliding windows object classification for computer vision.
 And finally we also spent a lot of time talking about different aspects of, sort of, advice on building a machine learning system.
@@ -578,7 +483,6 @@ So we talked about evaluation of learning algorithms, evaluation metrics like pr
 And we also spent a lot of time talking about debugging learning algorithms and making sure the learning algorithm is working.
 And so all of these were different tools for helping you to decide what to do next and how to spend your valuable time when you're developing a machine learning system.
 And in addition to having the tools of machine learning at your disposal so knowing the tools of machine learning like supervised learning and unsupervised learning and so on, I hope that you now not only have the tools, but that you know how to apply these tools really well to build powerful machine learning systems.
-Those were the topics of this class and if you worked all the way through this course you should now consider yourself an expert in machine learning.
 As you know, machine learning is a technology that's having huge impact on science, technology and industry.
 And you're now well qualified to use these tools of machine learning to great effect.
 I hope that many of you in this class will find ways to use machine learning to build cool systems and cool applications and cool products.
@@ -586,10 +490,8 @@ And I hope that you find ways to use machine learning not only to make life bett
 I also wanted to let you know that this class has been great fun for me to teach.
 So, thank you for that.
 And before wrapping up, there's just one last thing I wanted to say.
-And even today, you know, I still try to take different courses when I have time to try to learn new things.
 And so I know how time-consuming it is to learn this stuff.
 I know that you're probably a busy person with many, many other things going on in your life.
-And so the fact that you still found the time or took the time to watch these videos and, you know, many of these videos just went on for hours, right?
 And I know that many of you have worked hard on this class and that many of you have put a lot of time into this class, that many of you have put a lot of yourselves into this class.
 So I hope that you also got a lot of out this class.
 And I wanted to say: Thank you very much for having been a student in this class.
@@ -603,7 +505,6 @@ There's all kinds of knowledge that we've accumulated over the years about what 
 But ultimately the song writer has to inject this creative spark that puts it all together and makes a piece of music that people actually want to listen to.
 Okay, so that's the art of song writing.
 In 1974, Donald Knuth, a computer scientist at Stanford, wrote an essay where he talked about the difference between an art and a science.
-And the bottom line is that he said a science is something we understand so well, that we can teach it to a computer.
 Okay.
 Okay, when you analyze data, we have a lot of tools at our disposal.
 We have statistical methods, we have machine learning methods, we have all kinds of software packages that we can apply.
@@ -651,7 +552,6 @@ So once you've set your expectations, you can figure out how much money to bring
 The actual collecting of the data involves going to the restaurant and getting the check.
 So once you've gotten the check, you observed the reality of what the meal costs.
 And there's two possibilities.
-So suppose you thought it was gonna be $30, and it ended up being $30, then that's great.
 You know exactly, you brought the right amount of money, and then you can pay for the meal.
 The other possibility is that the expectations don't match of what the reality is.
 So thought it was $30 and it ended up being $40.
@@ -684,7 +584,6 @@ So setting the right expectations and making them as sharp as possible is a real
 So the data analysis process for the most part involves five different steps, and these steps are basically stating and refining your question, and exploring the data, and more importantly, determining if the data that you have is appropriate for answering the question that you asked in the first part.
 The third step is building statistical models to summarize your data and to quantify the relationships.
 The fourth step is interpreting the results, and the fifth step is communicating those results to the appropriate audience.
-And each one of these five steps you can imagine there's a little cycle that you can engage in which involves setting expectations, collecting information, and matching those expectations to the data that you collect.
 And then revising your expectations based on what you've seen.
 So what we're gonna talk about in future lectures is how this little cycle, this three step cycle, applies to each one of the five stages of data analysis.
 There are six types of questions you can ask in a data analysis, and in this lecture, we'll talk about each of them and what they mean for interpreting your results.
@@ -693,7 +592,6 @@ Now each one of these questions has very different characteristics and imply dif
 So we're gonna talk about the characteristics of each of these types of questions and how they can be used or misused in any data analysis.
 The first type of question you can ask is a descriptive question.
 Now, the fundamental feature of a descriptive question is that you're often looking to summarize a characteristic of a dataset, so often this involves taking the average or taking the proportion of some feature in your data.
-So for example, you might ask how many people have visited this website in the last 24 hours?
 Or, you know, what's the average level of air pollution in the city of Baltimore?
 So here, you're summarizing kind of the features of a dataset and you're focusing on the data that you have on hand.
 And you're not really worried about things that are outside of the dataset yet.
@@ -771,7 +669,6 @@ You might not have the money.
 They might require too many resources to try to answer a question.
 And so, there's a lot of questions that simply have to go unanswered.
 For example, in health research, there are a lot of questions that we have about how the body works and how does disease occur, but we simply cannot conduct the experiments that we might like to conduct because you might be putting people in danger, or it might be simply unethical to do such experiments.
-So think about your questions to see whether it's even possible to answer it given the kind of real-life situations that we are in.
 Now, the last feature of a good question is very important, and it's that a good question tends to be very specific.
 Now, specificity is useful because it often leads to simpler data collection and simpler kind of experiments and data analysis.
 And so the key word here is sharpness.
@@ -787,7 +684,6 @@ And by the intervention I mean an action that you can take given the answer to a
 So, if we collect the data on people who have five servings of fruits and vegetables per day, and we collect data on how many respiratory tract infections that they have.
 If the data suggests that this question is true, that more fruits and vegetables leads to fewer respiratory tract infections, then we already know how we might intervene in terms of modifying people's diets and improving their health.
 So a very specific question will tend to lead to a well defined intervention and that will give you, those kinds of results will allow you change behaviors, to change actions to actually make a difference in the world.
-Whereas a very vague or non-specific question will often leave you in the same place that you started out in and without knowing what kinds of changes to make or what kinds of behaviors to change.
 So just to summarize the five features of a good question are it has to be of interest to an audience.
 It has to not already been answered.
 It has to plausible so that you can kind of explain how things would work if the answer to the question met your expectation.
@@ -801,7 +697,6 @@ Cuz it could be that, maybe, you thought you had the right question.
 And you thought you had the right data set, but when looking around in the data set and exploring what's in there, you realize that maybe the question is better asked a different way.
 Or maybe you need to just slightly refine the question, make it more specific, or maybe focus on specific variables.
 So the goal of EDA is to get a chance to look at the data, see if you've got the right data, do you need to get more?
-And do you need to refine your question at all?
 In this lecture, we're gonna talk about whether you have the right data to answer your question.
 And then, another goal of exploratory data analysis, assuming you pass that first part, is to think about how can you develop a sketch of kinda what the answer to your question might be.
 So the idea, so one of the end products of exploratory data analysis is to really get a sense of whether the solution is out, whether the solution exists, and what it might look at.
@@ -816,8 +711,6 @@ Imagine you've got some box, and there's something inside you wanna get at.
 And you can't get at it yet, and so you kinda shake it around, maybe measure it.
 You know, see how big it is.
 Is it bigger than a bread box?
-And see what kind noises does it make when you shake it.
-So that's kind of what you're trying to do with your data set here.
 Your data set is the thing that's inside the box but you want to make sure, kind of see what's, everything's kind of the right shape and size.
 So some of the things that I like to check are, do you have the right number of rows and columns?
 If the way that you got this data said that you were expecting there to be 1,000 rows, then there should be 1,000 rows in the table for example.
@@ -832,7 +725,6 @@ And then if there's any other metadata that you might need, things like codebook
 So this could all be done without actually looking at any numbers yet.
 Now, the next thing I like to do is to check the edges of the data set.
 And so for example, if you're looking at a table, I like to check the top and the bottom.
-Okay, so just look at the first few rows and then maybe look at the last few rows.
 So the first few rows are helpful just to make sure you've got the right numbers there, the kind of things you were expecting to see.
 I find it's very useful to look at the last few rows just to make sure, for example, that the data set is read in properly, that you've got all of the data that you were expecting to get.
 Often in data files, there's some junk at the end, some comments maybe, just some notes that someone put in there, especially if they were exported from an Excel spreadsheet.
@@ -841,12 +733,10 @@ And you want to check to see is the data formatted correctly?
 Does it look like the right numbers are in the right columns and the right numbers are in the right rows?
 Sometimes those things can be shifted by one or two.
 So you wanna make sure you've got everything kinda correct there.
-If you've got data, for example with dates, often looking at the top and the bottom can be useful because if they're sorted by date, you can see if the range is correct.
 And so that's another thing that you might wanna check for.
 And so, just looking at the very edges of the data set can be very useful to flag a number of basic problems that can very often occur and are usually easy to fix.
 But once you kind of get into a data analysis, if you discover these things later, it can be a real pain in the neck to deal with.
 So the next item that I always try to think about when I'm looking at a new data set, I'm just getting involved in a data analysis is what I call ABC, always be checking your Ns, okay?
-So every aspect of your data set is gonna have some kind of count or number associated with it.
 For example, there's gonna be a total number of observations, or your sample size.
 Is that what you expect it to be?
 Are you expecting a certain number of columns?
@@ -854,7 +744,6 @@ There's going to be a number of columns, you should always check that end.
 But then also within the data set, there's going to be a certain numbers that you expect.
 For example, if you have a number of subjects, you wanna count the number of subjects or units in your analysis.
 If every subject was measured three times, you wanna make sure that every subjects got actually three measurements associated with it, right?
-So there's all kinds of just ends that you can check within your data set and kind of around your data set to make sure that everything is kind of in structured in place, okay?
 So, the next thing you wanna do is actually just look at your data.
 And to me, the easiest way to look at the data to determine if there are any problems is to make a plot.
 So making a plot is useful in two ways.
@@ -911,21 +800,17 @@ Okay, so this is the point where you ask yourself those three questions that we 
 Do you have the right data?
 Do you need to get other data, right?
 So do you need to collect more?
-Do you need to ask for more?
 And do you have the right question, or does it need to be refined a little bit?
 So once you're here, you may need to slightly revise a few things with your data and with your question.
 But once you've done that, if you wanna move on, then you can start using exploratory data analysis techniques to kinda refine your primary model, and then move on later into a more formal model.
 Statistical models can play many different roles in a data analysis.
 In this lecture I'll talk about how to use statistical models to explore your data.
 So exploratory data analysis can have two broad goals.
-The first is more basic where it's you determine whether you have the right data to answer your question.
 So in many ways this is like with film-making, you want to make a rough cut of your movie, right?
 So the idea is it's not gonna be the final product, but it's gonna give you a sense of how things flow and how things work.
-And if you're gonna make an argument to someone, you're gonna argue for doing this versus that and you wanna build evidence to make your case, this is gonna be a basic sketch of how that argument's gonna work out.
 Okay?
 So that's what we'll talk about in this lecture.
 And so this lecture is really about using statistical models to help you to summarize your data, and to eventually kind of make things to things like make inference, okay.
-So the first thing we need to talk about is what is a model, okay, and why do we need them, okay.
 So, models are generally speaking are just constructs that we build to help us understand the real world, okay.
 So for example, in biology often people will use mice as models for humans.
 So we can't do experiments on humans so we'll use, we sometimes people do experiments on mice to use, to kind of give us sense of what might happen in a human being.
@@ -936,7 +821,6 @@ But the models that we use are mathematical models in many cases.
 And we use them to help tell, to kind of help us describe the population that we're talking about.
 So if there's a population out there that we're trying to make inferences to, or to describe in some way, we use a model to kind of help us do that.
 Because often the population is too complex to think about all at once.
-So imagine if you're trying to make a statement about the entire United States, everyone in the United States, okay.
 All the things that might go on between all the 300 or so million people in the United States, it's impossible to think about.
 So we need a model to help us simplify that, to allow us to think about it in a kind of a reasonable way.
 The ideas of the models will stand in for the population.
@@ -949,8 +833,6 @@ Is that, all models are wrong, but some are useful.
 So, it's important not to get hung up on finding the right model.
 But rather to focus on developing a model that's actually useful to help you tell your story about the population.
 So it might be useful to start at this point, which I think it was to ask what's it like to have no model at all?
-So that way you get a sense of kind of how bad things can be or how difficult it might be if you didn't ever use a model.
-So just take this as a basic example.
 Suppose you're developing a new product, and you want to know how much people would be willing to pay for this new product.
 So something you might do is just put out a simple survey, you might survey 20 people, and that may be a representative of the the larger population of people that would be willing to buy this product.
 And ask them how much they would be willing to pay.
@@ -966,17 +848,14 @@ It's in here somewhere, because this is the data.
 It has to be in here somewhere.
 But the problem is, so this is, there's no model to help us think about the data.
 So this is what I would call the trivial model, meaning that there's no model.
-And the problem is the trivial model is not useful.
 Because it doesn't provide any summary or any data reduction.
 Okay?
 So put it this way, if all models are gonna be wrong, you might as well try to find something that's useful.
-Rather than have no model at all that's almost certainly not going to be useful.
 So just for the sake of example, let's use the normal model.
 So, the normal model is based on the normal distribution, and it's the familiar bell curve that we've seen many, many times.
 The nice thing about the normal model is that it only requires two parameters to estimate.
 And we can estimate that from the data by just calculating the mean and the standard deviation in the usual way.
 So the first question we want to ask is, what do we expect to see?
-If the population were truly coming from a normal distribution, what would that look like, okay?
 And it's always important to set expectations for models, so I know it's very tempting to get right into the data and see what they look like, but you gotta be able to set your expectations.
 Appropriately, so that you know whether you're right or wrong in the end, okay?
 So here's what we would expect the data to look like if they were drawn from, as representative samples from the population that was governed by a normal distribution.
@@ -993,11 +872,9 @@ Now we use the data to draw the picture, because we use the data to calculate th
 But there's no actual data in this picture.
 So just keep that in mind.
 Now, but eventually we'll look at the data.
-And we want to know how that data matches our expectation, which is what this picture is giving us.
 Now before we actually get to the data, one of the things I just want to do is to show you, what would data look like if it came from a normal distribution, okay?
 Now the nice thing about most software packages now is that we could just simulate the error from a normal distribution and see what it looks like.
 So here's what that picture looks like.
-I've made a histogram of 20 data points that come from exactly a normal distribution.
 You can see that the histogram and the blue curve match very nicely with each other.
 This is all very nice and ideal because it's simulated, okay?
 So this is what I call, drawing a fake picture, okay?
@@ -1029,7 +906,6 @@ For starters, the data may not even be representative of the population.
 This is just a website that was up there and anyone who just happened to come by could fill in their name and say what price they'd be willing to pay.
 Who knows who these people were, who knows if they were even prospective customers, people who would actually buy the product?
 So that the data collection process might have been very skewed.
-But on the other hand it could be that the model clearly just does not fit well and we may need to revise the model too.
 It may be easier in some circumstances to revise the model than to revise the data, especially at the data collection process.
 Is very expensive, okay?
 So one of the things we can do is let's try the gamma distribution.
@@ -1046,8 +922,6 @@ But it's not, it doesnt exactly fit it perfectly, and still you have a bunch of,
 And now, but the important thing is that we have a different model, and so a different model is gonna yield different predictions.
 So this model is telling us something completely different about the population than the normal model was, right?
 So the normal model told us there was gonna be a big hump kind of around 20.
-But this model tells us that the hump's more like around seven and ten.
-So the model is telling us something very different about what the population is willing to pay for this product.
 For example, before we said that 11% of people would be willing to pay more than $30.
 However, if we use the gamma model we find that only 7% of people would be willing to pay more than $30.
 So the importance of using models, different types of models is that they tell you very different things about the population, and they result in very different predictions.
@@ -1077,7 +951,6 @@ But this is kind of an indirect relationship.
 What we're really doing is we're using temperature as a proxy for the amount of sunlight that's available, cuz we don't really actually have any data on sunlight, okay?
 So we're expecting this kind of positive correlation between temperature and ozone in New York City.
 Now the simplest model that we can use to describe this relationship that we expect is a linear model.
-So now the question we should be asking right now is, what does a linear model look like?
 So remember we wanna set expectations before we start looking at the data.
 So the easiest way to do that is to draw a fake picture.
 So this picture shows two simulated variables with a linear relationship.
@@ -1108,7 +981,6 @@ So it's clearly not a perfect model.
 So the observed pattern from the data seems to suggest that the relationship between ozone and temperature is actually kind of flat up until about the point where you hit 70 degrees, 72, 73 degrees.
 Then there's a sharp increase in ozone with every additional degree of temperature.
 And so this suggests that maybe the relationship is non linear.
-So we can revise our expectations for what the relationship should look like to be this kind of non-linear relationship, rather than our original expectation of a linear relationship.
 And so the way that we can check that is by using a non-linear smoother.
 Here's some data with a low-S smoother, which is a flexible smoother that can capture a lot of different kinds of smooth trends, okay.
 So what we can see here is that, from the blue line, there's a sharp increase in ozone after about 75 degrees, and then maybe around 85 degrees or so, there's some suggestion of leveling off of the relationship.
@@ -1137,8 +1009,6 @@ That's another indicator that you're probably out of data.
 Because often what you'll want to do is get another data set to replicate what you've done.
 So this is a sign that you're out of data and you need to get some more.
 The next question that you might want to ask yourself is do you have enough data to make a decision?
-Now data analysis is often done in support of some sort of decision making.
-And analysis for decisions is often different from doing analysis for like supporting a research paper, or for shipping a product, or even if you're writing a technical report.
 It may be that you have enough information or you have enough evidence to make a decision based on lots of external factors that are not really in the data set, okay.
 So decision making can depend on many different inputs.
 One of which may be your analysis.
@@ -1150,7 +1020,6 @@ And there may be multiple parallel purposes all at once.
 And so, keeping track of what these purposes are and why you're analyzing data will keep you focused on how much you can iterate your data analysis to get the appropriate answer.
 The next question you wanna ask yourself is, can you place your results in a larger context?
 Another way to ask this question is really, do the results make any sense?
-Because now, in order to answer this question, you may need to search the literature, or talk to people inside or outside your organization who are familiar with this area and to see if your findings fit with what they expect to see.
 Now whether your findings do fit the kind of existing literature or what people believe.
 It may or may not be a good thing.
 If they don't fit, for example, this may lead you down a path of new discovery.
@@ -1172,7 +1041,6 @@ And it's important to be aware of these budgets, even if you don't directly cont
 And importantly, you may need to eventually argue for more resources or more time, and you're going to have to persuade other people in those cases.
 So it's important to know when to stop the data analysis process or the exploratory data analysis process in order to prepare results for presentation and to argue for continuation of the project, if that's what you believe needs to be done.
 Keeping track of your time and your budgets for both money and time is an important part of managing the data analysis process, so that you kind of manage the continuation into the next phase and to argue for more resources if you need them.
-So these are some basic questions that you can ask yourself to determine whether you need to stop the exploratory data analysis process.
 Do you have enough evidence to make a decision?
 Can you place your results in a larger context or do these results make sense, and finally are you just simply out of time?
 These questions will help you determine how to manage the data analysis process in general and whether you can stop the exploratory analysis process and move on to the next phase.
@@ -1203,7 +1071,6 @@ It's gonna help you tell the story better in the end after you analyze the data.
 So similarly it's important that you identify an important question that you wanna ask.
 Just get an answer.
 But presumably you've done this already.
-So just as a very quick, simple running example, here's a basic population of ten penguins.
 And so the basic question that we wanna ask is, what proportion of this population of penguins is wearing a turquoise hat?
 So, that's basically it.
 Now, the problem, of course, is that we can't collect data on the population, right?
@@ -1230,7 +1097,6 @@ So given our little data set here of three penguins, we want to estimate what's 
 So from the dataset we can estimate that it's one-third of the dataset.
 One-third of the penguins have turquoise hats so we'll assume that one-third of the population wears turquoise hats.
 Our final estimate is one-third or .33 penguins with turquoise hats.
-Now it turns out because we know the population that the truth is about point four penguins actually wear turquoise hats, or two-fifths, okay?
 And so the question is well how do we know if 0.3 or 0.33 is a good estimate?
 So we'll talk about that in the next lecture.
 In terms of how do you know whether you've made a good inference or not.
@@ -1258,7 +1124,6 @@ Often with natural processes, it's useful to think of an unobserved stochastic p
 If you imagine there's a stochastic process of earthquakes that randomly drops earthquakes into our world, or wildfires, or hurricanes, whatever it may be, when you fit a model and you make an inference from that model, what you're inferring are properties of this unobserved stochastic process.
 The last thing that I'll talk about when it comes to inference is actually not about inference at all, it's actually a special case of using the data as a population.
 The underlying question here really that you want to ask yourself is do you actually need to make an inference at all?
-Sometimes you can think of the data set as a population.
 There may be cases where you actually have all the data you ever wanna see and then you actually don't care about things that are outside the data set, which is really, fundamentally, what inference is about is that you're talking about things outside the data set.
 If the data are the population, one of the features of your analysis is that it will have no uncertainty because there's no sampling process that generates the uncertainty.
 You won't have to worry about confidence intervals or standard errors or P values because you'll have all the certainty in the world that you'll need, assuming that you don't have any problems with that data set.
@@ -1301,12 +1166,10 @@ And so if your model's incorrect, it doesn't correctly reflect the relationships
 If you don't have the right model, then it's pretty straightforward to see that your predictions just may be poor and they may have a high error rate.
 So really what you need to know is kinda what are the questions that you need to be asking when you're involved in a data analysis process?
 And so the three basic questions related to the different kinds of violations that you might encounter when doing inference.
-So the first is can we characterize the population?
 That's a very simple question and the solution is to really just do more thinking beforehand.
 Before you engage in the inference process, just take a little bit of extra time to think about what the population is and maybe engage in experts in this area.
 They may be inside or outside of your organization.
 The second question you wanna ask is do we understand the sampling process?
-So what you wanna do about this is you can either collect your own data in which case you can specify what the sampling process is going to be.
 You can maybe collect auxiliary data about the population characteristics.
 So if you have auxiliary data about the population, maybe certain features of the population, then you can quantify the differences between the sample that you collect and the auxiliary data on the population to see how different they are.
 For example, you might have data on the sex of people in your study.
@@ -1336,7 +1199,6 @@ Formal modeling is the process of precisely specifying statistical models for yo
 So, at this point you've done a lot of exploratory data analysis, and you probably have a reasonable sketch of the solution that you're looking for for your question.
 But you may not be so sure about whether that solution will hold up to kind of challenges or will be sensitive to the little changes in the data or the model.
 And so, formal modeling is the process of kind of specifying your model very precisely so that you know what you're trying to estimate, and you know how you can challenge your findings in a rigorous framework.
-And so, usually the way that we write down these models is with mathematical notation or with computer codes so that we can get very specific about what we're trying to do.
 Now, when we talk about formal models, very often we'll talk about parameters, and parameters play an important role in statistical modelling.
 Parameters usually represent characteristics of the population.
 They might describe relationships between variables or certain features like means or standard deviations, and because they are characteristics of the population they're generally considered to be unknown.
@@ -1346,7 +1208,6 @@ So for example, in a linear regression, the coefficients of the linear regressio
 And very often your goal is to estimate them.
 So, the general framework for doing formal modeling is very similar to kind of what we've been talking about all along in this course.
 The three basic steps are setting expectations, collecting information, and then revising those expectations based on what you see.
-So for setting expectations, typically you want to have a primary model, which is your best sense of what the solution should be and what is the answer to your question.
 This is the leading candidate based on all the current information you have and based on any kind of exploratory analysis that you've done.
 Now it's not necessarily going to be the final model, it's going to be the model that you start with to kind of structure your formal analysis.
 You may update it later based on any information that you collect, and you may change your primary model to be something different.
@@ -1384,7 +1245,6 @@ The last set is a very large class of variables, is all the potential confounder
 So these are things that tend to be, they are associated with your key predictor and they're also associated with their outcome.
 And they generally serve to kinda confuse the association between your key predictor and your outcome.
 So these are things that often may need to be accounted for in some way or included in a formal model to properly examine the relationship between your key predictor and your outcome.
-So a prediction analysis differs from an associational type of analysis, because the goal here is to really to use all available information to predict an outcome, okay?
 So you usually don't care about the mechanism, or how things work when you're trying to do a prediction analysis.
 So you don't necessarily care about explaining how a variable can predict a given outcome.
 You just want to be able to generate a good prediction from a set of variables and you're not developing some detailed understanding of the relationships between all the features okay.
@@ -1411,8 +1271,6 @@ And then you have some independent random error that we call epsilon.
 In addition to those factors, we have a number of parameters that we wanna estimate.
 So alpha here is the intercept.
 It's the value of y when x and z are zero.
-We have beta, which is the change in y associated with a one unit increase in x, adjusted for z.
-And then gamma is the change in y associated with a one-unit increase in z, adjusting for x.
 So, this is a linear model, and the parameter that we're trying to estimate here is beta.
 That's what tells us how our outcome changes along with our key predictor.
 Now, there are other parameters, gamma and alpha, that are in the model and we need to have them in the model for the model to work.
@@ -1458,7 +1316,6 @@ And so the question you really wanna know is, did the ads cause an increase in s
 Over and above whatever background trends that might of been going on that you that you're not aware of.
 So let's take our primary model, which is just gonna be a simple model with the outcome and indicator of the campaign.
 If we use that model, what you'll see is that we'll estimate beta, the increase in the daily sales due to the ad campaign to be $44.75, okay?
-Now, now let's suppose we add a background trend into our model.
 So instead of the primary model where we just had the key predictor and the outcome, we fit the following model.
 Which has a quadratic trend for time, so this allows for kinda a little curvature, and allows for kind of rising and falling of the daily total sales.
 Okay, so if we use this model, and we still try to estimate beta, what we get is that the, our estimate of beta is $39.86.
@@ -1486,8 +1343,6 @@ Then maybe you don't care whether it's $39 or $49.
 As long as you make something back, then the ad campaign's worth it.
 On the other hand, if the ad campaign were really expensive, so maybe it's $20 a day to run these ads.
 Then you might care which end of the range you fall on when you run this ad campaign, because maybe $39 is not worth it, but $49 would be worth it.
-Given the evidence that you've seen from these different models showing you that there might be a range of say, $39 $49 increase in total sales during the period of the ad campaign.
-So even though we fit many different models, not all of them are equally plausible, okay?
 So the primary model may not be plausible, because it didn't incorporate the possibility of any sort of background trend, okay?
 And you don't want to just forget about them because they could affect how your sales go, and you may think your campaign is having a big effect.
 When actually there's something just going on in the background that's moving your sales numbers.
@@ -1498,7 +1353,6 @@ We allow for this background trend.
 It's a polynomial model.
 But it's not very complicated, or at least not overly complicated, to try to capture this trend.
 So whether a model could be considered more or less plausible will depend on your knowledge of the subject.
-And your ability to map real world events to mathematical formulations of the model.
 When different models tell the same story, for example, if you don't care about the range of $39 to $49, then it's sometimes better to choose the simpler model or the model with fewer parameters.
 And the reason is it's usually easier to tell a story about the data when you have fewer parameters and so this makes the model more useful.
 And then finally a simpler model would be more efficient because you're using more data to estimate fewer parameters and so that's generally good from a statistical standpoint.
@@ -1511,7 +1365,6 @@ So we had two different models kind of adjusting for the background trends.
 So what conclusion you make ultimately may depend on outside factors like cost, or kind of timing issues.
 And so you have to factor all this in when you kind of ultimately draw your conclusions about what to do or what decisions to make.
 And also, you may have to think about the plausibility of the various models that you've chosen.
-So this is the basic kinda outline of an associational analysis.
 Obviously there'll often be many more things that you're gonna wanna do.
 But they'll generally follow this framework, and you're gonna wanna iterate between kinda fitting primary models and secondary models.
 And so you get to an answer that you can use or can make a decision on.
@@ -1527,7 +1380,6 @@ So when we build a prediction model the thing that we want is to be able to find
 Because typically the outcome is typically going to be some binary outcome or some multi-class outcome where that can take either two values or just a handful of values.
 That is a typical setup of a prediction problem.
 And you want to be able to separate the two classes using a set of features that you collect, and a model that you develop, okay?
-So here's a very simple example of a single predictor on a binary outcome that produces very good separation, okay?
 This data is simulated, so I just want to show you so you can see what it looks like.
 On the y-axis I have the values of the outcome which are just 0 and 1, so it's a binary outcome.
 You can think of this as like not having the disease and having the disease or any sort of binary class outcome like that.
@@ -1580,7 +1432,6 @@ So if you truly have bad credit the algorithm will have a difficult time picking
 So there are a couple of things to think about when you see the results of a prediction model like this one.
 So, the first thing to think about is prediction quality.
 First, you have to ask yourself is the model's accuracy good enough for your purposes.
-So you solve the summary statistics from this particular model, which is okay.
 It had a 70% accuracy, it had 2.6% specificity.
 Is that good enough for your purposes?
 Well, it depends on what your purposes are.
@@ -1607,7 +1458,6 @@ And if you can't remember or you can't reproduce the tuning parameters, you'll n
 So one last thing I want to mention is about the availability of other data.
 So many prediction algorithms these days are very good at exploring the structure of complex data and making very good predictions, especially once you get the tuning parameters right.
 And so, but now it may be that if your model is not working very well, that you have to change to another algorithm or another procedure because different procedures can work well in different settings and different types of data structures and different types of data set up.
-However, if you try a few algorithms and they all seem to be producing kind of a similar quality of prediction, regardless of how well you tune them, it may be time to get more data or other data to help you predict the outcome.
 It could just be that the dataset you have only has an intrinsic amount of ability to predict whatever outcome you're interested in.
 And you have to kind of get other data that will have better predictive power.
 And so think about that as you're building prediction algorithms and you're seeing the results.
@@ -1631,8 +1481,6 @@ We just wanna find a kind of a model form that predicts the outcome with a high 
 So I wanted to give a brief example of how these different types of questions can lead to different conclusions, even on the same dataset.
 I'll start first with an inferential question.
 Suppose I want to know how is air pollution in New York City related to mortality in New York City.
-So the data I'm gonna use comes from this national morbidity and mortality in air pollution study, and here's a picture of daily mortality in New York from 2001 to 2005.
-And you can see that it has highly seasonal components, the mortality tends to be higher in the winter and lower in the summer, and it's very specific to kind of to pattern across every year.
 Here is what particulate matter data looks like.
 And so for the same time period you can see this has also a seasonal structure to it.
 In particular, particulate matter is high in the summer.
@@ -1649,7 +1497,6 @@ And you can see that the coefficient for PM10 here is 0.00004, etc.
 And so basically is close to zero.
 You can tell by the size of the standard error, which is much bigger than the estimate, that there's a lot of variability around this estimate and so it's effectively zero.
 The association between the two variables is zero.
-So that's kind of what our basic first cut analysis tells us.
 Now one thing we know about pollution and mortality, just from the pictures that we just saw of the data is that they're highly seasonal.
 Season plays a big role in explaining variability in both mortality and in air pollution okay?
 Remember mortality was high in the winter and low in the summer, and pollution was high in the summer and low in the winter.
@@ -1657,14 +1504,12 @@ So it seems like season is clearly related to both mortality and pollution.
 So it might be a reasonable thing to include as a potential confounding factor.
 So we can fit a secondary model to the data, which includes pm10 as our key predictor, and then maybe we'll include the season of the year as a potential confounding factor, so the season will just be, you know, there'll be four seasons, and we'll have a categorical value with a category for each season.
 So, here is the results of fitting that model to the data.
-And you can see that I highlighted the coefficient for pm10 here is actually quite a bit larger now, is 0.00149, and you can see that the standard error is quite a bit smaller relative to the estimate.
 So, this suggests that the coefficient for pm10 is quite a bit bigger than zero, maybe statistically significant.
 So the addition of this confounding factor dramatically changed the association we estimate between pm10 and mortality.
 And so, part of this is because season is very strongly related to both, but it's kind of positive, it's correlated in one way with mortality, but it's correlated in a different way with pollution.
 That's part of why we saw it when we didn't include season we saw no relationship.
 But when we do include it, we see this kinda quite a bit stronger relationship.
 Now there are other potential factors that we might wanna consider in terms of things that might both be related to mortality and to air pollution.
-So another one is the weather.
 So weather is associated with mortality and it's also highly associated with various air pollutants and so we can characterize the weather with something like temperature or dew point temperature to think to just capture a piece of kind of what weather is and so we can include that into our model.
 So here's the results of including temperature which is the tmpd variable and dew-point temperature which is the dptp variable.
 And you can see now.
@@ -1673,10 +1518,8 @@ Again, temperature and dew point are strong factors that are related to both mor
 Finally, another type of factor that may be related to both mortality and PM, particulate matter, is other pollutants, right?
 So there are other pollutants that may affect health, and they may be correlated with particulate matter because they may share common sources.
 So, one common source in a city like New York is gonna be traffic.
-Traffic can produce particles, it can also produce other pollutants.
 So one of the pollutants that we'll look at is nitrogen dioxide.
 And so nitrogen dioxide tends to be correlated with particles.
-So if you are interested in association between particles and mortality, you might wonder well is what we're seeing actually the association between nitrogen dioxide and mortality?
 And so we can include nitrogen dioxide in our model as a potential confounding factor, and see how the estimate for particulate matter changes when we do that.
 So here are the results from that model, and you can see that compared to the previous model the coefficient for pm10 drops a little bit, it goes down a little bit, so the effect weakens a little bit when we include nitrogen dioxide in the model.
 Now it's still quite a strong effect, relative to the standard error that we estimate but it's not estimate, that is not as strong as it was before we entered, we included no2 in the model.
@@ -1692,7 +1535,6 @@ Under different sets of models, including different sets of confounding factors.
 Now what we do with this information will depend on what the goal of the analysis is, who the stakeholders are, and what we might do with this information afterwards.
 But we won't talk about that now.
 The point I want to make is the kind of the analysis that you do for an associational type of analysis is very much along these lines.
-So another question that we could ask, is what best predicts mortality in New York City, using the data that we have available, okay?
 So now I've changed the question to a prediction type of question, and we want to know what predicts the outcome best.
 So one of the things that we could do is fit a complex prediction algorithm, all right?
 We don't need to know, we don't need to worry about estimating associations, or adjusting for confounding factors.
@@ -1701,11 +1543,8 @@ So here I'm gonna use a random force algorithm to make predictions of mortality 
 And one of the aspects of random forest algorithm is that it allows for a summary statistic called variable importance.
 And this gives you a sense of how important a variable is in increasing the skill of the algorithm in predicting the outcome.
 So, I've plotted here, the variable importance plot that rank orders all the variables in terms of how important they are to improving the prediction skill of the algorithm.
-Followed by dew-point temperature, followed by the date, and then no2, ozone which is o3.
 And then finally, pm10 and then dow, which is the day of the week.
-So you can see that from this prediction model, particularly matter actually is second from the bottom in terms of improving the prediction skill of the algorithm.
 So if you were to look at this analysis and then ask the original question, and say, how is pm10 related to mortality?
-You might think well, it's not related to mortality.
 But that's true, but it doesn't necessarily mean that pm10 is not associated with mortality, from an associational standpoint.
 It may have an important association with mortality.
 But that the association is inherently weak.
@@ -1725,7 +1564,6 @@ Now the expectations for your interpretation will be based on things like explor
 Now when the interpretation does not match your expectations, that you're gonna have to figure out whether it's because your expectations were incorrect or because your interpretation is incorrect.
 And so figuring that out is part of the iterative nature of interpretation.
 And even though this is one of the last steps of any data analysis, you may need to go back to the exploratory data analysis or the formal modeling stages if the things that you've discover in your interpretation challenge what you found previously.
-So there are a couple of basic principles to keep in mind when interpreting results, particularly in the later stages of a data analysis.
 The first thing you're probably gonna wanna do is to revisit your question, and just to kinda make sure that you haven't gone off course from your original question.
 The second thing you wanna think about is your primary results.
 So typically in a formal modelling, you'll have a primary model and maybe some secondary models.
@@ -1793,7 +1631,6 @@ And so any kind of positive findings that you find that match your expectations 
 So sometimes with inferential questions where you're just looking for an association, if the association is of interest that meant you evolved into kind of asking a more causal question where you may need to design a different kind of study, maybe an intervention, or a controlled trial.
 So that may be the decision that results from your analysis.
 But the ultimate decision and how much evidence is needed to inform that decision will depend on the stakeholders of the analysis of who asked for the analysis, who is being informed by it, and kind of what their cost benefits and what their kind of values are.
-And so, different groups of people will interpret evidence differently, not because of their interpreting it incorrectly but rather their decision to act on evidence will based on a variety of factors that are really outside the dataset and are not really part of the analysis.
 So it's important to always keep in mind the ultimate goal of the analysis, the decision that might need to be made, and the stakeholders who are involved in making those decisions and what kinds of factors they need to consider.
 So, just to summarize, when it comes to interpreting results, you wanna always revisit the question, make sure you know what question you're asking and what type of question it is, so that you can figure out whether the analysis matched the question.
 Think about your primary result, and for that result, you wanna consider the direction, the magnitude, and the uncertainty.
@@ -1852,7 +1689,6 @@ This lecture provides just a couple of ideas of how to make a good data analysis
 There are a couple of key components that I feel like are important to making a good presentation that involves data analysis, and so I thought I would just list a couple of them here.
 Just so you can kind of keep them in mind and think about them the next time you're making your next presentation.
 So, the first and I think the most important thing you want to have in a presentation is to state the question that you're trying to answer.
-I can't tell you how many times I've been in a presentation and we've been ten minutes in and I still don't exactly know what question this person is trying to answer.
 So, it's important, upfront, that you not assume that everyone is on the same page, that everyone has the same background, but to state the question clearly and succinctly so that everyone knows what the goal is.
 Okay.
 And once everyone knows what the goal is, we could all be kind of on the same page and oriented towards achieving that goal.
@@ -1870,12 +1706,10 @@ But just as a warning though, this could be a double edged sword.
 Because people like to talk about data when they see it.
 So if you want people to have good discussion, to have informed discussion that may be useful to you, I think it's very useful to show the data.
 People love to talk about data, but, so even if you don't want that discussion to happen necessarily, you may be better off in the end if it does happen.
-And so to this extent, I find plots are better than tables, because plots show people, you know, a summary of the data, but they also show people deviations from what might be expected, and so plots are very useful for kind of producing discussion and kind of encouraging people to think about the data.
 When it's possible, if you're making a presentation and you're showing the data, if you're showing some summary or a statistic about the data, try to show a measure of uncertainty to go with it.
 And the reason why is it just provides for a richer discussion when you can incorporate the uncertainty into any predictions or any estimates that you make from the data.
 And so, try to have a broad array of measures of uncertainty so that people can get the full picture of what's going on in your analysis.
 So for example, if you have a primary model, it can be used to show results for say, a bunch of secondary models or to show confidence intervals for parameters.
-Lastly, I think it's important that when you present results from a data analysis, that you separate three things, they are the evidence, the interpretation and the decision.
 It's often easy to kind of conflate all these things into one sentence or to one statement and I think it helps people to provide a useful discussion if you can separate them out.
 So for example, if you're looking at, let's say, an air pollutant and some health outcome, you might find that the increase in the air pollutant results, you estimate that an increase in the air pollutant results in a 5% increase in the health outcome.
 So that's bad.
@@ -1892,9 +1726,6 @@ And further more, what you do about it is further separate from what you think a
 So, separating the evidence, the interpretation, and the decision can help people think about the different components.
 And can weigh the evidence, in terms of how they would react differently or how important that evidence is to whatever process they're involved in.
 So, I think doing that provides for a useful presentation and provides for a more important, a useful discussion about the meaning of your results and what we should do about them.
-You can't move them.
-Now, as you're cemented in place in your room, start to think how is this going to affect your life?
-I want you to take a second, and on the screen now, type in what type of problem you think you would have in your life, if you couldn't move, if you were always cemented in place.
 Keiko from Tokyo wrote in, well , that she couldn't go to the bathroom.
 You know, that would really be a problem or you could go to the bathroom, but you're stuck in place.
 How would that affect your life?
@@ -1905,10 +1736,7 @@ Well if you haven't understood this, these are all problems that plants have, be
 They can't move.
 You can go to the closet, get a sweater.
 You could turn on, the air conditioner or you could catch a plane down to Florida in the middle of the winter to, to escape the cold.
-And because of this, all of plant biology is quite complex to allow them to change their own development, their growth, in order to survive stuck in one place.
 So on a very basic biological level, plants are often more complex than animals are.
-And as we'll learn in this class, plants have to know and I'm going to use air quotes quite a lot here.
-They have to feel the weather.
 They have to be able to know where the light is.
 The have to be able to see where the light is.
 They have to be able to feel if something is touching them.
@@ -1918,8 +1746,6 @@ All right, let's take stock of where we are, we've covered so much.
 So in module three, we talked about the role of emotions in resilience.
 We talked about managing anxiety either through cognitive strategies, deliberate breathing or developing and sustaining a mindfulness practice.
 We also talked though about the importance of positive emotions in maintaining our resilience.
-Remember, positive emotions, they broaden our thinking and creativity.
-We also showcased gratitude and talked about the science of how gratitude benefits us in some really powerful ways.
 And we challenged you to develop your own gratitude practice, so that one of the lens through which you view the world is what am I receiving.
 We're going to ask you to think about not what's wrong with you and how to fix it, but what's right with you.
 Who are you at your best from a character perspective and how can you use what already strong and right in you to enhance your resilience and enhance your relationships,and have greater positive emotional sort of stuff?
@@ -1930,7 +1756,6 @@ Welcome to an introduction to Data Science with Python.
 This course is the first course out of five in a larger Python and Data Science Specialization.
 Each course progressively builds on your knowledge from previous courses to give you a well-rounded view of what Data Science is, while helping you to develop skills to practice data science.
 In this specialization, we're focused on teaching applied skills using the Python programming language.
-There are many other tools that one can use in data science, such as specialized statistical analysis languages like R, or more general purpose programming languages like Java and C.
 First, it's easy to learn.
 Python is now the language of choice for introducing university students to programming.
 It's used in eight out of 10 of the US's top computer science programs.
@@ -1951,13 +1776,11 @@ Much of the thinking behind pandas is similar to relational theory.
 So if you have a background in databases, you'll find the pandas environment fairly natural to work in.
 At the same time, some of the more advanced ways to query and manipulate pandas' data frames like boolean masking and hierarchical indexing are different than in databases and require some careful discussion.
 So we'll discuss these in module three of this course.
-The final module of the course is dedicated to the course project where you'll take some datasets, merge and clean them, then process the data and answer some questions.
 In this week we'll discuss basic statistical tests and methods that ensure you have a solid grasp going forward into the next course.
 At the same time the intent is for your course project to be a demonstration of the skills that you've gained in manipulating messy data into something of coherence.
 Before we go into programming fundamentals, though, we'll talk a bit more about what data science is, and why it's sweeping over the world.
 This is the story of Beth, her friend Carl and an idea they believed could become a great business.
 It's the story of how they succeeded and if you're a entrepreneur or anyone with a great idea it could easily be your story too.
-Let's begin at the beginning, see even if you have a great idea, success is far from assured.
 >> That's because that every great idea that you shape our world, there are thousands of seemingly great ideas that have flocked.
 In order to succeed, a great business idea needs a great business model, and they're not the same thing.
 Once your idea meets the world, it will meet customers.
@@ -1974,9 +1797,7 @@ What if it was possible, to design and test business models, in a way, that give
 The average American diet consists of about 70% processed food.
 That's food that's produced by companies who prioritize short-term profits over the long-term health of our children.
 As the processed food industry expands, many other parts of the world are also beginning to follow this trend.
-By far, the majority of the excess salt and sugar in the average American child's diet comes from processed food.
 Almost everything you find on the supermarket shelf that has been packaged, canned or bottled, falls into the category of processed foods.
-These include things like breakfast cereal, granola bars, cookies, crackers and sweetened drinks.
 One way to differentiate a highly processed food from a less processed one, is to look at the number of ingredients listed on the label.
 If the food has a long list of ingredients, the food is most likely highly processed.
 Especially, if those ingredients are not easily recognizable to you.
@@ -1988,7 +1809,6 @@ Most of the processed food that we find on a supermarket shelf today contains so
 And sugar can have many different names.
 It can be called corn syrup, glucose, dextrose brown rice syrup, or even evaporated cane juice.
 But these ingredients are all really just variations of sugar.
-And when our children are eating a lot processed food, it's easy for them to take in too much sugar without really knowing it.
 Many scientists are starting to think that the large amount of sugar in the average American diet is actually one of the main reasons why we see so many people with obesity and diabetes.
 Small amounts of sugar are almost certainly not going to cause problems for a healthy child who's eating a balanced diet.
 But when our children consume too much processed food, then they end up eating too much sugar as well.
@@ -2003,3 +1823,246 @@ We know that it's important for children to stay hydrated, especially when they'
 But for a healthy child, it's usually best to stick with plain water from a clean, reliable source.
 If we teach out children to see sweetened drinks as an occasional treat instead of as the norm it can really help to keep their sugar intake in check.
 And when you're finished, take a picture, do a reflection and send it to us.
+So, the first trap that we all fall into and by the way I am guilty of all this traps too and I'm always trying to work on them.
+So pretend I'm giving a lecture on how to be healthier and I tell you something like this.
+And that liquid calories are important things to watch out for, because many times, when people are consuming liquids, they don't realize that they're consuming calories, and you're not listening anymore.
+I can create that in my head in like a second and then I listen to you." What does P2P mean?
+So reproducible research is concerned with creating code and documents that will completely reproduce all of the analysis that you've done in a transparent way so that you can communicate that to other people.
+So we're going to talk about in the reproducible research course, the structure of a data analysis, how do you set it up, how do you organize it and put it together.
+And then we're going to talk a little bit about a unique idea called evidence-based data analysis, doing data analysis based on what's best practices in the field right now.
+So, a question that often comes up when you talk about data science is, what about big data?
+So the question that keeps coming up is what about big data?
+So, you often think, see things like, you know, big data and cloud management and cloud and big data tend to go together and that's because for some data sets they're so big that you can't analyze them on your local laptop computer.
+Well this is only one example of that. So, there was an experiment run by Stanley Milgram where he took 296 individuals and he, what he tried to do was basically send them a letter and ask them to send a letter from someone they knew and so forth until they went a specific address.
+And so, 64 of these such chains came back, so 64 out of 296.
+The take home message is that it's now possible to collect much more data much more cheaply than it was before and to analyze it.
+And I would add to it, no matter how big the data are.
+So reproducible research is concerned with creating code and documents that will completely reproduce all of the analysis that you've done in a transparent way so that you can communicate that to other people.
+So we're going to talk about in the reproducible research course, the structure of a data analysis, how do you set it up, how do you organize it and put it together.
+And then we're going to talk a little bit about a unique idea called evidence-based data analysis, doing data analysis based on what's best practices in the field right now.
+So, a question that often comes up when you talk about data science is, what about big data?
+So the question that keeps coming up is what about big data?
+So, you often think, see things like, you know, big data and cloud management and cloud and big data tend to go together and that's because for some data sets they're so big that you can't analyze them on your local laptop computer.
+Well this is only one example of that. So, there was an experiment run by Stanley Milgram where he took 296 individuals and he, what he tried to do was basically send them a letter and ask them to send a letter from someone they knew and so forth until they went a specific address.
+And so, 64 of these such chains came back, so 64 out of 296.
+The take home message is that it's now possible to collect much more data much more cheaply than it was before and to analyze it.
+And I would add to it, no matter how big the data are.
+Today, with the digital capabilities around us and the amount of data being captured, our enhanced abilities to analyze data and draw conclusions from it allow us to provide our clients with real time insights that impact their business decisions faster than ever before and on a more informed basis.
+As I mentioned, 4/4 time, the top number Indicates the amount of beats that are in any given measure.
+Okay, 4/4 time.
+As I mentioned, 4/4 time, the top number Indicates the amount of beats that are in any given measure.
+Okay, 4/4 time.
+Or it maybe some information from another system where you have additional information that puts the sensor data into context.
+So we're going to look at ways that Node-RED allows you to make your sensor data accessible to other systems, but also how to pull in other data into your Node-RED flow so you can then combine it with the sensor data to create your logic.
+We've already seen the inject node is very useful when creating, testing and debugging a flow.
+But in reality, events are going to come in automatically, so there are a series of nodes to allow you to capture events and respond to those events.
+As we go through the rest of this course, we'll be using sensor data from the Raspberry Pi and the Sense HAT, and that will arrive within your Node-RED flow using the IBM Watson IoT service running on Bluemix.
+You'll also see that there are input nodes to respond to various other inputs, such as a web request or a websocket, or simple tcp sockets.
+With the advent of cloud, REST APIs are becoming the de facto way for systems to communicate, using http verbs, post, get, delete, and JSON as the data format to exchange information.
+So if you drag that onto the sheet, and then open up the properties, it's very simple.
+You can see it asks you what actv verb you want to respond to, and also what the URL is for this endpoint.
+If I put a function node in between them, I can very quickly create a simple web page where the function node is just going to return some text in the payload.
+If I then deploy that, and then launch a browser on the URL, and the URL is the same URL for Node-RED. But where I have red for the Node-RED editor, I simply replace it with a property I entered in the input node.
+It's important that data arrives at the response node because it's that data that joins the request and the response.
+In this module, we're going to be looking at MQTT, MQTT is an open source protocol that was designed to solve the problems of machine to machine communication.
+But it was also designed to be very, very small in code footprint. And also use of power and network bandwidth.
+So, it's an ideal protocol for the Internet of Things.
+This differs from peer-to-peer communication, like email or SMS texting, where the sender sends a message to a specified receiver.
+And for events data, there is a recommended format to put the JSON data in and that's the format that the QuickStart service uses. However, you are not required to use this.
+In particular, two formats that we'll talk about now are the JavaScript Object Notation, JSON, and the Extensible Markup Language, XML.
+Let's break it apart. First, the data comprises a single JSON object, and that object is a map, and that map has one key value pair.
+Now that list. Has several objects inside it, and each of those objects is itself a map.
+For instance. There's a key called eqid and it's value is an earthquake id.
+Let's take a look at an example application that gets this data from the internet, and then processes it to create a more human readable display.
+As before, this application initially displays a single button labeled load data, and as before, when I press that button the application will issue an HTTP get request to an external server and that server will respond with some complex text containing the requested earthquake data.
+Here I've got the application open in the IDE, and now I'll open up the file that does the downloading and displaying.
+Now here the do in background method is similar to what we've seen before but this time it uses the JSON Response Handler class to process the response.
+This method begins by passing the raw response through a basic response handler, which just returns the response body without the HTTP response headers.
+Next the code uses a JSON tokener to parse the JSON response into a Java object, and then to return that top level object, which in this case is a map.
+So I want to show this application to you now. Instead, let's look at this application's source code.
+We will meet with people like the founders of 3D Hubs, who make available a platform which gives you access to 30,000 printers.
+We will speak to people at Shape Ways, which provide you a service bureau to upload designs and get the prints shipped to you.
+Hi there, I'll be your professor in this course.
+Hang on a second, I'll get out of here.
+And I think that one of the biggest global health care issue at the moment is the increase in mobility of patients to consume health care abroad.
+I live in New Zealand and I am currently studying health science and psychology in University of Auckland.
+I'm just kidding, I'm Indian by origin but I do consider myself to be a bit of a world citizen.
+I live in the US, I'm a citizen of the US, but I'm currently visiting India as a professor of marketing at the Indian School of Business in Hyderabad, which is this really beautiful city of old forts, palaces, and monuments.
+And then there was this other guy, who had practically dropped out of the rat race.
+To me, it seemed that the ultimate purpose of education is to give students the tools and the skill sets required to lead a happy and fulfilling life, and of course to also help other people do the same.
+I asked them whether they'd be interested in taking a class that focused on one of life's most important questions, what are the determinants of a happy and fulfilling life?
+The students said that they'd be absolutely delighted to take such a class.
+The main objective of the course was to be very simple, to give the students the opportunity to discuss this life's important question.
+Now, I have to confess, that I had a vested interest in teaching this kind of a class.
+So I was personally very interested in teaching a class on happiness, but what I wasn't sure of is whether the business school would approve such a course.
+And, in a few short weeks, that number is going to be several orders of magnitude higher, thanks to Coursera.
+I'm also writing a book right now tentatively titled " If You're So Smart Why Aren't You Happy?" Which will be coming out sometime in 2016.
+Happy smarts is, by the way, very different from academic smarts, which has to do with IQ and test-taking ability and critical thinking ability, those kind of things.
+It's also different from career smarts, which has to do with the skills required to advance in your career.
+You'll also discover a wealth of resources on that website including many of my articles that have appeared on my popular Psychology Today blog, Sapient Nature.
+Thank you so much for taking the course, and I look forward to getting to know you better in the coming six weeks.
+In other words, when you let go of the ball, its weight domainte its motion and it plummets. Well, weight is associated with gravity.
+And gravity is a physical phenomenon that produces attractive forces between every pair of objects in the universe. This ball is exerting an attractive force on me by way of gravity, I'm exerting an attractive force on the ball by way of gravity, every possible pair.
+But gravity is a very weak phenomena, and as a result, the only object big enough to produce noticeable gravitational effects, that is once we, we are routinely aware of is our earth.
+It pulls this ball downward with a gravitational force, it pulls me down with a gravitational force, it pulls you downward with a gravitational force, and we give a name to these individual gravitational forces.
+To observe the ball's weight in action, let go of the ball, and let it accelerate.
+Remember, that a ball's weight is a force exerted by gravity, whereas the ball's mass is its resistance to accelerations. How hard is it to make it change velocities?
+There is no fundamental reason why weight and mass should have any connection to one another, and yet they do. It turns out that, before observation, that every kilogram of mass here near the earth's surface weighs about 9.8 Newtons.
+Well, it's conventionally represented by the letter g, the lowercase letter g, and it carries a mysterious name, it's called the acceleration due to gravity. In the next video, we'll take a look at why that name is appropriate.
+But it turns out just knowing the algorithms and knowing the math isn't that much good if you don't also know how to actually get this stuff to work on problems that you care about.
+It turns out that machine learning is a field that had grown out of the field of AI, or artificial intelligence.
+We wanted to build intelligent machines and it turns out that there are a few basic things that we could program a machine to do such as how to find the shortest path from A to B.
+But for the most part we just did not know how to write AI programs to do the more interesting things such as web search or photo tagging or email anti-spam.
+One of the reasons machine learning has so pervaded is the growth of the web and the growth of automation All this means that we have much larger data sets than ever before.
+So, for example tons of Silicon Valley companies are today collecting web click data, also called clickstream data, and are trying to use machine learning algorithms to mine this data to understand the users better and to serve the users better, that's a huge segment of Silicon Valley right now.
+With the advent of automation, we now have electronic medical records, so if we can turn medical records into medical knowledge, then we can start to understand disease better.
+And in engineering as well, in all fields of engineering, we have larger and larger, and larger and larger data sets, that we're trying to understand using learning algorithms.
+A second range of machinery applications is ones that we cannot program by hand.
+It turns out one of the reasons it's so inexpensive today to route a piece of mail across the countries, in the US and internationally, is that when you write an envelope like this, it turns out there's a learning algorithm that has learned how to read your handwriting so that it can automatically route this envelope on its way, and so it costs us a few cents to send this thing thousands of miles.
+Here at Stanford, the number of recruiters that contact me asking if I know any graduating machine learning students is far larger than the machine learning students we graduate each year.
+So I think there is a vast, unfulfilled demand for this skill set, and this is a great time to be learning about machine learning, and I hope to teach you a lot about machine learning in this class.
+Samuel's claim to fame was that back in the 1950, he wrote a checkers playing program and the amazing thing about this checkers playing program was that Arthur Samuel himself wasn't a very good checkers player.
+But what he did was he had to programmed maybe tens of thousands of games against himself, and by watching what sorts of board positions tended to lead to wins and what sort of board positions tended to lead to losses, the checkers playing program learned over time what are good board positions and what are bad board positions.
+Here's a slightly more recent definition by Tom Mitchell who's a friend of Carnegie Melon.
+So Tom defines machine learning by saying that a well-posed learning problem is defined as follows.
+The task T would be the task of playing checkers, and the performance measure P will be the probability that wins the next game of checkers against some new opponent.
+Throughout these videos, besides me trying to teach you stuff, I'll occasionally ask you a question to make sure you understand the content. Here's one.
+In a few seconds, the video will pause and when it does so, you can use your mouse to select one of these four radio buttons to let me know which of these four you think is the right answer to this question.
+So hopefully you got that this is the right answer, classifying emails is the task T.
+And so on the task of systems performance, on the performance measure P will improve after the experience E.
+This is something that I feel pretty strongly about. And exactly something that I don't know if any other university teachers.
+Teaching about learning algorithms is like giving a set of tools. And equally important or more important than giving you the tools as they teach you how to apply these tools.
+There's a huge difference between people that know how to use these machine learning algorithms, versus people that don't know how to use these tools well.
+So what we're going to do in this class is actually spend a lot of the time talking about how if you're actually trying to develop a machine learning system, how to make those best practices type decisions about the way in which you build your system. So that when you're finally learning algorithim, you're less likely to end up one of those people who end up persuing something after six months that someone else could have figured out just a waste of time for six months.
+And second, and more importantly, I want to start giving you intuition about why these neural network representations might be a good idea and how they can help us to learn complex nonlinear hypotheses.
+Previously we said that the sequence of steps that we need in order to compute the output of a hypotheses is these equations given on the left where we compute the activation values of the three hidden uses and then we use those to compute the final output of our hypotheses h of x.
+And notice that, there, z2 this is a three dimensional vector. We can now vectorize the computation of a(2)1, a(2)2, a(2)3 as follows.
+So, the a1 is vector, I can now take this x here and replace this with z2 equals theta1 times a1 just by defining a1 to be activations in my input layer.
+And z3 is stated 2 times a2 and finally my hypotheses output h of x which is a3 that is the activation of my one and only unit in the output layer.
+So, if you implement it using these equations that we have on the right, these would give you an efficient way or both of the efficient way of computing h of x.
+By the way, in a network like this, layer one, this is called an input layer. Layer four is still our output layer, and this network has two hidden layers.
+So, hopefully from this video you've gotten a sense of how the feed forward propagation step in a neural network works where you start from the activations of the input layer and forward propagate that to the first hidden layer, then the second hidden layer, and then finally the output layer.
+Let me tell you how to do that and also show you some even more effective ways to use precision and recall as an evaluation metric for learning algorithms.
+So, as usual, we're going to predict 1, y equals 1, if h(x) is greater or equal to 0.5. And predict 0 if the hypothesis outputs a value less than 0.5.
+Because if you go to a patient and you tell them that they have cancer, it's going to give them a huge shock. What we give is a seriously bad news, and they may end up going through a pretty painful treatment process and so on.
+Instead of setting the threshold at 0.7, we can set this at 0.9. Now we'll predict y=1 only if we are more than 90% certain that the patient has cancer.
+And so, a large fraction of those patients will turn out to have cancer. And so this would be a higher precision classifier will have lower recall because we want to correctly detect that those patients have cancer.
+And by doing so, we're saying that, you know what, if we think there's more than a 30% chance that they have cancer we better be more conservative and tell them that they may have cancer so that they can seek treatment if necessary.
+And in this case what we would have is going to be a higher recall classifier, because we're going to be correctly flagging a higher fraction of all of the patients that actually do have cancer.
+Why we might want to have higher precision or higher recall and the story actually seems to work both ways.
+And so in general, for most classifiers there is going to be a trade off between precision and recall, and as you vary the value of this threshold that we join here, you can actually plot out some curve that trades off precision and recall.
+Concretely, suppose we have three different learning algorithms. So actually, maybe these are three different learning algorithms, maybe these are the same algorithm but just with different values for the threshold.
+And, if every time you try out a new algorithm you end up having to sit around and think, well, maybe 0.5/0.4 is better than 0.7/0.1, or maybe not, I don't know.
+So, using P and R to denote precision and recall, what you could do is just compute the average and look at what classifier has the highest average value.
+Conversely, if you have a classifier that predicts y equals zero, almost all the time, that is that it predicts y=1 very sparingly, this corresponds to setting a very high threshold using the notation of the previous y.
+And if you just take the average of (P+R)/2 from this example, the average is actually highest for Algorithm 3, even though you can get that sort of performance by predicting y=1 all the time and that's just not a very good classifier, right?
+The F Score, which is also called the F1 Score, is usually written F1 Score that I have here, but often people will just say F Score, either term is used. Is a little bit like taking the average of precision and recall, but it gives the lower value of precision and recall, whichever it is, it gives it a higher weight.
+So in that sense, it kind of combines precision and recall, but for the F Score to be large, both precision and recall have to be pretty large.
+This F Score formula is really maybe a, just one out of a much larger number of possibilities, but historically or traditionally this is what people in Machine Learning seem to use.
+And the term F Score, it doesn't really mean anything, so don't worry about why it's called F Score or F1 Score.
+But this usually gives you the effect that you want because if either a precision is zero or recall is zero, this gives you a very low F Score, and so to have a high F Score, you kind of need a precision or recall to be one.
+Whereas a perfect F Score, so if precision equals one and recall equals 1, that will give you an F Score, that's equal to 1 times 1 over 2 times 2, so the F Score will be equal to 1, if you have perfect precision and perfect recall.
+And of course, if your goal is to automatically set that threshold to decide what's really y=1 and y=0, one pretty reasonable way to do that would also be to try a range of different values of thresholds. So you try a range of values of thresholds and evaluate these different thresholds on, say, your cross-validation set and then to pick whatever value of threshold gives you the highest F Score on your crossvalidation .
+In this video I would like to just quickly summarize the main topics of this course and then say a few words at the end and that will wrap up the class.
+So we talked about things like bias and variance, and how regularization can help with some variance problems. And we also spent a little bit of time talking about this question of how to decide what to work on next.
+So, that's it. Those were the topics of this class and if you worked all the way through this course you should now consider yourself an expert in machine learning.
+Which is that: It was maybe not so long ago, that I was a student myself. And even today, you know, I still try to take different courses when I have time to try to learn new things.
+And so the fact that you still found the time or took the time to watch these videos and, you know, many of these videos just went on for hours, right? And the fact many of you took the time to go through the review questions and that many of you took the time to work through the programming exercises.
+Or you might Google the restaurant and maybe look up the menu to see what the meal typically costs there.
+One is that, that cost meets your expectation. So suppose you thought it was gonna be $30, and it ended up being $30, then that's great.
+And each one of these five steps you can imagine there's a little cycle that you can engage in which involves setting expectations, collecting information, and matching those expectations to the data that you collect.
+So for example, you might ask how many people have visited this website in the last 24 hours?
+However, in many other situations, causal questions can really only be answered indirectly using observational data, so in situations where we can't control what the settings are or what the experiment or design a specific experiment to kind of to collect data, on directly on this question.
+And so, there in situations like that, we need to accumulate evidence through many different types of studies, and to develop a pattern that would suggest that a causal relationship exists.
+The sixth type of question that we are interested in is a mechanistic type of question.
+And the goal here is essentially to uncover a deterministic link between two sets of features, okay?
+And so we want to know if we can, if we change one measurement on one hand, can we, does it always result in a specific outcome on a different measurement?
+The second important part about a good question that hasn't already been answered already, so this may seem a little bit obvious, but with the wealth of data out there and literature and the availability of the Internet, it's quite possible that someone,somewhere out there, has either at least studied your question or maybe even answered it.
+Some of the key questions that you wanna think about before engaging in an exploratory data analysis process, are basically, do you have the right data to answer the question that you’re interested in?
+Things like that. So that's kind of what you're trying to do with your data set here.
+Okay, so just look at the first few rows and then maybe look at the last few rows.
+If you've got data, for example with dates, often looking at the top and the bottom can be useful because if they're sorted by date, you can see if the range is correct.
+You know, if the earliest and latest dates are correct.
+So every aspect of your data set is gonna have some kind of count or number associated with it.
+So there's all kinds of just ends that you can check within your data set and kind of around your data set to make sure that everything is kind of in structured in place, okay?
+All right, so I think a plot is very important to make.
+Well that can be useful just so you know that roughly the mean of your, the distribution in your data set, is corresponds to kind of what you might expect in the population.
+The first is more basic where it's you determine whether you have the right data to answer your question.
+And part of exploratory analysis is to determine do you need to get more data, do you need to change datasets, or do you need to change your question or refine your question.
+So what I'm gonna talk about in this lecture is really how do we develop a sketch of a solution to your question, assume your question is appropriate and is answerable, we want to start sketching out a solution.
+And if you're gonna make an argument to someone, you're gonna argue for doing this versus that and you wanna build evidence to make your case, this is gonna be a basic sketch of how that argument's gonna work out.
+So the first thing we need to talk about is what is a model, okay, and why do we need them, okay.
+So imagine if you're trying to make a statement about the entire United States, everyone in the United States, okay.
+Okay. So that way you get a sense of kind of how bad things can be or how difficult it might be if you didn't ever use a model.
+Okay. So just take this as a basic example.
+Okay? And the problem is the trivial model is not useful.
+Rather than have no model at all that's almost certainly not going to be useful. All right?
+If the population were truly coming from a normal distribution, what would that look like, okay?
+And we want to know how that data matches our expectation, which is what this picture is giving us.
+But this model tells us that the hump's more like around seven and ten.
+So the model is telling us something very different about what the population is willing to pay for this product.
+Obviously this last one didn't really fit perfectly, so you might wanna either refine your model or you might want to do another survey to get more data, to get a better sense and so you kind of think about where you go from here. The point of this whole exercise is that you get a little sketch of where you're gonna go and kinda what your solution's gonna be.
+So now the question we should be asking right now is, what does a linear model look like?
+Okay. So we can revise our expectations for what the relationship should look like to be this kind of non-linear relationship, rather than our original expectation of a linear relationship.
+Or how it might manifest in that way.
+So if you've answered the question and maybe it's matched your expectations, it's often important to try to replicate your findings in an independent data set just so you can be sure that the answer that you've come to is actually the truth.
+Now data analysis is often done in support of some sort of decision making.
+And analysis for decisions is often different from doing analysis for like supporting a research paper, or for shipping a product, or even if you're writing a technical report.
+Because now, in order to answer this question, you may need to search the literature, or talk to people inside or outside your organization who are familiar with this area and to see if your findings fit with what they expect to see.
+Because remember for every diamond in the rough, there are 99 pieces of coal.
+So just as a very quick, simple running example, here's a basic population of ten penguins. Okay, and each of these penguins has a turquoise hat or a purple hat.
+So the first is can we characterize the population?
+By virtue of the fact that you are sampling data, you will introduce uncertainty, because you don't have all the data.
+And so, usually the way that we write down these models is with mathematical notation or with computer codes so that we can get very specific about what we're trying to do.
+Using just words alone to describe a model, so that's why we usually have to resort to mathematics or computer code.
+So for setting expectations, typically you want to have a primary model, which is your best sense of what the solution should be and what is the answer to your question.
+And then you'll be testing it in various different ways, just to see if it's going to work.
+And so if the secondary models are largely consistent with your primary model and exactly what consistent means depends on the context and your application and the question that you are asking. And then that's great and you can either move on to the next phase or maybe you're finished and you can just kind of record your results.
+So Associational Analyses, there the aim is to look at the association between two or maybe more features while in the presence of many other potentially confounding factors, okay And so for the most part we're interested in looking at the association between two things, but there may be other things that we have to adjust for, or account for, and that we want to make sure we're accounting for properly.
+The next set of analyses that you might do is a prediction analysis. So a prediction analysis differs from an associational type of analysis, because the goal here is to really to use all available information to predict an outcome, okay?
+We have beta, which is the change in y associated with a one unit increase in x, adjusted for z.
+And then gamma is the change in y associated with a one-unit increase in z, adjusting for x.
+So for example, the data for this might look something like this in this table here where you have 21 days.
+Now, now let's suppose we add a background trend into our model.
+So ultimately, the question you're asking is is it worth the risk of buying these ads. Given the evidence that you've seen from these different models showing you that there might be a range of say, $39 $49 increase in total sales during the period of the ad campaign.
+And likely with real world data, there's gonna be lots of things going on in the background.
+So here's a very simple example of a single predictor on a binary outcome that produces very good separation, okay?
+And the dataset is taken from the UCI Machine Learning Repository, which is an excellent repository for all kinds of machine learning and prediction types of data sets.
+So you solve the summary statistics from this particular model, which is okay.
+And so it's not necessarily true that all, the algorithms are exchangeable, you may want to change the algorithm. However, if you try a few algorithms and they all seem to be producing kind of a similar quality of prediction, regardless of how well you tune them, it may be time to get more data or other data to help you predict the outcome.
+So the data I'm gonna use comes from this national morbidity and mortality in air pollution study, and here's a picture of daily mortality in New York from 2001 to 2005.
+And you can see that it has highly seasonal components, the mortality tends to be higher in the winter and lower in the summer, and it's very specific to kind of to pattern across every year.
+Okay. So that's kind of what our basic first cut analysis tells us.
+And you can see that I highlighted the coefficient for pm10 here is actually quite a bit larger now, is 0.00149, and you can see that the standard error is quite a bit smaller relative to the estimate.
+Traffic can produce particles, it can also produce other pollutants.
+So another question that we could ask, is what best predicts mortality in New York City, using the data that we have available, okay?
+And you can see at the very top here is temperature, which is kind of ranked as the most important variable.
+Followed by dew-point temperature, followed by the date, and then no2, ozone which is o3. Season.
+So you can see that from this prediction model, particularly matter actually is second from the bottom in terms of improving the prediction skill of the algorithm.
+So there are a couple of basic principles to keep in mind when interpreting results, particularly in the later stages of a data analysis.
+And so, different groups of people will interpret evidence differently, not because of their interpreting it incorrectly but rather their decision to act on evidence will based on a variety of factors that are really outside the dataset and are not really part of the analysis.
+There's gonna be many results that you generate, so you wanna think about the totality of the evidence.
+I can't tell you how many times I've been in a presentation and we've been ten minutes in and I still don't exactly know what question this person is trying to answer. Okay.
+And so to this extent, I find plots are better than tables, because plots show people, you know, a summary of the data, but they also show people deviations from what might be expected, and so plots are very useful for kind of producing discussion and kind of encouraging people to think about the data.
+Lastly, I think it's important that when you present results from a data analysis, that you separate three things, they are the evidence, the interpretation and the decision. Okay?
+Hi, welcome to what a plant knows. If by chance you clicked on the wrong course, go back and get to the course you want because this is what a plant knows.
+So here we see Klaus from Germany wrote in that you know, he'd be hungry and thirsty and he couldn't get food or couldn't find water.
+Tom, from Pittsburgh came in, they said he be cold, hot, you know, he couldn't get a sweater.
+They're literally rooted in place, just like you would be if you were cemented.
+But plants, they can't do that, they can't escape.
+And because of this, all of plant biology is quite complex to allow them to change their own development, their growth, in order to survive stuck in one place.
+Plants have to know what their surrounding are. They have to feel the weather.
+Remember, positive emotions, they broaden our thinking and creativity.
+And we're going to focus on two critical topics, and these are ones that are near and dear to my heart.
+The specialization is of an intermediate level or difficulty, and we expect that you have studied some basic programming and statistics in the past.
+There are many other tools that one can use in data science, such as specialized statistical analysis languages like R, or more general purpose programming languages like Java and C. We chose Python as the basis for this specialization for three reasons.
+Both the interface that we're going to use for doing assignments, called Jupiter Notebooks, and the main libraries for the first two courses, Pandas and Matplotlib, are part of the SciPy stack, and provide an excellent basis for moving into machine learning, text mining and network analysis.
+Don't worry, if you already have Python down and you want to be challenged, we have some advanced Python in here as well.
+The final module of the course is dedicated to the course project where you'll take some datasets, merge and clean them, then process the data and answer some questions.
+Let's begin at the beginning, see even if you have a great idea, success is far from assured.
+It is, and though the journey for these guys and for you won't be a walk in the park, all you'll need is your creativity, willingness to work and passion for your idea.
+Our children are in trouble, because we've outsourced the job of feeding them.
+These include things like breakfast cereal, granola bars, cookies, crackers and sweetened drinks.
+Even some brands of the foods you might consider to be inherently healthy, can turn out to be heavily processed, like yogurt, or cheese, or even pasta sauce.
+When we cook, we get to decide what is going into our children's bodies, and unlike the processed food manufactures, we have a strong interest in the health of the people who are going to be eating the food that we make.
+The fact that fruit juice is on this list often surprises parents, because many of us have grown up thinking that fruit juice is healthy and it can be, in the right amounts.
