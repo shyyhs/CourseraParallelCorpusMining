@@ -1,3 +1,3 @@
 # English-Chinese dataset is released now! (2021)
 
-English-Japanese dataset and English-Chinese dataset.
+Now we have two parallel datasets for lecture translation: English-Japanese dataset and English-Chinese dataset.
