@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
+# common package 
 import os
 from os.path import basename, dirname
 import sys
@@ -12,36 +7,27 @@ import glob
 
 import numpy as np
 
+# for calculating bleu score
 from nltk.translate.bleu_score import SmoothingFunction
 from nltk.translate import bleu
 from nltk import word_tokenize
 import nltk
-nltk.download('punkt')
+#nltk.download('punkt') # add this line if punkt not found
 
-from scipy import spatial
+# for word2vec
+from scipy import spatial # similarity measure
 import gensim
 from gensim.models import Word2Vec
-
-#word2vec_path = "/share03/song/word2vec/en/model.txt"
-#model = gensim.models.KeyedVectors.load_word2vec_format(word2vec_path, unicode_errors='ignore')
 
 lang1 = 'ja'
 lang2 = 'en'
 
-
-# In[3]:
-
-
+# load language model which takes time
 lang1_word2vec_path = "/larch/song/lrec/word2vec/{}/model.txt".format(lang1)
 lang2_word2vec_path = "/larch/song/lrec/word2vec/{}/model.txt".format(lang2)
-
 lang1_model = gensim.models.KeyedVectors.load_word2vec_format(lang1_word2vec_path, unicode_errors='ignore')
 lang2_model = gensim.models.KeyedVectors.load_word2vec_format(lang2_word2vec_path, unicode_errors='ignore')
 print ("word2vec model loaded")
-
-
-# In[39]:
-
 
 ori_folder =  "./03_length_clean"
 trans_lang1_folder = "./05_separate_docs_trans_{}".format(lang1)
@@ -53,13 +39,8 @@ if (os.path.exists(ori_folder) == 0):
     print ("No en folder!")
 if (os.path.exists(trans_lang1_folder) == 0) or (os.path.exists(trans_lang2_folder)==0):
     print ("No trans folder!")
-
 if (os.path.exists(output_folder) == 0):
     os.makedirs(output_folder)
-
-
-# In[48]:
-
 
 # get vec lists of a sentence
 # get connected vec lists of two lists
@@ -253,7 +234,6 @@ def get_res_from_decide(lang1_lines, lang2_lines, trans_lang1_lines, trans_lang2
             i+=1
         if (lang1_sentence!=''):
             sentence_pairs.append([lang1_sentence, lang2_sentence])
-            
     return sentence_pairs
 
 def save_results(sentence_pairs, lang1_file, lang2_file):
@@ -262,34 +242,19 @@ def save_results(sentence_pairs, lang1_file, lang2_file):
             lang1_sentence, lang2_sentence = sentence_pair
             f1.write(lang1_sentence.strip()+'\n')
             f2.write(lang2_sentence.strip()+'\n')
-            #print (i)
-            #print (lang1_sentence)
-            #print (lang2_sentence)
 
 
-# In[ ]:
-
-
-lang1_names = glob.glob("{}/*.{}.txt".format(ori_folder, lang1))
-lang2_names = glob.glob("{}/*.{}.txt".format(ori_folder, lang2))
-new_names = [''.join(basename(name).strip().split('.')[:-2]) for name in lang1_names]
-new_names.sort()
-print (len(new_names))
-for name_idx, name in enumerate(new_names):
-    print (name_idx, name)
-    untok_lang1_name = os.path.join(ori_folder, name + '.{}.txt'.format(lang1))
+def main_process():
+    # define japanese, english files, translated japanese, english files, and output files
     lang1_name = os.path.join(ori_folder, name + '.{}.txt'.format(lang1)) + '.tok'
-    command = "cat {} | jumanpp --segment > {}".format(untok_lang1_name, lang1_name)
-    os.system(command)
-    
     lang2_name = os.path.join(ori_folder, name + '.{}.txt'.format(lang2))
-    
     trans_lang1_name = os.path.join(trans_lang1_folder, name + '.trans_{}.txt'.format(lang1))
     trans_lang2_name = os.path.join(trans_lang2_folder, name + '.trans_{}.txt'.format(lang2))
-    #ids_name = os.path.join(output_folder, name + '.ids.txt')
     lang1_output_name = os.path.join(output_folder, "{}.{}.txt".format(name, lang1))
     lang2_output_name = os.path.join(output_folder, "{}.{}.txt".format(name, lang2))
-
+    # japanese segmentation using jumanpp
+    #seg_command = "cat {} | jumanpp --segment > {}".format(UNTOK_JAPANESE_FILE_PATH, OUTPUT)
+    #os.system(seg_command)
     with open(lang1_name, "r") as f:
         lang1_lines = f.readlines()
     with open(lang2_name, "r") as f:
@@ -298,58 +263,12 @@ for name_idx, name in enumerate(new_names):
         trans_lang1_lines = f.readlines()
     with open(trans_lang2_name, "r") as f:
         trans_lang2_lines = f.readlines()
-    #print (lang1_lines[0])
-    #print (lang2_lines[0])
-    #print (trans_lang1_lines[0]) 
-    #print (trans_lang2_lines[0]) 
-    
-    #print (len(lang1_lines))
-    #print (len(lang2_lines))
-    #print (lang1_lines, lang2_lines)
-    
-    
+        
     align(lang1_lines, lang2_lines, trans_lang1_lines, trans_lang2_lines)
     sentence_pairs = get_res_from_decide(lang1_lines, lang2_lines, trans_lang1_lines, trans_lang2_lines)
     save_results(sentence_pairs, lang1_output_name, lang2_output_name)
-    #print (decide)
-    #for i, sentence_pair in enumerate(sentence_pairs):
-    #    print (i)
-    #    lang1_sentence, lang2_sentence = sentence_pair
-    #    print (lang1_sentence)
-    #    print (lang2_sentence)
 
 
-# In[ ]:
-
-
-#def get_vec(sentence, model):
-#    res = np.zeros(100)
-#    num_of_words = len(sentence)
-#    for word in sentence:
-#        try:
-#            res += model[word]
-#        except:
-#            num_of_words -= 1
-#    res/=num_of_words
-#    return res
-
-#def get_vecs_from_lines(lines, model):
-#    vecs = []
-#    for line in lines:
-#        vecs.append(get_vec(line, model))
-#    return vecs
-
-
-#def check_position_similarity(i, trans_len, j, en_len):
-#    relative_trans_loc = float(i)/trans_len
-#    relative_en_loc = float(j)/en_len
-#    relative_err = abs(relative_trans_loc - relative_en_loc)
-#    return relative_err
-
-
-# In[ ]:
-
-
-
-
+if (__name__ == '__main__'):
+    main_process()
 
