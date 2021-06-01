@@ -11,9 +11,9 @@ Keywords: Japanese-English parallel dataset, educational domain machine translat
 
 |       | #lines | #docs | Description                       |
 |-------|--------|-------|-----------------------------------|
-| Test  | 2005   | 50    | Human-validated                     |
-| Dev   | 541    | 16    | Human-validated                     |
-| Train | 40770  | 818   | Automatic aligned<br>High quality |
+| Test  | 2068   | 50    | Human-validated                     |
+| Dev   | 555    | 16    | Human-validated                     |
+| Train | 50543  | 818   | Automatic aligned<br>High quality |
 
 Table 1: English-Japanese parallel dataset in educational domain.
 
@@ -28,7 +28,9 @@ Table 2: English-Chinese parallel dataset in educational domain.
 
 
 
-It contains high quality English-Japanese (English-Chinese) parallel sentences and documents from site [Coursera](https://coursera.org/). Please refer our paper for details.
+It contains high quality English-Japanese parallel sentences and documents from site [Coursera](https://coursera.org/). Please refer our paper for details. 
+
+Update: We updated the English-Japanese dataset and it contains more sentences. We added a new English-Chinese dataset.
 
 
 ## Source code
