@@ -15,6 +15,8 @@ import nltk
 from scipy import spatial # similarity measure
 import gensim
 from gensim.models import Word2Vec
+# for input arguments
+import argparse
 
 # define two languages
 lang1 = 'ja'
@@ -257,22 +259,34 @@ def main_process(lang1_name, lang2_name, trans_lang1_name, trans_lang2_name, lan
     save_results(sentence_pairs, lang1_output_name, lang2_output_name)
 
 if (__name__ == '__main__'):
-    #lang1_name = os.path.join(ori_folder, name + '.{}.txt'.format(lang1)) + '.tok'
-    #lang2_name = os.path.join(ori_folder, name + '.{}.txt'.format(lang2))
-    #trans_lang1_name = os.path.join(trans_lang1_folder, name + '.trans_{}.txt'.format(lang1))
-    #trans_lang2_name = os.path.join(trans_lang2_folder, name + '.trans_{}.txt'.format(lang2))
-    #lang1_output_name = os.path.join(output_folder, "{}.{}.txt".format(name, lang1))
-    #lang2_output_name = os.path.join(output_folder, "{}.{}.txt".format(name, lang2))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-l1")
+    parser.add_argument("-l2")
+    parser.add_argument("-trans_l1")
+    parser.add_argument("-trans_l2")
+    parser.add_argument("-output_l1")
+    parser.add_argument("-output_l2")
 
-    # define japanese, english files, translated japanese, english files, and output files
-    lang1_name = "doc.ja.txt.tok" # ja files are tokenized by Jumanpp
-    lang2_name = "doc.en.txt"
-    #ja_seg(lang1_name, lang1_name + ".tok")
-    #lang1_name = lang1_name + ".tok"
-    trans_lang1_name = "doc.trans_ja.txt.tok" # doc.en.txt (trans to Ja)-> doc_trans.ja.txt
-    trans_lang2_name = "doc.trans_en.txt" # doc.ja.txt (trans to En)-> doc_trans.ja.txt
-    lang1_output_name = "doc.align_ja.txt"
-    lang2_output_name = "doc.align_en.txt"
+    args = parser.parse_args()
+    lang1_name = args.l1 # ja files are tokenized by Jumanpp
+    lang2_name = args.l2
+    trans_lang1_name = args.trans_l1
+    trans_lang2_name = args.trans_l2
+    lang1_output_name = args.output_l1
+    lang2_output_name = args.output_l2
+
+    # example input
+    example_flag = 0
+    if (example_flag == 1):
+        # define japanese, english files, translated japanese, english files, and output files
+        lang1_name = "doc.ja.txt.tok" # ja files are tokenized by Jumanpp
+        lang2_name = "doc.en.txt"
+        #ja_seg(lang1_name, lang1_name + ".tok")
+        #lang1_name = lang1_name + ".tok"
+        trans_lang1_name = "doc.trans_ja.txt.tok" # doc.en.txt (trans to Ja)-> doc_trans.ja.txt
+        trans_lang2_name = "doc.trans_en.txt" # doc.ja.txt (trans to En)-> doc_trans.ja.txt
+        lang1_output_name = "doc.align_ja.txt"
+        lang2_output_name = "doc.align_en.txt"
 
     # load LM models
     lang1_word2vec_path = "/mnt/elm/song/lrec/word2vec/{}/model.txt".format(lang1)

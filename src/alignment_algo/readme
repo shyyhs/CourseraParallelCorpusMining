@@ -1,0 +1,2 @@
+# example
+python align.py -l1 "doc.ja.txt.tok" -l2 "doc.en.txt" -trans_l1 "doc.trans_ja.txt.tok" -trans_l2 "doc.trans_en.txt" -output_l1 "doc.align_ja.txt" -output_l2 "doc.align_en.txt"
