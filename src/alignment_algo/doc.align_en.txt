@@ -1,0 +1,76 @@
+Welcome to calculus.
+I'm Professor Ghrist.
+We are about to begin the course Calculus in a single variable.
+Welcome to calculus.
+I'm Professor Ghrist and for the next 13 weeks I'll be your calculus professor.
+Calculus is a wonderful subject.
+One of the loftiest achievements of human thought with thousands of years in the making.
+Whether you are at the beginning of your studies, or whether you've come back to deepen your understanding, my course will give you a novel experience.
+This course is built on the main objects of calculus, functions, limits, derivatives, and integrals, both continuous and discreet.
+You'll learn how to compute with these objects, but you'll also learn what they mean.
+And how they are useful in the engineering, biological, social, and physical sciences.
+Are you ready?
+Let's go!
+You may be wondering, what do you need in order to be successful in this course?
+Well, there are several things that you do not need.
+You don't need a big calculus book, you don't need a fancy calculator, you don't need any money, this is a free course, but there is one thing that you do need a lot of, and that is time.
+Mathematics is difficult and it takes time to work through the homework assignments, to think about what you are doing.
+This is a hard course and you're going to need time and perseverance to get through it.
+You're also going to need prerequisites.
+It's assumed that you know the basics, such as algebra.
+You need to be very familiar with how exponents work, how polynomials are factored.
+Sometimes we'll be doing some of the basic algebra off-screen and it's going to be up to you to fill those steps in.
+You're going to have some background in basic geometry.
+Knowing about things like curves and circles, volumes, areas of basic shapes.
+You're going to want to make sure that you've seen some trigonometry before.
+We'll be reviewing things like sine, cosine and tangent, but you will need to have some prior exposure, likewise, in pre-calculus.
+It's assumed that you've seen the exponential function, e to the x, and the natural logarithm, l n of x.
+We'll review this a little bit, but you're going to want to make sure that it's not your first time seeing that.
+And even though this is a calculus course, it is not your first calculus course.
+I'm going to assume that you've seen some of the basics such as differentiation or integration of polynomials and exponential functions before.
+You need to know, or at least have seen, a definition of a derivative, maybe in terms of slopes.
+And it will be helpful if you've seen a definition of an integral in terms of, say, an area under a curve.
+Now we're going to go through all of that material again and make your understanding deeper and clearer.
+But, if it's your first time seeing this, then this might not be the course for you.
+Let's continue with an overview of the course.
+What you're going to see over the next 13 weeks.
+The course is broken into five chapters.
+The first chapter is on functions and beginning with a simple function, e to the x, we're going to reconsider functions from the perspective of series.
+Taylor series, to be precise.
+We'll learn a new asymptotic language for understanding growth.
+And then, in chapter two, we'll put that language and that intuition to work by reconsidering rates of change and our notion of differentiation.
+From there we'll turn in chapter three to the notion of an anti-derivitive.
+That is an integral.
+Motivated by applied problems in differential equations we will build up integrals both indefinite and then definite.
+In chapter 4, we'll take what we've learned about derivatives and integrals and put them to use considering applications in the physical, social, engineering and biological sciences.
+Finally, in chapter five we'll revisit everything that we have done in the course, rebuilding calculus in a discrete setting.
+A calculus four sequences.
+Your next step should be to take the diagnostic exam and see if you remember all of those prerequisites.
+Then, begin with lecture one.
+Watch the lecture, and then go to the homework assignments.
+There are two homework sets per lecture.
+One, a set of core or basic problems, and then a set of challenge problems that are optional, for those who want to go deeper.
+Now, when you get to the homeworks, you may or may not encounter some difficulty.
+If you do, we have several resources available.
+You can go to the Penn Calc Wiki, which operates something like a text for the course.
+But even better, you can go to the discussion forums.
+Help and be helped by other people.
+As you complete homework assignments, move on to the next lectures and repeat.
+When you get to the end of a chapter, then there will be a quiz.
+Those happen at particular times.
+You can see the schedule on the website for the course.
+Eventually, when we're done with all five chapters, we'll get to the final exam and, if you make it to the end, you will be done.
+It is by no means an easy path to get to the end of this course, it is a difficult subject and is only learned by means of hard work.
+You are going to have to work hard and persevere to get to the end.
+But I am confident that together, we can make it.
+It's a privilege for me to be your calculus professor this term, and I'm glad that you've chosen this course.
+I want you to make it to the end.
+Your next step should be to take the diagnostic exam, and make sure that this is the right place.
+Then, start with lesson one, and move lesson by lesson.
+Don't skip around a lot.
+This course has a flow.
+Calculus is like an epic story with main characters, grand themes, struggle, and eventual achievement.
+I want you to see that story.
+I want you to live that story.
+This course is going to be an odyssey, a long and difficult journey, but if you work hard, you'll make it to the end with something you can be really proud of.
+A mastery of calculus.

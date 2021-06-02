@@ -242,7 +242,7 @@ def save_results(sentence_pairs, lang1_file, lang2_file):
             f1.write(lang1_sentence.strip()+'\n')
             f2.write(lang2_sentence.strip()+'\n')
 
-def main_process():
+def main_process(lang1_name, lang2_name, trans_lang1_name, trans_lang2_name, lang1_output_name, lang2_output_name):
     with open(lang1_name, "r") as f:
         lang1_lines = f.readlines()
     with open(lang2_name, "r") as f:
@@ -265,18 +265,21 @@ if (__name__ == '__main__'):
     #lang2_output_name = os.path.join(output_folder, "{}.{}.txt".format(name, lang2))
 
     # define japanese, english files, translated japanese, english files, and output files
-    lang1_name = "doc.ja.txt"
+    lang1_name = "doc.ja.txt.tok" # ja files are tokenized by Jumanpp
     lang2_name = "doc.en.txt"
-    trans_lang1_name = "doc_trans.ja.txt" # doc.en.txt (trans to Ja)-> doc_trans.ja.txt
-    trans_lang2_name = "doc_trans.en.txt" # doc.ja.txt (trans to En)-> doc_trans.ja.txt
-    lang1_output_name = "doc_align.ja.txt"
-    lang2_output_name = "doc_align.en.txt"
+    #ja_seg(lang1_name, lang1_name + ".tok")
+    #lang1_name = lang1_name + ".tok"
+    trans_lang1_name = "doc.trans_ja.txt.tok" # doc.en.txt (trans to Ja)-> doc_trans.ja.txt
+    trans_lang2_name = "doc.trans_en.txt" # doc.ja.txt (trans to En)-> doc_trans.ja.txt
+    lang1_output_name = "doc.align_ja.txt"
+    lang2_output_name = "doc.align_en.txt"
 
     # load LM models
-    lang1_word2vec_path = "/larch/song/lrec/word2vec/{}/model.txt".format(lang1)
-    lang2_word2vec_path = "/larch/song/lrec/word2vec/{}/model.txt".format(lang2)
+    lang1_word2vec_path = "/mnt/elm/song/lrec/word2vec/{}/model.txt".format(lang1)
+    lang2_word2vec_path = "/mnt/elm/song/lrec/word2vec/{}/model.txt".format(lang2)
+    print ("started loading LMs. It takes much time")
     lang1_model = load_LM(lang1_word2vec_path)
     lang2_model = load_LM(lang2_word2vec_path)
     print ("word2vec model loaded")
-    main_process()
+    main_process(lang1_name, lang2_name, trans_lang1_name, trans_lang2_name, lang1_output_name, lang2_output_name)
 
