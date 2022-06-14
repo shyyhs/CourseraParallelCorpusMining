@@ -1,1 +1,2 @@
 Follow the 00 to 08 order.
+Currently 06_ids.ipynb contains 1( the proposed DP algorithm with word2vec embeddings, 2) LASER based method 3) sentBERT based method.
