@@ -72,6 +72,16 @@ Please cite our paper if you used our code or dataset:
     language = "English",
     ISBN = "979-10-95546-34-4",
 }
+@article{Haiyue Song2024,
+  title={Bilingual Corpus Mining and Multistage Fine-tuning for Improving Machine Translation of Lecture Transcripts},
+  author={Haiyue Song and Raj Dabre and Chenhui Chu and Atsushi Fujita and Sadao Kurohashi},
+  journal={Journal of Information Processing},
+  volume={32},
+  number={ },
+  pages={628-640},
+  year={2024},
+  doi={10.2197/ipsjjip.32.628}
+}
 ```
 
 ## Contact 
